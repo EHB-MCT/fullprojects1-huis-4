@@ -2,7 +2,7 @@
 
 /* NAVIGATION */
 nav {
-	background-color: #c6b7a1;
+	background-color: #84816b;
 	padding: 15px 30px 60px;
 }
 
@@ -22,4 +22,8 @@ nav a {
 	text-decoration: none;
 	color: black;
 	font-family: "Avenir Next", sans-serif;
+}
+
+.navLinks a:hover {
+	color: #803407;
 }
