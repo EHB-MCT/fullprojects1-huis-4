@@ -7,23 +7,54 @@ body {
 }
 
 h1 {
-	font-size: 100px;
+	font-size: 70px;
 	font-weight: 600;
+	color: #387b5c;
 }
 
 h2 {
-	font-size: 50px;
+	font-size: 35px;
+	color: #013832;
 }
 
 h3 {
-	font-size: 42px;
+	font-size: 40px;
 	font-weight: 600;
+	color: #387b5c;
 }
 
 p {
-	font-size: 30px;
+	font-size: 18px;
+	color: #013832;
 }
 
 a {
-	font-size: 30px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #fffdf6;
+}
+
+a#language {
+	color: #d1a246;
+}
+
+p a {
+	color: #013832;
+	text-decoration: underline;
+	text-decoration-color: #d1a246;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+}
+
+ul {
+	margin-bottom: 50px;
+}
+
+ul li {
+	color: #013832;
+	font-size: 18px;
+}
+
+ul li::marker {
+	color: #d1a246;
 }

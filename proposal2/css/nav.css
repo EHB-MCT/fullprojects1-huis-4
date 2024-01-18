@@ -1,4 +1,29 @@
 /* NAVIGATION */
 
 nav {
+	background-color: #387b5c;
+	padding: 15px 30px 60px;
+	border-radius: 0px 0px 40px 40px;
+}
+
+nav a {
+	float: left;
+	text-align: center;
+	padding: 12px;
+}
+
+.navLinks {
+	float: right;
+}
+
+.navLinks a {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.navLinks a:hover {
+	text-decoration: underline;
+	text-decoration-color: #fffdf6;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 10px;
 }
