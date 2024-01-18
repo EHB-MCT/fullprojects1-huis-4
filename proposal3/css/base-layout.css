@@ -1,17 +1,34 @@
 /* BASE LAYOUT FLEXBOX */
 
 :root {
-	--body-background: #FAF8F5;
-	--article-background: #D08240;
-	--article-background-secondary: #FFFFFF;
+	--body-background: #faf8f5;
+	--article-background: #d08240;
+	--article-background-secondary: #ffffff;
 	--footer-lip: #996539;
 	--button: #;
 	--button-hover: #;
 	--text: #000000;
-	--link: #0E06FF;
+	--link: #0e06ff;
 	--link-hover: #0a03d7;
+	--flex-box-background: #f19648;
 }
 
 body {
 	margin: 0;
+}
+
+.flex-box {
+	display: flex;
+	background-color: var(--flex-box-background);
+	width: 20%;
+
+	> *:is(a) {
+		width: 10%;
+	}
+}
+
+a {
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid black;
 }

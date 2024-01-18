@@ -1,7 +1,23 @@
 /* BUTTONS */
 
 .btn-primary {
+	border-radius: 25px;
+	padding: 8px 18px;
+	color: #fff;
+	text-decoration: none;
+	background-color: #f19648;
+	border: 1px solid #707070;
+}
+.btn-primary:hover {
+	background-color: #a96a35;
 }
 
 .btn-secondary {
+	border-radius: 0px;
+	padding: 8px 80px;
+	color: #fff;
+	text-decoration: none;
+	background-color: #f19648;
+	border: 1px solid #f19648;
+	border-left: 1px solid #707070;
 }
