@@ -1,12 +1,14 @@
 /* BUTTONS */
 
 .btn-primary {
-	background-color: #387b5c;
+	background-color: #d1a246;
 	text-decoration: none;
 	color: #fffdf6;
 	border-radius: 40px;
 	padding: 20px 80px;
 }
 
-.btn-secondary {
+.btn-primary:hover,
+.btn-primary:active {
+	background-color: #013832;
 }
