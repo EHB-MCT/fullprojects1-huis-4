@@ -1,5 +1,17 @@
 /* BASE LAYOUT FLEXBOX */
 
+:root {
+	--body-background: #FAF8F5;
+	--article-background: #D08240;
+	--article-background-secondary: #FFFFFF;
+	--footer-lip: #996539;
+	--button: #;
+	--button-hover: #;
+	--text: #000000;
+	--link: #0E06FF;
+	--link-hover: #0a03d7;
+}
+
 body {
 	margin: 0;
 }
