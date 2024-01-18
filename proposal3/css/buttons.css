@@ -3,50 +3,64 @@
 .btn-primary {
 	border-radius: 25px;
 	padding: 8px 18px;
-	color: #fff;
+	color: var(--button-text);
 	text-decoration: none;
-	background-color: #f19648;
-	border: 1px solid #707070;
+	background-color: var(--button-background);
+	border: 1px solid var(--button-border);
 }
 
 .btn-primary:hover {
-	background-color: #a96a35;
+	background-color: var(--button-background-hover);
+	color: var(--button-text);
 }
 
 .btn-secondary {
 	display: flex;
 	width: 50%;
 
-	> * {
-		color: #ffffff;
+	>* {
+		color: var(--button-text);
 		display: flex;
-
-		&:nth-child(1) {
-			background-color: var(--option-button-background);
-			width: 60%;
-		}
-
-		&:nth-child(3) {
-			background-color: var(--option-button-background-opaque);
-			width: 40%;
-		}
 	}
 
 	a,
-	span.button-extra {
+	.button-extra {
 		padding: 10px 0;
 		padding-left: 40px;
 
 		span {
-			border-left: 1px solid gray;
+			border-left: 1px solid var(--button-border);
 			padding: 10px 10px;
 		}
 	}
 
+	a {
+		background-color: var(--button-background);
+		width: 60%;
+	}
+
+	.button-extra {
+		background-color: var(--button-background-lightest);
+		width: 40%;
+	}
+
 	.button-spacer {
-		background-color: var(--option-button-background-light);
+		background-color: var(--button-background-lighter);
 		display: inline-block;
-		width: 20px;
+		width: 5px;
 		padding-right: 10px;
+	}
+}
+
+.btn-secondary:hover {
+	background-color: var(--button-background-hover);
+
+	a {
+		opacity: 0.8;
+		text-decoration: underline;
+	}
+
+	* {
+		color: var(--button-text);
 	}
 }
