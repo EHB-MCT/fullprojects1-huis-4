@@ -1,25 +1,59 @@
+@font-face {
+	font-family: "Brush Script MT";
+	src: url("path/to/brush-script-mt.woff2") format("woff2"),
+		url("path/to/brush-script-mt.woff") format("woff"),
+		url("path/to/brush-script-mt.ttf") format("truetype");
+	/* Add more formats if necessary */
+}
+
 /* TYPOGRAPHY */
 
 h1 {
+	font-family: "Brush Script MT", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 35px;
+	color: #c6b7a1;
+	padding-left: 50px;
 }
 
 h2 {
+	font-family: "Brush Script MT", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	color: #c6b7a1;
+	padding-left: 50px;
 }
 
 h3 {
-}
-
-h4 {
-}
-
-h5 {
-}
-
-h6 {
+	font-family: "Brush Script MT", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	color: #c6b7a1;
+	padding-left: 50px;
 }
 
 p {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 14px;
+}
+p a {
+	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-color: #c6b7a1;
+}
+ul {
+	margin-bottom: 50px;
 }
 
-a {
+ul li {
+	color: #013832;
+	font-family: "Avenir Next", sans-serif;
+	font-size: 14px;
+}
+
+ul li::marker {
+	color: #c6b7a1;
 }

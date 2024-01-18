@@ -1,32 +1,33 @@
 /* TYPOGRAPHY */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 h1 {
-	font-family: "Lato bold";
+	font-family: "Lato";
 	font-size: 124pt;
 }
 
 h2 {
-	font-family: "Lato bold";
+	font-family: "Lato";
 	font-size: 55pt;
 }
 
 h3 {
-	font-family: "Lato bold";
+	font-family: "Lato";
 	font-size: 50pt;
 }
 
 h4 {
-	font-family: "Lato bold";
+	font-family: "Lato";
 	font-size: 35pt;
 }
 
 h5 {
-	font-family: "Lato bold";
+	font-family: "Lato";
 	font-size: 30pt;
 }
 
 h6 {
-	font-family: "Lato bold";
+	font-family: "Lato";
 	font-size: 20pt;
 }
 
