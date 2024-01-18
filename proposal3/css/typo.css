@@ -35,7 +35,8 @@ p {
 	font-size: 15pt;
 }
 
-a {
-	font-family: "Roboto";
+a,
+span {
+	font-family: "Roboto", monospace;
 	font-size: 15pt;
 }

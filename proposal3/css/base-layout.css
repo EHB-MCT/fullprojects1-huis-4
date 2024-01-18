@@ -10,25 +10,19 @@
 	--text: #000000;
 	--link: #0e06ff;
 	--link-hover: #0a03d7;
-	--flex-box-background: #f19648;
+	--option-button-background: #f19648;
+	--option-button-background-light: rgba(241, 150, 72, 0.90);
+	--option-button-background-opaque: rgba(241, 150, 72, 0.75);
 }
 
-body {
+*,
+*::before,
+*::after {
 	margin: 0;
-}
-
-.flex-box {
-	display: flex;
-	background-color: var(--flex-box-background);
-	width: 20%;
-
-	> *:is(a) {
-		width: 10%;
-	}
+	padding: 0;
+	box-sizing: border-box;
 }
 
 a {
-	margin-left: 10px;
-	padding-left: 10px;
-	border-left: 1px solid black;
+	text-decoration: none;
 }

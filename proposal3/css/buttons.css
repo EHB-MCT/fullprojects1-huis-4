@@ -8,16 +8,45 @@
 	background-color: #f19648;
 	border: 1px solid #707070;
 }
+
 .btn-primary:hover {
 	background-color: #a96a35;
 }
 
 .btn-secondary {
-	border-radius: 0px;
-	padding: 8px 80px;
-	color: #fff;
-	text-decoration: none;
-	background-color: #f19648;
-	border: 1px solid #f19648;
-	border-left: 1px solid #707070;
+	display: flex;
+	width: 50%;
+
+	> * {
+		color: #ffffff;
+		display: flex;
+
+		&:nth-child(1) {
+			background-color: var(--option-button-background);
+			width: 60%;
+		}
+
+		&:nth-child(3) {
+			background-color: var(--option-button-background-opaque);
+			width: 40%;
+		}
+	}
+
+	a,
+	span.button-extra {
+		padding: 10px 0;
+		padding-left: 40px;
+
+		span {
+			border-left: 1px solid gray;
+			padding: 10px 10px;
+		}
+	}
+
+	.button-spacer {
+		background-color: var(--option-button-background-light);
+		display: inline-block;
+		width: 20px;
+		padding-right: 10px;
+	}
 }
