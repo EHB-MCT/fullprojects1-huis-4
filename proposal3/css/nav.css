@@ -1,4 +1,25 @@
 /* NAVIGATION */
 
 nav {
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	color: var(--flex-box-background);
+	font-family: "Roboto";
+	font-size: 15pt;
+}
+
+nav li {
+	display: inline;
+	margin: 0 10px;
+}
+
+nav ul {
+	display: flex;
+	> :first-child {
+		margin-right: auto;
+	}
+	> :last-child {
+		margin-left: auto;
+	}
 }

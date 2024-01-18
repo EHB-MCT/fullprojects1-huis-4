@@ -1,55 +1,41 @@
 /* TYPOGRAPHY */
 
 h1 {
-    font-family: "Lato bold";
-    font-size: 124pt;
+	font-family: "Lato bold";
+	font-size: 124pt;
 }
 
 h2 {
-    font-family: "Lato bold";
-    font-size: 55pt;
+	font-family: "Lato bold";
+	font-size: 55pt;
 }
 
 h3 {
-    font-family: "Lato bold";
-    font-size: 50pt;
+	font-family: "Lato bold";
+	font-size: 50pt;
 }
 
 h4 {
-    font-family: "Lato bold";
-    font-size: 35pt;
+	font-family: "Lato bold";
+	font-size: 35pt;
 }
 
 h5 {
-    font-family: "Lato bold";
-    font-size: 30pt;
+	font-family: "Lato bold";
+	font-size: 30pt;
 }
 
 h6 {
-    font-family: "Lato bold";
-    font-size: 20pt;
+	font-family: "Lato bold";
+	font-size: 20pt;
 }
 
 p {
-    font-family: "Consolas";
-    font-size: 15pt;
+	font-family: "Consolas";
+	font-size: 15pt;
 }
 
 a {
-    font-family: "Roboto";
-    font-size: 15pt;
-
-    margin-left: 10px;
-    padding-left: 10px;
-    border-left: 1px solid black;
-}
-
-.flex-box {
-    display: flex;
-    background-color: gray;
-    width: 50%;
-
-    > *:is(a) {
-        width: 70%;
-    }
+	font-family: "Roboto";
+	font-size: 15pt;
 }
