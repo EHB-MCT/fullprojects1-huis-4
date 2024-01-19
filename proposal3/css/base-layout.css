@@ -5,30 +5,36 @@
 	--article-background: #d08240;
 	--article-background-secondary: #ffffff;
 	--footer-lip: #996539;
-	--button: #;
-	--button-hover: #;
-	--text: #000000;
-	--link: #0e06ff;
-	--link-hover: #0a03d7;
-	--flex-box-background: #f19648;
+
+	--button-background: #f19648;
+	--button-background-lighter: rgba(241, 150, 72, 0.90);
+	--button-background-lightest: rgba(241, 150, 72, 0.75);
+	--button-background-hover: #a96a35;
+	--button-border: #707070;
+	--button-text: #ffffff;
+	--button-text-hover: #CBB298;
+
+	--common-text: #494949;
+	--common-text-hover: #; /* Not entirely useless, could be good for quoted material */
+
+	--anchor: #0e06ff;
+	--anchor-hover: #0a03d7;
+
+	--nav-text: #d08240;
+	--nav-text-current: #CBB298;
+	--nav-text-hover: #CBB298;
 }
 
 body {
-	margin: 0;
-}
-
-.flex-box {
-	display: flex;
-	background-color: var(--flex-box-background);
-	width: 20%;
-
-	> *:is(a) {
-		width: 10%;
-	}
+	background-color: var(--body-background);
+	color: var(--common-text);
 }
 
 a {
-	margin-left: 10px;
-	padding-left: 10px;
-	border-left: 1px solid black;
+	color: var(--anchor);
+	text-decoration: none;
+
+	&:hover {
+		color: var(--anchor-hover);
+	}
 }

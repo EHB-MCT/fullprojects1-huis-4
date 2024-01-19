@@ -8,7 +8,7 @@ h1 {
 
 h2 {
 	font-family: "Lato";
-	font-size: 55pt;
+	font-size: 70pt;
 }
 
 h3 {
@@ -31,12 +31,13 @@ h6 {
 	font-size: 20pt;
 }
 
-p {
+body {
 	font-family: "Consolas";
 	font-size: 15pt;
 }
 
-a {
+a,
+span {
 	font-family: "Roboto";
 	font-size: 15pt;
 }

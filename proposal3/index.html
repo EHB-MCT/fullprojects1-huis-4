@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Styleguide 1</title>
-		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/base-layout.css" />
-		<link rel="stylesheet" href="css/nav.css" />
-		<link rel="stylesheet" href="css/typo.css" />
-		<link rel="stylesheet" href="css/buttons.css" />
-	</head>
-	<body>
-		<nav>
-			<ul>
-				<li></li>
-				<li>home</li>
-				<li>over ons</li>
-				<li>steun ons</li>
-				<li>vacature</li>
-				<li>werking</li>
-				<li>archief</li>
-				<li>nl/fr</li>
-			</ul>
-		</nav>
 
-		<h1>Heading 1</h1>
-		<h2>Heading 2</h2>
-		<h3>Heading 3</h3>
-		<h4>Heading 4</h4>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Styleguide 1</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/base-layout.css" />
+	<link rel="stylesheet" href="css/nav.css" />
+	<link rel="stylesheet" href="css/typo.css" />
+	<link rel="stylesheet" href="css/buttons.css" />
+</head>
 
-		<p>
-			Lorem ipsum dolor sit amet <a href="#">link</a> consectetur adipisicing
-			elit. Quisquam quibusdam, voluptatum, quod, quia voluptatem voluptas quos
-			asperiores, voluptate quae quas doloribus. Quisquam quibusdam, voluptatum,
-			quod, quia voluptatem voluptas quos asperiores, voluptate quae quas
-			doloribus.
-		</p>
-
+<body>
+	<nav>
 		<ul>
-			<li>List item</li>
-			<li>List item</li>
+			<li><a href="index.html"><div style="background-color:red; height: 50px; width: 100px;"></div></a></li>
+			<li><a href="index.html" id="current">Home</a></li>
+			<li><a href="#">Over Ons</a></li>
+			<li><a href="#">Steun Ons</a></li>
+			<li><a href="#">Vacature</a></li>
+			<li><a href="#">Werking</a></li>
+			<li><a href="#">Archief</a></li>
+			<li><a href="#">nl/fr</a></li>
 		</ul>
+	</nav>
 
-		<a href="#" class="btn-primary">Primary</a>
-		<div class="flex-box">
-			<a href="#" class="btn-secondary">Secondary</a>
-		</div>
-	</body>
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4</h4>
+
+
+	<p>
+		Lorem ipsum dolor sit amet <a href="#">link</a> consectetur adipisicing
+		elit. Quisquam quibusdam, voluptatum, quod, quia voluptatem voluptas quos
+		asperiores, voluptate quae quas doloribus. Quisquam quibusdam, voluptatum,
+		quod, quia voluptatem voluptas quos asperiores, voluptate quae quas
+		doloribus.
+	</p>
+
+	<ul>
+		<li>List item</li>
+		<li>List item</li>
+	</ul>
+
+	<a href="#" class="btn-primary">Primary</a>
+
+	<div class="btn-secondary">
+		<a href="#"><span></span>Secondary</a>
+		<span class="button-spacer"></span>
+		<span class="button-extra"><span></span>Extra info</span>
+	</div>
+
+	<div class="btn-secondary">
+		<a href="#"><span></span>Secondary</a>
+		<span class="button-spacer"></span>
+		<span class="button-extra"><span></span>Extra info</span>
+	</div>
+</body>
+
 </html>
