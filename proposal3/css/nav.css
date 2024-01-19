@@ -6,6 +6,7 @@ nav ul {
 	align-items: center;
 	justify-content: center;
 	padding-right: 40px;
+	color: var(--nav-text);
 
 	> :first-child {
 		margin-right: auto;

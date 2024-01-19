@@ -3,27 +3,27 @@
 
 h1 {
 	font-family: "Lato";
-	font-size: 124pt;
+	font-size: 60pt;
 }
 
 h2 {
 	font-family: "Lato";
-	font-size: 70pt;
+	font-size: 40pt;
 }
 
 h3 {
 	font-family: "Lato";
-	font-size: 50pt;
+	font-size: 35pt;
 }
 
 h4 {
 	font-family: "Lato";
-	font-size: 35pt;
+	font-size: 30pt;
 }
 
 h5 {
 	font-family: "Lato";
-	font-size: 30pt;
+	font-size: 20pt;
 }
 
 h6 {
@@ -40,4 +40,8 @@ a,
 span {
 	font-family: "Roboto";
 	font-size: 15pt;
+}
+
+a {
+	color: var(--nav-text);
 }
