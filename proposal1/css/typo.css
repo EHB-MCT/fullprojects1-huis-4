@@ -43,6 +43,7 @@ p a {
 	text-decoration: none;
 	text-decoration: underline;
 	text-decoration-color: #c6b7a1;
+	color: black;
 }
 ul {
 	margin-bottom: 50px;
