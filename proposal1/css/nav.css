@@ -3,7 +3,11 @@
 /* NAVIGATION */
 nav {
 	background-color: #84816b;
-	padding: 15px 30px 60px;
+	padding: 15px 30px 15px;
+}
+nav img {
+	width: 40px;
+	height: 40px;
 }
 
 nav a {
