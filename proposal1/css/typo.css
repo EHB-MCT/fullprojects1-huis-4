@@ -36,6 +36,7 @@ h3 {
 }
 
 p {
+	margin-left: 50px;
 	font-family: "Avenir Next", sans-serif;
 	font-size: 14px;
 }
@@ -46,6 +47,7 @@ p a {
 	color: black;
 }
 ul {
+	margin-left: 50px;
 	margin-bottom: 50px;
 }
 
