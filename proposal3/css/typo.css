@@ -45,3 +45,7 @@ span {
 a {
 	color: var(--nav-text);
 }
+
+ul {
+	margin-bottom: 40px;
+}
