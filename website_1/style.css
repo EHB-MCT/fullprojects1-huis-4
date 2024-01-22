@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "Brush Script MT";
+	src: url("path/to/brush-script-mt.woff2") format("woff2"),
+		url("path/to/brush-script-mt.woff") format("woff"),
+		url("path/to/brush-script-mt.ttf") format("truetype");
+	/* Add more formats if necessary */
+}
+@import url("https://fonts.googleapis.com/css2?family=Avenir+Next:wght@400&display=swap");
+/* TYPOGRAPHY */
+
+body {
+	margin: 0;
+}
+
+/* BUTTONS */
+.btn-primary {
+	margin-left: 50px;
+	font-family: "Avenir Next", sans-serif;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: white;
+	border: 2px solid #84816b;
+	padding: 20px 80px;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+	background-color: gray;
+}
+
+/* NAVIGATION */
+nav {
+	background-color: #d08240;
+	padding: 15px 30px 15px;
+}
+nav img {
+	width: 40px;
+	height: 40px;
+}
+
+nav a {
+	float: left;
+	text-align: center;
+	padding: 12px;
+}
+
+.navLinks {
+	float: right;
+}
+
+.navLinks a {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	color: black;
+	font-family: "Avenir Next", sans-serif;
+}
+
+.navLinks a:hover {
+	color: white;
+}
