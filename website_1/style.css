@@ -35,8 +35,8 @@ nav {
 	padding: 15px 30px 15px;
 }
 nav img {
-	width: 40px;
-	height: 40px;
+	width: 45px;
+	height: auto;
 }
 
 nav a {
@@ -44,9 +44,9 @@ nav a {
 	text-align: center;
 	padding: 12px;
 }
-
 .navLinks {
 	float: right;
+	padding: 10px;
 }
 
 .navLinks a {
@@ -59,4 +59,7 @@ nav a {
 
 .navLinks a:hover {
 	color: white;
+}
+.logo {
+	display: flex;
 }
