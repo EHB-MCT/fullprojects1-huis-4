@@ -83,9 +83,59 @@ nav a {
 
 .footer {
 	background-color: #d08240;
+	display: flex;
+	justify-content: space-around;
 }
 
 .footer h3 {
-	color: white;
+	color: black;
 	font-family: "Avenir Next", sans-serif;
+	margin-bottom: 0;
+}
+
+.emailAdres {
+	display: flex;
+	font-family: "Avenir Next", sans-serif;
+	font-size: 18px;
+}
+
+#line {
+	padding: 50px 0px;
+}
+
+.email {
+	display: flex;
+}
+
+.email img,
+.phone img,
+.sponsors img {
+	object-fit: contain;
+	margin-right: 10px;
+}
+
+.phone {
+	display: flex;
+	margin-top: -25px;
+}
+
+.contact {
+	margin: 30px;
+}
+
+.adress {
+	margin: 30px;
+}
+
+.sponsors {
+	display: flex;
+}
+
+.sponsors img {
+	margin: 20px;
+	width: 250px;
+}
+
+.contactInfo {
+	margin-top: 3px;
 }
