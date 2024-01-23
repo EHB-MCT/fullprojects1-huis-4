@@ -5,7 +5,32 @@ body {
 	margin: 0;
 }
 
+h1 {
+	font-size: 280px;
+	font-family: "Brush Script MT", serif;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 35px;
+	font-family: "Brush Script MT", serif;
+	font-style: italic;
+}
+
+h3 {
+	font-size: 25px;
+	font-family: "Avenir Next", sans-serif;
+	font-weight: medium;
+}
+
+h4 {
+	font-size: 18px;
+	font-family: "Avenir Next", sans-serif;
+	font-weight: medium;
+}
+
 p {
+	font-size: 16px;
 	font-family: "Avenir Next", sans-serif;
 }
 
@@ -28,7 +53,7 @@ p {
 
 /* NAVIGATION */
 nav {
-	background-color: #d08240;
+	background-color: #97b287;
 	padding: 15px 30px 15px;
 	display: flex;
 	justify-content: space-between;
@@ -47,6 +72,10 @@ nav a {
 	color: black;
 	font-size: 14px;
 	font-family: "Avenir Next", sans-serif;
+}
+
+nav a.current {
+	color: white;
 }
 
 .logo a {
@@ -86,14 +115,12 @@ nav a {
 /*FOOTER*/
 
 footer {
-	background-color: #d08240;
+	background-color: #97b287;
 	display: flex;
 	justify-content: space-around;
 }
 
-footer h3 {
-	color: black;
-	font-family: "Avenir Next", sans-serif;
+footer h4 {
 	margin-bottom: 0;
 }
 
@@ -144,9 +171,14 @@ footer h3 {
 	margin-top: 3px;
 }
 
+/*header*/
+
 .note1 {
 	max-width: 500px;
 	transform: rotate(-5deg);
+	position: absolute;
+	left: 5%;
+	top: 25%;
 }
 
 .note2 {
@@ -172,8 +204,8 @@ footer h3 {
 
 header {
 	display: flex;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 150px;
+	margin-top: 25px;
 }
 
 .notes {
@@ -182,4 +214,36 @@ header {
 
 .ComputerEnBloem {
 	flex: 25%;
+}
+
+.CB {
+	width: 600px;
+}
+
+.Assistent {
+	transform: rotate(-6deg);
+	position: absolute;
+	left: 9%;
+	top: 47%;
+}
+
+.Administratief {
+	transform: rotate(-2deg);
+	position: absolute;
+	left: 29%;
+	top: 56%;
+}
+
+.Kook {
+	transform: rotate(-2deg);
+	position: absolute;
+	left: 9%;
+	top: 71%;
+}
+
+.Logistiek {
+	transform: rotate(-1deg);
+	position: absolute;
+	left: 34%;
+	top: 81%;
 }
