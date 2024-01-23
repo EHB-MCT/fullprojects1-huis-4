@@ -1,78 +1,81 @@
 /*header*/
 
-.note1 {
-	max-width: 500px;
-	transform: rotate(-5deg);
-	position: absolute;
-	left: 5%;
-	top: 25%;
-}
-
-.note2 {
-	max-width: 500px;
-	position: absolute;
-	left: 25%;
-	top: 35%;
-}
-
-.note3 {
-	max-width: 500px;
-	position: absolute;
-	left: 25%;
-	top: 60%;
-}
-
-.note4 {
-	max-width: 500px;
-	position: absolute;
-	left: 5%;
-	top: 50%;
-}
-
 .headerJ {
-	display: flex;
 	margin-left: 150px;
 	margin-top: 25px;
 }
 
-.notes {
-	flex: 75%;
+.Flex {
+	display: flex;
 }
 
 .ComputerEnBloem {
-	flex: 25%;
+	flex: 1;
 }
 
 .CB {
 	width: 600px;
 }
 
-.Assistent {
-	transform: rotate(-6deg);
-	position: absolute;
-	left: 9%;
-	top: 47%;
+.text {
+	flex: 1;
 }
 
-.Administratief {
-	transform: rotate(-2deg);
-	position: absolute;
-	left: 29%;
-	top: 56%;
+.Assistent {
+	margin-top: 150px;
+	margin-bottom: 30px;
 }
 
 .Kook {
-	transform: rotate(-2deg);
-	position: absolute;
-	left: 9%;
-	top: 71%;
+	margin-top: 30px;
+	margin-bottom: 200px;
 }
 
 .Logistiek {
-	transform: rotate(-1deg);
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.knop1 {
 	position: absolute;
-	left: 34%;
-	top: 81%;
+	top: 45%;
+	left: 30%;
+}
+
+.knop2 {
+	position: absolute;
+	top: 52%;
+	left: 30%;
+}
+
+.knop3 {
+	position: absolute;
+	top: 59%;
+	left: 30%;
+}
+
+.knop4 {
+	position: absolute;
+	top: 66%;
+	left: 30%;
+}
+
+.pijl1 {
+	position: absolute;
+	top: 30%;
+	right: 45%;
+}
+
+.pijl2 {
+	position: absolute;
+	bottom: 10%;
+	left: 37%;
+}
+
+.pijl3 {
+	position: absolute;
+	bottom: 40%;
+	left: 25%;
 }
 
 /*Maatschappelijk assistente*/
