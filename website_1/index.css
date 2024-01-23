@@ -1,0 +1,119 @@
+.elements {
+	position: relative;
+}
+
+.flower_1 {
+	position: absolute;
+	width: 200px;
+	transform: rotate(-60deg);
+	margin-left: 330px;
+	margin-top: -60px;
+}
+
+.tape_1 {
+	position: absolute;
+	z-index: 8;
+	width: 120px;
+	margin-top: 200px;
+	margin-left: 125px;
+	transform: rotate(-25deg);
+}
+
+.wheelVissen {
+	position: absolute;
+	margin-top: 300px;
+	top: 0;
+}
+
+.wheelVissen .wheel {
+	width: 300px;
+	transform: rotate(-6deg);
+	margin-left: 140px;
+	margin-top: -60px;
+}
+
+.wheelVissen .vissen {
+	width: 90px;
+}
+
+.Huis {
+	position: absolute;
+	width: 270px;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	margin-top: 50px;
+	margin-left: 200px;
+}
+
+.paper_note {
+	position: absolute;
+	z-index: 8;
+	margin-top: 370px;
+	width: 500px;
+	margin-left: 200px;
+	transform: rotate(5deg);
+}
+
+.note h2 {
+	position: absolute;
+	z-index: 9;
+	margin-top: 545px;
+	margin-left: 300px;
+	transform: rotate(3deg);
+	line-height: 33px;
+	font-weight: lighter;
+}
+
+.rechts {
+	margin-left: 50%;
+}
+
+.tape_2 {
+	position: absolute;
+	z-index: 8;
+	width: 120px;
+	margin-top: 18px;
+	margin-left: 125px;
+	transform: rotate(-25deg);
+}
+
+.inside {
+	position: absolute;
+	width: 300px;
+	box-shadow: 16px 16px 34px -14px rgba(0, 0, 0, 0.75);
+	margin-top: 70px;
+	margin-left: 150px;
+	width: 230px;
+	transform: rotate(4deg);
+}
+
+.vrede {
+	position: absolute;
+	z-index: 9;
+	margin-left: -54%;
+	margin-top: 17.5%;
+	width: 50%;
+}
+
+.koekendoos {
+	width: 150px;
+	margin-top: 30%;
+	margin-left: 10%;
+}
+
+.plant {
+	position: absolute;
+	width: 100px;
+	z-index: 10;
+	margin-top: 27%;
+	margin-right: -50%;
+}
+
+.illustratie {
+	margin-left: 50%;
+}
+
+footer {
+	margin-top: 30%;
+}
