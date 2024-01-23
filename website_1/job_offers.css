@@ -1,0 +1,274 @@
+/*header*/
+
+.note1 {
+	max-width: 500px;
+	transform: rotate(-5deg);
+	position: absolute;
+	left: 5%;
+	top: 25%;
+}
+
+.note2 {
+	max-width: 500px;
+	position: absolute;
+	left: 25%;
+	top: 35%;
+}
+
+.note3 {
+	max-width: 500px;
+	position: absolute;
+	left: 25%;
+	top: 60%;
+}
+
+.note4 {
+	max-width: 500px;
+	position: absolute;
+	left: 5%;
+	top: 50%;
+}
+
+.headerJ {
+	display: flex;
+	margin-left: 150px;
+	margin-top: 25px;
+}
+
+.notes {
+	flex: 75%;
+}
+
+.ComputerEnBloem {
+	flex: 25%;
+}
+
+.CB {
+	width: 600px;
+}
+
+.Assistent {
+	transform: rotate(-6deg);
+	position: absolute;
+	left: 9%;
+	top: 47%;
+}
+
+.Administratief {
+	transform: rotate(-2deg);
+	position: absolute;
+	left: 29%;
+	top: 56%;
+}
+
+.Kook {
+	transform: rotate(-2deg);
+	position: absolute;
+	left: 9%;
+	top: 71%;
+}
+
+.Logistiek {
+	transform: rotate(-1deg);
+	position: absolute;
+	left: 34%;
+	top: 81%;
+}
+
+/*Maatschappelijk assistente*/
+
+.headerM {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.maatschappelijkAssisstent {
+	text-align: center;
+}
+
+.TaakomschrijvingFlex {
+	display: flex;
+	margin-bottom: 150px;
+}
+
+.TaakomschrijvingText {
+	flex: 1;
+}
+
+.TaakomschrijvingImage {
+	flex: 1;
+	justify-content: left;
+}
+
+.plant {
+	width: 250px;
+	position: absolute;
+	right: 20%;
+}
+
+.ProfielFlex {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.ProfielText {
+	position: absolute;
+	right: 20%;
+	flex: 1;
+}
+
+.ProfielImage {
+	flex: 1;
+	margin-left: 50px;
+}
+
+.schilderij {
+	width: 500px;
+}
+
+.AanbodFlex {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.AanbodText {
+	flex: 1;
+}
+
+.AanbodImage {
+	flex: 1;
+}
+
+/*Administratief medewerker*/
+
+.headerA {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.administratiefMedewerker {
+	text-align: center;
+}
+
+.TaakomschrijvingFlexA {
+	display: flex;
+	margin-bottom: 150px;
+}
+
+.TaakomschrijvingTextA {
+	flex: 50%;
+}
+
+.TaakomschrijvingImageA {
+	flex: 50%;
+}
+
+.lijn2 {
+	position: absolute;
+	right: 0%;
+	top: 10.7%;
+}
+
+.ProfielFlexA {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.ProfielTextA {
+	flex: 1;
+}
+
+.ProfielImageA {
+	flex: 1;
+}
+
+.RoseBloem {
+	width: 500px;
+	position: absolute;
+	left: 15%;
+	top: 40%;
+}
+
+.AanbodFlexA {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.AanbodImageA {
+	flex: 1;
+}
+
+.AanbodTextA {
+	flex: 1;
+}
+
+.smiley {
+	width: 100px;
+	position: absolute;
+	top: 100%;
+	left: 42%;
+}
+
+/*kookvrijwilliger*/
+
+.headerK {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.kookVrijwilliger {
+	text-align: center;
+}
+
+.TaakomschrijvingFlexK {
+	display: flex;
+}
+
+.TaakomschrijvingImageK {
+	flex: 1;
+	padding-left: 50px;
+}
+
+.piano {
+	transform: rotate(-55deg);
+}
+
+.TaakomschrijvingTextK {
+	flex: 1;
+}
+
+.ProfielFlexK {
+	display: flex;
+}
+
+.ProfielImageK {
+	flex: 1;
+}
+
+.ProfielTextK {
+	flex: 1;
+}
+
+.lijnK {
+	width: 400px;
+	position: absolute;
+	top: 60%;
+}
+
+.AanbodFlexK {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.AanbodImageK {
+	flex: 1;
+}
+
+.AanbodTextK {
+	flex: 1;
+}
+
+.vraagteken {
+	position: absolute;
+	right: 20%;
+}

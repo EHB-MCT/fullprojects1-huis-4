@@ -1,0 +1,34 @@
+main {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    margin: 50px 100px;
+
+    background-image: 
+        url("./assets/bike.png"),
+        url("./assets/tape-small.png"),
+        url("./assets/carpet.png"),
+        url("./assets/white-frame.png"),
+        url("./assets/housing-cutout.png"),
+        url("./assets/line-illustration.png"),
+        url("./assets/house-illustration.png"),
+        url("./assets/heart-illustration.png");
+    background-repeat: no-repeat;
+    background-position-x: 25%, 75%, 63%, 63.5%, 5%, 125%, 70%, 95%;
+    background-position-y: 32%, 7%, 20%, 18%, 30%, 3%, 84%, 100%;
+
+    > * {
+        width: fit-content;
+    }
+
+    .flex-right {
+        margin-left: auto;
+        margin-top: 700px;
+    }
+}
+
+.text-wrap {
+	width: 353pt;
+	overflow-wrap: break-word;
+}
