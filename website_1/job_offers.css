@@ -202,7 +202,7 @@ footer h4 {
 	top: 50%;
 }
 
-header {
+.headerJ {
 	display: flex;
 	margin-left: 150px;
 	margin-top: 25px;
@@ -246,4 +246,68 @@ header {
 	position: absolute;
 	left: 34%;
 	top: 81%;
+}
+
+/*Maatschappelijk assistente*/
+
+.headerM {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.maatschappelijkAssisstent {
+	text-align: center;
+}
+
+.TaakomschrijvingFlex {
+	display: flex;
+	margin-bottom: 150px;
+}
+
+.TaakomschrijvingText {
+	flex: 1;
+}
+
+.TaakomschrijvingImage {
+	flex: 1;
+	justify-content: left;
+}
+
+.plant {
+	width: 250px;
+	position: absolute;
+	right: 20%;
+}
+
+.ProfielFlex {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.ProfielText {
+	position: absolute;
+	right: 20%;
+	flex: 1;
+}
+
+.ProfielImage {
+	flex: 1;
+	margin-left: 50px;
+}
+
+.schilderij {
+	width: 500px;
+}
+
+.AanbodFlex {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.AanbodText {
+	flex: 1;
+}
+
+.AanbodImage {
+	flex: 1;
 }
