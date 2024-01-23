@@ -74,6 +74,10 @@ nav a {
 	font-family: "Avenir Next", sans-serif;
 }
 
+nav a.current {
+	color: white;
+}
+
 .logo a {
 	font-size: 20px;
 	font-family: "Avenir Next", sans-serif;
