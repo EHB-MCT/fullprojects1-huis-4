@@ -311,3 +311,73 @@ footer h4 {
 .AanbodImage {
 	flex: 1;
 }
+
+/*Administratief medewerker*/
+
+.headerA {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.administratiefMedewerker {
+	text-align: center;
+}
+
+.TaakomschrijvingFlexA {
+	display: flex;
+	margin-bottom: 150px;
+}
+
+.TaakomschrijvingTextA {
+	flex: 50%;
+}
+
+.TaakomschrijvingImageA {
+	flex: 50%;
+}
+
+.lijn2 {
+	position: absolute;
+	right: 0%;
+	top: 10.7%;
+}
+
+.ProfielFlexA {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.ProfielTextA {
+	flex: 1;
+}
+
+.ProfielImageA {
+	flex: 1;
+}
+
+.RoseBloem {
+	width: 500px;
+	position: absolute;
+	left: 15%;
+	top: 40%;
+}
+
+.AanbodFlexA {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.AanbodImageA {
+	flex: 1;
+}
+
+.AanbodTextA {
+	flex: 1;
+}
+
+.smiley {
+	width: 100px;
+	position: absolute;
+	top: 100%;
+	left: 42%;
+}
