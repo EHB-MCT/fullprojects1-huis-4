@@ -212,8 +212,8 @@
 /*kookvrijwilliger*/
 
 .headerK {
-	margin-left: 150px;
-	margin-right: 150px;
+	margin-left: 200px;
+	margin-right: 100px;
 }
 
 .kookVrijwilliger {
@@ -271,4 +271,59 @@
 .vraagteken {
 	position: absolute;
 	right: 20%;
+}
+
+/*logistiek vrijwilliger*/
+
+.headerL {
+	margin-left: 200px;
+	margin-right: 100px;
+}
+
+.logistiekVrijwilliger {
+	text-align: center;
+}
+
+.TaakomschrijvingFlexL {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.TaakomschrijvingImageL {
+	flex: 1;
+	padding-left: 50px;
+}
+
+.ster {
+	position: absolute;
+	right: 20%;
+}
+
+.TaakomschrijvingTextL {
+	flex: 1;
+}
+
+.ProfielFlexL {
+	display: flex;
+}
+
+.ProfielTextL {
+	flex: 1;
+}
+
+.Profielleeg {
+	flex: 1;
+}
+
+.AanbodFlexL {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.AanbodImageL {
+	flex: 1;
+}
+
+.AanbodTextL {
+	flex: 1;
 }
