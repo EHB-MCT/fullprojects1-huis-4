@@ -81,13 +81,13 @@ nav a {
 
 /*FOOTER*/
 
-.footer {
+footer {
 	background-color: #d08240;
 	display: flex;
 	justify-content: space-around;
 }
 
-.footer h3 {
+footer h3 {
 	color: black;
 	font-family: "Avenir Next", sans-serif;
 	margin-bottom: 0;
