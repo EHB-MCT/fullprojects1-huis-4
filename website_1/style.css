@@ -26,7 +26,6 @@ h1 {
 h2 {
 	font-size: 35px;
 	font-family: "Brush Script MT", serif;
-	font-style: italic;
 }
 
 h3 {
@@ -86,7 +85,8 @@ nav a {
 	font-family: "Avenir Next", sans-serif;
 }
 
-nav a.current {
+nav a.current,
+nav .current {
 	color: #97b287;
 }
 
@@ -114,14 +114,6 @@ nav a.current {
 .logo {
 	display: flex;
 	align-items: center;
-}
-
-#taal {
-	color: #97b287;
-}
-
-#taal:hover {
-	color: black;
 }
 
 /*FOOTER*/
