@@ -220,3 +220,70 @@ h2 {
 	margin-top: -250px;
 	margin-bottom: 150px;
 }
+
+/*Maatschappelijk assistente*/
+
+.headerM {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.maatschappelijkAssisstent {
+	text-align: center;
+}
+
+.TaakomschrijvingFlex {
+	display: flex;
+}
+
+.TaakomschrijvingText {
+	flex: 1;
+}
+
+.TaakomschrijvingImage {
+	flex: 1;
+	justify-content: left;
+}
+
+.schilderij {
+	width: 400px;
+	margin-left: 250px;
+}
+
+.ProfielFlex {
+	display: flex;
+}
+
+.ProfielText {
+	flex: 1;
+	margin-left: 75px;
+	margin-top: 50px;
+}
+
+.ProfielImage {
+	flex: 1;
+	width: 50%;
+	align-self: center;
+}
+
+.plant {
+	width: 500px;
+	margin-left: 100px;
+	margin-top: -100px;
+}
+
+.AanbodFlex {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.AanbodText {
+	flex: 1;
+	margin-top: -100px;
+	margin-left: 75px;
+}
+
+.Aanbodleeg {
+	flex: 1;
+	object-fit: contain;
+}
