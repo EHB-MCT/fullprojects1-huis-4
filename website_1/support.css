@@ -1,24 +1,23 @@
 main {
-	min-height: 50vh;
-	margin: 50pt 48pt;
-
-	background-image: url("./assets/steun-ons-achtergrond.png");
-	background-repeat: no-repeat;
-	background-position-x: 15%;
-	background-position-y: 40%;
-
-	> * {
-		width: fit-content;
-	}
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 section {
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+	background-image: url("./assets/steun-ons-achtergrond.png");
+	background-repeat: no-repeat;
+	background-position-x: 30%;
+	background-position-y: 100%;
+
 	h3 {
 		margin-left: 20%;
 	}
 
 	p {
-		width: 450pt;
-		margin-left: 115%;
+		margin-left: 60%;
 	}
 }

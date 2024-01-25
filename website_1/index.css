@@ -1,119 +1,87 @@
-.elements {
+@font-face {
+	font-family: "Brush Script MT";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Brush Script MT"),
+		url(https://db.onlinewebfonts.com/t/33bc06ea126d3ff79886277122f1f510.woff2)
+			format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("./assets/home-bike.png"),
+		url("./assets/home-box-arrow.png"), url("./assets/home-photo.png"),
+		url("./assets/home-illustration-house.png"), url("./assets/home-plant.png");
+	background-repeat: no-repeat;
+	background-position-x: -15%, 77%, 72%, 85%, 82%;
+	background-position-y: 50%, 75%, 0%, 2%, 58%;
+
+}
+
+section {
+	width: fit-content;
+	height: fit-content;
 	position: relative;
 }
 
-.flower_1 {
+#title-container {
+	position: relative;
+	user-select: none;
+	width: 675pt;
+	height: 361pt;
+	left: 13%;
+}
+
+#title-part-1 {
 	position: absolute;
-	width: 200px;
-	transform: rotate(-60deg);
-	margin-left: 330px;
-	margin-top: -60px;
+	font-family: "Avenir Next Ultralight";
+	font-size: 103.52pt;
+	top: -13%;
 }
 
-.tape_1 {
+#title-part-2 {
 	position: absolute;
-	z-index: 8;
-	width: 120px;
-	margin-top: 200px;
-	margin-left: 125px;
-	transform: rotate(-25deg);
+	font-family: "Avenir Next Bold";
+	font-size: 57.35pt;
+	left: 25%;
+	top: 15%;
 }
 
-.wheelVissen {
+#title-part-3 {
 	position: absolute;
-	margin-top: 300px;
-	top: 0;
+	font-family: "Brush Script MT";
+	font-size: 199.42pt;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 4pt black;
+	left: 54%;
+	top: 13%;
+
+	> *:nth-child(even) {
+		top: 20px;
+		position: relative;
+		padding: 0 5px 0 5px;
+	}
+
+	> *:not(:nth-child(1)):nth-child(odd) {
+		top: -30px;
+		position: relative;
+		padding: 0 2px 0 2px;
+	}
 }
 
-.wheelVissen .wheel {
-	width: 300px;
-	transform: rotate(-6deg);
-	margin-left: 140px;
-	margin-top: -60px;
-}
-
-.wheelVissen .vissen {
-	width: 90px;
-}
-
-.Huis {
-	position: absolute;
-	width: 270px;
-	top: 0;
-	left: 0;
-	z-index: 9;
-	margin-top: 50px;
-	margin-left: 200px;
-}
-
-.paper_note {
-	position: absolute;
-	z-index: 8;
-	margin-top: 370px;
-	width: 500px;
-	margin-left: 200px;
-	transform: rotate(5deg);
-}
-
-.note h2 {
-	position: absolute;
-	z-index: 9;
-	margin-top: 545px;
-	margin-left: 300px;
-	transform: rotate(3deg);
-	line-height: 33px;
-	font-weight: lighter;
-}
-
-.rechts {
-	margin-left: 50%;
-}
-
-.tape_2 {
-	position: absolute;
-	z-index: 8;
-	width: 120px;
-	margin-top: 18px;
-	margin-left: 125px;
-	transform: rotate(-25deg);
-}
-
-.inside {
-	position: absolute;
-	width: 300px;
-	box-shadow: 16px 16px 34px -14px rgba(0, 0, 0, 0.75);
-	margin-top: 70px;
-	margin-left: 150px;
-	width: 230px;
-	transform: rotate(4deg);
-}
-
-.vrede {
-	position: absolute;
-	z-index: 9;
-	margin-left: -54%;
-	margin-top: 17.5%;
-	width: 50%;
-}
-
-.koekendoos {
-	width: 150px;
+#quote {
+	position: relative;
+	left: -30%;
 	margin-top: 30%;
-	margin-left: 10%;
 }
 
-.plant {
-	position: absolute;
-	width: 100px;
-	z-index: 10;
-	margin-top: 27%;
-	margin-right: -50%;
-}
-
-.illustratie {
-	margin-left: 50%;
-}
-
-footer {
-	margin-top: 30%;
+#home-page-btn {
+	position: relative;
+	top: 250px;
+	white-space: nowrap;
 }
