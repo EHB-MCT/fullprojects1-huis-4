@@ -103,6 +103,11 @@ nav .dropdown img {
 	z-index: 1000;
 }
 
+nav .dropdown input:checked ~ img,
+nav .dropdown:hover input ~ img {
+	transform: rotate(0deg);
+}
+
 nav .dropdown .dropdown-btn {
 	border: none;
 	cursor: pointer;
@@ -110,38 +115,33 @@ nav .dropdown .dropdown-btn {
 
 nav .dropdown ul {
 	list-style: none;
-	padding: 0 20px 0 0;
-	margin-left: -10px;
+	padding: 0;
+	margin: 0;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
 
 	> :nth-child(odd) {
 		background-color: #7e9570;
 	}
 
 	> * {
-		padding: 10px 10px 10px 10px;
-		width: 100%;
+		padding: 10px;
 	}
 }
 
-nav .dropdown #dropdown-content {
-	position: absolute;
-	background-color: #97b287;
-	z-index: 1000;
-}
-
-nav .dropdown #dropdown-content,
-nav .dropdown #dropdown-toggle {
-	display: none;
-}
-
-nav .dropdown input:hover ~ #dropdown-content,
-nav .dropdown input:checked ~ #dropdown-content {
+nav .dropdown:hover ul {
 	display: block;
 }
 
-nav .dropdown input:hover ~ img,
-nav .dropdown input:checked ~ img {
-	transform: rotate(0deg);
+nav .dropdown #dropdown-content {
+	background-color: #97b287;
+}
+
+nav #dropdown-toggle {
+	display: none;
 }
 
 /*FOOTER*/
