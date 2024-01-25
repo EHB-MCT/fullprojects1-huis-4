@@ -40,9 +40,18 @@ h4 {
 	font-weight: medium;
 }
 
-p {
+p,
+span,
+label {
 	font-size: 16px;
 	font-family: "Avenir Next", sans-serif;
+}
+
+a {
+	font-size: 14px;
+	font-family: "Avenir Next", sans-serif;
+	text-decoration: none;
+	color: black;
 }
 
 /* BUTTONS */
@@ -53,21 +62,22 @@ p {
 	text-decoration: none;
 	font-weight: bold;
 	background-color: white;
-	border: 2px solid #84816b;
+	border: 2px solid #97b287;
 	padding: 20px 80px;
 }
 
 .btn-primary:hover,
 .btn-primary:active {
-	background-color: gray;
+	background-color: #97b287;
 }
 
 /* NAVIGATION */
 nav {
-	background-color: white;
+	background-color: #97b287;
 	padding: 15px 30px 15px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 nav img {
@@ -76,44 +86,76 @@ nav img {
 }
 
 nav a {
-	float: left;
-	text-align: center;
+	display: flex;
 	padding: 12px;
-	text-decoration: none;
-	color: black;
 	font-size: 14px;
-	font-family: "Avenir Next", sans-serif;
+}
+
+nav #spacer {
+	width: 25%;
 }
 
 nav a.current,
-nav .current {
-	color: #97b287;
+nav .current,
+nav a:hover {
+	color: white;
 }
 
-.logo a {
+nav .logo span {
 	font-size: 20px;
 	font-family: "Avenir Next", sans-serif;
-}
-.navLinks {
-	float: right;
-	padding: 10px;
-}
-
-.navLinks a {
-	padding-left: 20px;
-	padding-right: 20px;
-	text-decoration: none;
-	color: black;
-	font-family: "Avenir Next", sans-serif;
+	margin-left: 20px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
-.navLinks a:hover {
-	color: #97b287;
+nav .dropdown {
+	position: relative;
 }
 
-.logo {
-	display: flex;
-	align-items: center;
+nav .dropdown img {
+	transform: rotate(-90deg);
+	width: 15px;
+	user-select: none;
+}
+
+nav .dropdown label {
+	user-select: none;
+}
+
+nav .dropdown .dropdown-btn {
+	padding: 12px;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+}
+
+nav .dropdown ul {
+	list-style: none;
+	padding: 0;
+
+	>:nth-child(odd) {
+		background-color: #7e9570;
+	}
+}
+
+nav .dropdown #dropdown-content {
+	position: absolute;
+	background-color: #97b287;
+	z-index: 1000;
+}
+
+nav .dropdown #dropdown-content,
+nav .dropdown #dropdown-toggle {
+	display: none;
+}
+
+nav .dropdown input:checked ~ #dropdown-content {
+	display: block;
+}
+
+nav .dropdown input:checked ~ img {
+	transform: rotate(0deg);
 }
 
 /*FOOTER*/
