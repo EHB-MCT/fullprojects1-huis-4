@@ -9,23 +9,34 @@
 	</head>
 	<body>
 		<nav>
-			<div class="logo">
-				<img src="assets/logo-cutout.png" class="logo" alt="logo" />
-				<a href="" class="vzw-tekst">MAISON DE LA PAIX ASBL</a>
-			</div>
-			<div class="navLinks">
-				<a href="index_FR.html" class="current">ACCEUIL</a>
-				<a href="about.html">A PROPOS DE NOUS</a>
-				<a href="support.html">SOUTENEZ-NOUS</a>
-				<a href="job_offers.html">POSTE VACANTS</a>
-				<a href="contact.html">CONTACT</a>
-				<a href="./index_FR.html"
-					><span class="current">FR</span>/<span>NL</span></a
+			<a href="./index.html" class="logo">
+				<img src="./assets/logo-cutout.png" alt="logo" />
+				<span>MAISON DE LA PAIX ASBL</span>
+			</a>
+			<div id="spacer"></div>
+			<a href="./index.html">HOME</a>
+			<div class="dropdown">
+				<label for="dropdown-toggle" class="dropdown-btn current"
+					>A PROPOS DE NOUS</label
 				>
+				<input id="dropdown-toggle" type="checkbox" />
+				<img src="./assets/pointer-arrow.png" alt="#" />
+
+				<ul id="dropdown-content">
+					<a href="./about.html" class="current">WIE ZIJN WIJ</a>
+					<a href="./historiek.html">HISTORIEK</a>
+					<a href="./archive.html">ARCHIEF</a>
+				</ul>
 			</div>
+			<a href="./support.html">SOUTENEZ-NOUS</a>
+			<a href="./job_offers.html">POSTE VACANTS</a>
+			<a href="./contact.html">CONTACT</a>
+			<a href="archive.html">
+				<span class="current">FR</span>/<span>NL</span>
+			</a>
 		</nav>
 		<main>
-			<h2 class="titel">Rapport annuel</h2>
+			<h3 class="titel">Rapport annuel</h3>
 			<div class="jaarverslagen">
 				<div class="container_jaarverslag">
 					<div class="jaarverslag">
@@ -78,7 +89,7 @@
 					<img src="./assets/polaroid_jaarverslagen.png" alt="" />
 				</div>
 			</div>
-			<h2 class="titel">Newsletters</h2>
+			<h3 class="titel">Newsletters</h3>
 			<div class="nieuwsbrieven">
 				<div class="nieuwsbrief">
 					<a
