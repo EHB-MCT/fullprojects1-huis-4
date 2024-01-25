@@ -5,34 +5,33 @@
 
 body {
 	margin: 0;
-	font-size: 16pt;
+	font-size: 14pt;
 	font-family: "Avenir Next", sans-serif;
 }
 
 h1 {
 	font-size: 280pt;
-	font-family: "Kalnia", serif;
+	font-family: "Kalnia";
 }
 
 h2 {
-	font-size: 35pt;
-	font-family: "Kalnia", serif;
+	font-size: 40pt;
+	font-family: "Kalnia";
 }
 
 h3 {
-	font-size: 25pt;
-	font-family: "Avenir Next", sans-serif;
-	font-weight: medium;
+	color: #84A86E;
+	font-size: 30pt;
+	font-family: "Kalnia";
 }
 
 h4 {
 	font-size: 18pt;
 	font-family: "Avenir Next", sans-serif;
-	font-weight: medium;
 }
 
 a {
-	font-size: 16pt;
+	font-size: 14pt;
 	font-family: "Avenir Next", sans-serif;
 	text-decoration: none;
 	color: black;
@@ -101,6 +100,7 @@ nav .dropdown img {
 	right: -25px;
 	top: 2px;
 	position: absolute;
+	z-index: 1000;
 }
 
 nav .dropdown .dropdown-btn {
@@ -144,8 +144,12 @@ nav .dropdown input:checked ~ img {
 	transform: rotate(0deg);
 }
 
-/*FOOTER*/
+/* IMAGES */
+img {
+	z-index: -1;
+}
 
+/*FOOTER*/
 footer {
 	background-color: #97b287;
 	display: flex;
