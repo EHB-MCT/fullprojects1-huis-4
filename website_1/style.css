@@ -87,7 +87,6 @@ nav img {
 
 nav a {
 	display: flex;
-	padding: 12px;
 	font-size: 14px;
 }
 
@@ -134,7 +133,7 @@ nav .dropdown ul {
 	list-style: none;
 	padding: 0;
 
-	>:nth-child(odd) {
+	> :nth-child(odd) {
 		background-color: #7e9570;
 	}
 }
