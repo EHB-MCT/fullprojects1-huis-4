@@ -168,7 +168,8 @@ nav #dropdown-toggle {
 /* MAIN */
 main {
 	min-height: 60vh;
-	padding: 10vh 48pt;
+	padding: 0 48pt;
+	margin: auto 0 auto 0;
 }
 
 /*FOOTER*/

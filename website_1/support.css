@@ -1,13 +1,14 @@
 main {
 	display: flex;
-	align-items: center;
+	align-content: center;
 	justify-content: center;
 }
 
 section {
-	width: calc(100% - 50px);
-	height: fit-content;
 	position: relative;
+	width: 100%;
+	max-width: 1102px; /* Magic numbers are bad practice, sorry */
+	height: fit-content;
 	background-image: url("./assets/steun-ons-achtergrond.png");
 	background-repeat: no-repeat;
 	background-position-x: 10%;

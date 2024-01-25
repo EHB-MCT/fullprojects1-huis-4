@@ -12,44 +12,40 @@
 
 main {
 	display: flex;
-	align-items: center;
+	align-content: center;
 	justify-content: center;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	max-width: 1152px; /* Magic numbers are bad practice, sorry */
+	max-height: 520pt;
 	background-image: url("./assets/home-bike.png"),
 		url("./assets/home-box-arrow.png"), url("./assets/home-photo.png"),
 		url("./assets/home-illustration-house.png"), url("./assets/home-plant.png");
 	background-repeat: no-repeat;
-	background-position-x: -15%, 77%, 72%, 85%, 82%;
-	background-position-y: 50%, 75%, 0%, 2%, 58%;
-
-}
-
-section {
-	width: fit-content;
-	height: fit-content;
-	position: relative;
-}
-
-#title-container {
-	position: relative;
+	background-position-x: -30%, 77%, 72%, 85%, 82%;
+	background-position-y: 100%, 75%, -5%, 2%, 58%;
 	user-select: none;
-	width: 675pt;
-	height: 361pt;
-	left: 13%;
 }
 
 #title-part-1 {
 	position: absolute;
 	font-family: "Avenir Next Ultralight";
 	font-size: 103.52pt;
-	top: -13%;
+	top: 7%;
+	left: 18%;
+	color: #584E18;
 }
 
 #title-part-2 {
 	position: absolute;
 	font-family: "Avenir Next Bold";
 	font-size: 57.35pt;
-	left: 25%;
-	top: 15%;
+	left: 31%;
+  	top: 27%;
+	  color: #584E18;
 }
 
 #title-part-3 {
@@ -57,9 +53,9 @@ section {
 	font-family: "Brush Script MT";
 	font-size: 199.42pt;
 	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 4pt black;
-	left: 54%;
-	top: 13%;
+	-webkit-text-stroke: 4pt #584E18;
+	left: 44%;
+  	top: 28%;
 
 	> *:nth-child(even) {
 		top: 20px;
@@ -75,13 +71,25 @@ section {
 }
 
 #quote {
-	position: relative;
-	left: -30%;
-	margin-top: 30%;
+	position: absolute;
+	width: 300pt;
+	left: 20%;
+	top: 77%;
+
+	span {
+		font-family: Arial;
+		font-style: normal;
+		color: #84A86E;
+	}
 }
 
 #home-page-btn {
-	position: relative;
-	top: 250px;
+	position: absolute;
 	white-space: nowrap;
+	top: 81%;
+	left: 80%;
+}
+
+.btn-primary {
+	margin: 0 0 34px 50px;
 }
