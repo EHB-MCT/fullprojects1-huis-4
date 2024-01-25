@@ -5,19 +5,19 @@ main {
 }
 
 section {
-	width: fit-content;
+	width: calc(100% - 50px);
 	height: fit-content;
 	position: relative;
 	background-image: url("./assets/steun-ons-achtergrond.png");
 	background-repeat: no-repeat;
-	background-position-x: 30%;
+	background-position-x: 10%;
 	background-position-y: 100%;
 
 	h3 {
-		margin-left: 20%;
+		margin-left: 5%;
 	}
 
 	p {
-		margin-left: 60%;
+		margin-left: 55%;
 	}
 }
