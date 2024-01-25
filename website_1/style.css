@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Avenir+Next:wght@400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap");
 
 /* TYPOGRAPHY */
 
@@ -20,7 +20,7 @@ h2 {
 }
 
 h3 {
-	color: #84A86E;
+	color: #84a86e;
 	font-size: 30pt;
 	font-family: "Kalnia";
 }
@@ -117,7 +117,7 @@ nav .dropdown ul {
 		background-color: #7e9570;
 	}
 
-	>* {
+	> * {
 		padding: 10px 10px 10px 10px;
 		width: 100%;
 	}
@@ -142,11 +142,6 @@ nav .dropdown input:checked ~ #dropdown-content {
 nav .dropdown input:hover ~ img,
 nav .dropdown input:checked ~ img {
 	transform: rotate(0deg);
-}
-
-/* IMAGES */
-img {
-	z-index: -1;
 }
 
 /*FOOTER*/
