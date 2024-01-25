@@ -1,0 +1,24 @@
+main {
+	min-height: 50vh;
+	margin: 50pt 48pt;
+
+	background-image: url("./assets/steun-ons-achtergrond.png");
+	background-repeat: no-repeat;
+	background-position-x: 15%;
+	background-position-y: 40%;
+
+	> * {
+		width: fit-content;
+	}
+}
+
+section {
+	h3 {
+		margin-left: 20%;
+	}
+
+	p {
+		width: 450pt;
+		margin-left: 115%;
+	}
+}

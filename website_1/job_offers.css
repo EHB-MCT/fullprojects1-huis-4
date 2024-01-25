@@ -1,3 +1,7 @@
+.arrow {
+	margin: 20px;
+}
+
 /*header*/
 
 .headerJ {
@@ -22,66 +26,66 @@
 }
 
 .Assistent {
-	margin-top: 140px;
-	margin-bottom: 40px;
+	margin-top: 80px;
+	margin-bottom: 50px;
 }
 
 .Kook {
-	margin-top: 30px;
-	margin-bottom: 200px;
+	margin-top: 50px;
+	margin-bottom: 100px;
 }
 
 .Logistiek {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .knop1 {
 	position: absolute;
-	top: 52%;
-	left: 30%;
+	margin-left: 300px;
+	margin-top: -540px;
 }
 
 .knop2 {
 	position: absolute;
-	top: 60%;
-	left: 30%;
+	margin-left: 300px;
+	margin-top: -470px;
 }
 
 .knop3 {
 	position: absolute;
-	top: 68%;
-	left: 30%;
+	margin-left: 300px;
+	margin-top: -400px;
 }
 
 .knop4 {
 	position: absolute;
-	top: 76%;
-	left: 30%;
+	margin-left: 300px;
+	margin-top: -330px;
 }
 
 .pijl1 {
 	position: absolute;
-	bottom: 21%;
-	left: 25%;
+	margin-left: 250px;
+	margin-top: -540px;
 }
 
 .pijl2 {
 	position: absolute;
-	bottom: 36%;
-	left: 25%;
+	margin-left: 250px;
+	margin-top: -470px;
 }
 
 .pijl3 {
 	position: absolute;
-	bottom: 44%;
-	left: 25%;
+	margin-left: 250px;
+	margin-top: -400px;
 }
 
 .pijl4 {
 	position: absolute;
-	bottom: 28.5%;
-	left: 25%;
+	margin-left: 250px;
+	margin-top: -330px;
 }
 
 .margesFooter {
@@ -183,6 +187,7 @@
 
 .ProfielTextA {
 	flex: 1;
+	margin-top: -50px;
 }
 
 .ProfielImageA {
@@ -191,9 +196,7 @@
 
 .RoseBloem {
 	width: 500px;
-	position: absolute;
-	left: 15%;
-	top: 60%;
+	margin-top: -250px;
 }
 
 .AanbodFlexA {
@@ -207,7 +210,6 @@
 
 .BrugMetPlakband {
 	width: 600px;
-	margin-right: 150px;
 }
 
 .AanbodTextA {
@@ -306,8 +308,8 @@
 
 .ProfielTextL {
 	flex: 1;
-	margin-top: 100px;
-	margin-left: 75px;
+	margin-top: 60px;
+	margin-left: 25px;
 }
 
 .ProfielImageL {
@@ -316,7 +318,8 @@
 }
 
 .ZetelBloemEnGroen {
-	width: 800px;
+	width: 600px;
+	margin-right: -150px;
 }
 
 .AanbodFlexL {
