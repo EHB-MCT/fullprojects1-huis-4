@@ -11,13 +11,14 @@ main {
 		width: fit-content;
 	}
 }
+
 section {
 	h3 {
-		margin-left: 23%;
+		margin-left: 20%;
 	}
 
 	p {
-		width: 510pt;
-		margin-left: 100%;
+		width: 450pt;
+		margin-left: 115%;
 	}
 }
