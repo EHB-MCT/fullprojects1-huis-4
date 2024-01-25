@@ -1,0 +1,70 @@
+.Historiek {
+	margin-left: 300px;
+}
+
+.lijn {
+	width: 1500px;
+}
+
+.eerste {
+	position: absolute;
+	top: 25%;
+	left: 22%;
+}
+
+.ontstaan {
+	position: absolute;
+	top: 35%;
+	left: 20%;
+}
+
+.tweede {
+	position: absolute;
+	top: 59%;
+	left: 29.5%;
+}
+
+.begeleidingsaanbod {
+	position: absolute;
+	top: 72%;
+	left: 25%;
+}
+
+.derde {
+	position: absolute;
+	top: 77%;
+	right: 45%;
+}
+
+.werking {
+	position: absolute;
+	top: 55%;
+	right: 33%;
+}
+
+.vierde {
+	position: absolute;
+	top: 82%;
+	right: 17%;
+}
+
+.centrum {
+	position: absolute;
+	top: 90%;
+	right: 18%;
+}
+
+.vijfde {
+	position: absolute;
+	top: 120%;
+	right: 46%;
+}
+
+.samenwerking {
+	position: absolute;
+	top: 130%;
+	right: 22%;
+}
+
+.zesde {
+}
