@@ -1,3 +1,20 @@
+/*buttpn*/
+.btn {
+	margin-left: 50px;
+	font-family: "Avenir Next", sans-serif;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: white;
+	border: 2px solid #84816b;
+	padding: 15px 80px;
+}
+
+.btn:hover,
+.btn:active {
+	background-color: gray;
+}
+
 /*header*/
 
 .headerJ {
@@ -22,8 +39,8 @@
 }
 
 .Assistent {
-	margin-top: 150px;
-	margin-bottom: 30px;
+	margin-top: 140px;
+	margin-bottom: 40px;
 }
 
 .Kook {
@@ -32,8 +49,8 @@
 }
 
 .Logistiek {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .knop1 {
@@ -62,20 +79,30 @@
 
 .pijl1 {
 	position: absolute;
-	top: 30%;
-	right: 45%;
+	bottom: 30%;
+	left: 25%;
 }
 
 .pijl2 {
 	position: absolute;
-	bottom: 10%;
-	left: 37%;
+	bottom: 51%;
+	left: 25%;
 }
 
 .pijl3 {
 	position: absolute;
-	bottom: 40%;
+	bottom: 37%;
 	left: 25%;
+}
+
+.pijl4 {
+	position: absolute;
+	bottom: 44%;
+	left: 25%;
+}
+
+.margesFooter {
+	margin-bottom: 50px;
 }
 
 /*Maatschappelijk assistente*/
@@ -91,7 +118,6 @@
 
 .TaakomschrijvingFlex {
 	display: flex;
-	margin-bottom: 150px;
 }
 
 .TaakomschrijvingText {
@@ -103,30 +129,29 @@
 	justify-content: left;
 }
 
-.plant {
-	width: 250px;
-	position: absolute;
-	right: 20%;
+.schilderij {
+	width: 400px;
+	margin-left: 250px;
 }
 
 .ProfielFlex {
 	display: flex;
-	margin-bottom: 100px;
 }
 
 .ProfielText {
-	position: absolute;
-	right: 20%;
 	flex: 1;
+	margin-left: 75px;
+	margin-top: 50px;
 }
 
 .ProfielImage {
 	flex: 1;
-	margin-left: 50px;
 }
 
-.schilderij {
+.plant {
 	width: 500px;
+	margin-left: 100px;
+	margin-top: -100px;
 }
 
 .AanbodFlex {
@@ -136,6 +161,7 @@
 
 .AanbodText {
 	flex: 1;
+	margin-top: -100px;
 }
 
 .AanbodImage {
@@ -229,33 +255,18 @@
 
 .TaakomschrijvingImageK {
 	flex: 1;
-	padding-left: 50px;
-}
-
-.piano {
-	transform: rotate(-55deg);
+	margin-top: -100px;
+	margin-left: 100px;
 }
 
 .TaakomschrijvingTextK {
 	flex: 1;
 }
 
-.ProfielFlexK {
-	display: flex;
-}
-
-.ProfielImageK {
-	flex: 1;
-}
-
 .ProfielTextK {
-	flex: 1;
-}
-
-.lijnK {
-	width: 400px;
-	position: absolute;
-	top: 60%;
+	margin-top: -80px;
+	margin-left: 75px;
+	margin-bottom: 100px;
 }
 
 .AanbodFlexK {
@@ -265,15 +276,11 @@
 
 .AanbodImageK {
 	flex: 1;
+	margin-top: -50px;
 }
 
 .AanbodTextK {
 	flex: 1;
-}
-
-.vraagteken {
-	position: absolute;
-	right: 20%;
 }
 
 /*logistiek vrijwilliger*/
@@ -297,9 +304,10 @@
 	padding-left: 50px;
 }
 
-.ster {
+.pen {
 	position: absolute;
-	right: 20%;
+	right: 25%;
+	top: 27%;
 }
 
 .TaakomschrijvingTextL {
@@ -312,21 +320,17 @@
 
 .ProfielTextL {
 	flex: 1;
+	margin-top: 100px;
+	margin-left: 75px;
 }
 
-.Profielleeg {
+.ProfielImageL {
 	flex: 1;
+	width: 500px;
+	margin-top: -150px;
 }
 
 .AanbodFlexL {
-	display: flex;
-	margin-bottom: 50px;
-}
-
-.AanbodImageL {
-	flex: 1;
-}
-
-.AanbodTextL {
-	flex: 1;
+	margin-top: -250px;
+	margin-bottom: 150px;
 }
