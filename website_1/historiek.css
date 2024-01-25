@@ -3,68 +3,89 @@
 }
 
 .lijn {
-	width: 1500px;
+	width: 1650px;
 }
 
 .eerste {
 	position: absolute;
 	top: 25%;
-	left: 22%;
+	left: 25%;
 }
 
 .ontstaan {
 	position: absolute;
-	top: 35%;
-	left: 20%;
+	top: 40%;
+	left: 23%;
 }
 
 .tweede {
 	position: absolute;
-	top: 59%;
+	top: 68%;
 	left: 29.5%;
 }
 
 .begeleidingsaanbod {
 	position: absolute;
-	top: 72%;
-	left: 25%;
+	top: 82%;
+	left: 27%;
 }
 
 .derde {
 	position: absolute;
-	top: 77%;
-	right: 45%;
+	top: 80%;
+	right: 37%;
 }
 
 .werking {
 	position: absolute;
-	top: 55%;
-	right: 33%;
+	top: 58%;
+	right: 23%;
 }
 
 .vierde {
 	position: absolute;
-	top: 82%;
-	right: 17%;
+	top: 89%;
+	right: 10%;
 }
 
 .centrum {
 	position: absolute;
-	top: 90%;
-	right: 18%;
+	top: 99%;
+	right: 11%;
 }
 
 .vijfde {
 	position: absolute;
-	top: 120%;
-	right: 46%;
+	top: 130%;
+	right: 40%;
 }
 
 .samenwerking {
 	position: absolute;
-	top: 130%;
-	right: 22%;
+	top: 148%;
+	right: 16%;
 }
 
 .zesde {
+	position: absolute;
+	top: 155%;
+	right: 55%;
+}
+
+.autonomie {
+	position: absolute;
+	top: 144%;
+	right: 55%;
+}
+
+.openBoek {
+	position: absolute;
+	top: 20%;
+	right: 10%;
+}
+
+.paard {
+	position: absolute;
+	top: 100%;
+	right: 55%;
 }
