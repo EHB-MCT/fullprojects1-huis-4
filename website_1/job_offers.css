@@ -3,157 +3,22 @@
 }
 
 /*header*/
-
-.headerJ {
-	margin-left: 150px;
-	margin-top: 25px;
+.wrapper {
+	display: flex;
+	justify-content: space-evenly;
 }
 
-.Flex {
+.werk {
 	display: flex;
 }
 
-.ComputerEnBloem {
-	flex: 1;
+.werk p {
+	width: 50%;
+	align-self: center;
 }
 
-.CB {
-	width: 700px;
-}
-
-.text {
-	flex: 1;
-}
-
-.Assistent {
-	margin-top: 80px;
-	margin-bottom: 50px;
-}
-
-.Kook {
-	margin-top: 50px;
-	margin-bottom: 100px;
-}
-
-.Logistiek {
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.knop1 {
-	position: absolute;
-	margin-left: 300px;
-	margin-top: -540px;
-}
-
-.knop2 {
-	position: absolute;
-	margin-left: 300px;
-	margin-top: -470px;
-}
-
-.knop3 {
-	position: absolute;
-	margin-left: 300px;
-	margin-top: -400px;
-}
-
-.knop4 {
-	position: absolute;
-	margin-left: 300px;
-	margin-top: -330px;
-}
-
-.pijl1 {
-	position: absolute;
-	margin-left: 250px;
-	margin-top: -540px;
-}
-
-.pijl2 {
-	position: absolute;
-	margin-left: 250px;
-	margin-top: -470px;
-}
-
-.pijl3 {
-	position: absolute;
-	margin-left: 250px;
-	margin-top: -400px;
-}
-
-.pijl4 {
-	position: absolute;
-	margin-left: 250px;
-	margin-top: -330px;
-}
-
-.margesFooter {
-	margin-bottom: 50px;
-}
-
-/*Maatschappelijk assistente*/
-
-.headerM {
-	margin-left: 150px;
-	margin-right: 150px;
-}
-
-.maatschappelijkAssisstent {
-	text-align: center;
-}
-
-.TaakomschrijvingFlex {
-	display: flex;
-}
-
-.TaakomschrijvingText {
-	flex: 1;
-}
-
-.TaakomschrijvingImage {
-	flex: 1;
-	justify-content: left;
-}
-
-.schilderij {
-	width: 400px;
-	margin-left: 250px;
-}
-
-.ProfielFlex {
-	display: flex;
-}
-
-.ProfielText {
-	flex: 1;
-	margin-left: 75px;
-	margin-top: 50px;
-}
-
-.ProfielImage {
-	flex: 1;
-}
-
-.plant {
-	width: 500px;
-	margin-left: 100px;
-	margin-top: -100px;
-}
-
-.AanbodFlex {
-	display: flex;
-	margin-bottom: 100px;
-}
-
-.AanbodText {
-	flex: 1;
-	margin-top: -100px;
-	margin-left: 75px;
-}
-
-.Aanbodleeg {
-	flex: 1;
+.werk img {
+	object-fit: contain;
 }
 
 /*Administratief medewerker*/
