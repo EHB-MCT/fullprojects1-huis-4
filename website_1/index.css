@@ -36,7 +36,7 @@ section {
 	font-size: 103.52pt;
 	top: 7%;
 	left: 18%;
-	color: #584E18;
+	color: #584e18;
 }
 
 #title-part-2 {
@@ -44,8 +44,8 @@ section {
 	font-family: "Avenir Next Bold";
 	font-size: 57.35pt;
 	left: 31%;
-  	top: 27%;
-	  color: #584E18;
+	top: 27%;
+	color: #584e18;
 }
 
 #title-part-3 {
@@ -53,9 +53,9 @@ section {
 	font-family: "Brush Script MT";
 	font-size: 199.42pt;
 	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 4pt #584E18;
+	-webkit-text-stroke: 4pt #584e18;
 	left: 44%;
-  	top: 28%;
+	top: 28%;
 
 	> *:nth-child(even) {
 		top: 20px;
@@ -79,7 +79,7 @@ section {
 	span {
 		font-family: Arial;
 		font-style: normal;
-		color: #84A86E;
+		color: #84a86e;
 	}
 }
 
