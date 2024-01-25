@@ -1,0 +1,54 @@
+.titel {
+	margin-left: 10%;
+}
+
+.jaarverslagen,
+.nieuwsbrieven {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.jaarverslagen {
+	margin-bottom: 7%;
+}
+
+.jaarverslag {
+	display: flex;
+	box-shadow: 4px 5px 32px -25px rgba(0, 0, 0, 0.75);
+
+	padding: 20px;
+}
+
+.jaarverslag p {
+	padding: 20px;
+	margin: 0px 0px 30px 0px;
+}
+
+.jaarverslag .btn-primary {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.text_download {
+	padding-bottom: 30px;
+}
+
+.jaarverslag img {
+	object-fit: contain;
+	width: 80px;
+}
+
+.nieuwsbrief {
+	flex-direction: column;
+	display: flex;
+	align-self: center;
+}
+
+.nieuwsbrief a {
+	margin: 10px;
+	color: #584e18;
+}
+
+main {
+	margin-bottom: 5%;
+}
