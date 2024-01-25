@@ -5,7 +5,7 @@
 /*header*/
 .wrapper {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 .werk {
@@ -13,12 +13,41 @@
 }
 
 .werk p {
-	width: 50%;
+	width: 60%;
+	margin-right: 15px;
 	align-self: center;
 }
 
 .werk img {
 	object-fit: contain;
+}
+
+.links {
+	margin-left: 7%;
+}
+
+.rechts {
+	display: flex;
+	margin-left: 5%;
+}
+
+.rechts img {
+	margin-top: -20%;
+	width: 700px;
+	align-self: flex-start;
+}
+
+.text {
+	margin-top: 15%;
+	margin-bottom: 15%;
+}
+
+h2 {
+	margin-left: 7%;
+}
+
+.btn-primary {
+	white-space: nowrap;
 }
 
 /*Administratief medewerker*/
