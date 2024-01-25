@@ -1,32 +1,51 @@
 main {
-	display: flex;
-	flex-direction: column;
-
-	min-height: 100vh;
-	padding: 50px 100px;
-
-	background-image: url("./assets/mailbox.png"),
-		url("./assets/facebook_logo.png"), url("./assets/postcard.png"),
-		url("./assets/phone.png"), url("./assets/maps-location.png");
-	background-repeat: no-repeat;
-	background-position-x: 54%, 51%, 35%, 90%, 100px;
-	background-position-y: 0%, 20%, 12%, 25%, 60%;
-	background-size: 270px, 120px, 280px, 330px, 500px;
-	overflow: visible;
-
-	*:is(img) {
-		width: fit-content;
-	}
-
-	.flex-spacer {
-		height: 10vh;
-	}
-
-	.flex-right {
-		margin-left: 50%;
-	}
+	margin-left: 125px;
 }
 
-main section {
-	margin-top: 70px;
+.mail {
+	margin-top: 90px;
+}
+
+.M {
+	margin-bottom: 10px;
+}
+
+.F {
+	margin-bottom: 10px;
+}
+
+.MapAdres {
+	display: flex;
+	width: 100%;
+}
+
+.map {
+	max-width: 500px;
+	margin-bottom: 25px;
+}
+
+.nummer {
+	width: 600px;
+}
+
+.adres {
+	margin-left: 25px;
+	flex: 1;
+}
+
+.A {
+	margin-bottom: -10px;
+}
+
+.T {
+	margin-bottom: -10px;
+}
+
+.head {
+	display: flex;
+}
+
+.GSM {
+	width: 700px;
+	margin-left: 160px;
 }
