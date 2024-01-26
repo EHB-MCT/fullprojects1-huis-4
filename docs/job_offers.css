@@ -16,6 +16,7 @@
 	width: 60%;
 	margin-right: 15px;
 	align-self: center;
+	white-space: nowrap;
 }
 
 .werk img {
@@ -42,12 +43,9 @@
 	margin-bottom: 15%;
 }
 
-h2 {
-	margin-left: 7%;
-}
-
 .btn-primary {
 	white-space: nowrap;
+	margin: 5px;
 }
 
 /*Administratief medewerker*/
@@ -119,6 +117,7 @@ h2 {
 
 .kookVrijwilliger {
 	text-align: center;
+	margin-right: 7%;
 }
 
 .TaakomschrijvingFlexK {
@@ -174,6 +173,7 @@ h2 {
 
 .logistiekVrijwilliger {
 	text-align: center;
+	margin-right: 7%;
 }
 
 .TaakomschrijvingFlexL {
@@ -217,7 +217,7 @@ h2 {
 }
 
 .AanbodFlexL {
-	margin-top: -250px;
+	margin-top: -200px;
 	margin-bottom: 150px;
 }
 
