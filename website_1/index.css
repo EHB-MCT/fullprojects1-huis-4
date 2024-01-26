@@ -14,13 +14,13 @@ main {
 	display: flex;
 	align-content: center;
 	justify-content: center;
+	min-height: 750px;
 }
 
 section {
 	position: relative;
 	width: 100%;
 	max-width: 1152px; /* Magic numbers are bad practice, sorry */
-	max-height: 520pt;
 	background-image: url("./assets/home-bike.png"),
 		url("./assets/home-box-arrow.png"), url("./assets/home-photo.png"),
 		url("./assets/home-illustration-house.png"), url("./assets/home-plant.png");
