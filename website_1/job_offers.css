@@ -16,6 +16,7 @@
 	width: 60%;
 	margin-right: 15px;
 	align-self: center;
+	white-space: nowrap;
 }
 
 .werk img {
@@ -48,6 +49,7 @@ h2 {
 
 .btn-primary {
 	white-space: nowrap;
+	margin: 5px;
 }
 
 /*Administratief medewerker*/
