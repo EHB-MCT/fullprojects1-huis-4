@@ -34,6 +34,7 @@ article {
 
 section {
 	position: relative;
+	width: fit-content;
 
 	p {
 		width: 353pt;
