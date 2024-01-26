@@ -43,10 +43,6 @@
 	margin-bottom: 15%;
 }
 
-h2 {
-	margin-left: 7%;
-}
-
 .btn-primary {
 	white-space: nowrap;
 	margin: 5px;
@@ -121,6 +117,7 @@ h2 {
 
 .kookVrijwilliger {
 	text-align: center;
+	margin-right: 7%;
 }
 
 .TaakomschrijvingFlexK {
@@ -176,6 +173,7 @@ h2 {
 
 .logistiekVrijwilliger {
 	text-align: center;
+	margin-right: 7%;
 }
 
 .TaakomschrijvingFlexL {
