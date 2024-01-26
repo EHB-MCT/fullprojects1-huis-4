@@ -41,6 +41,28 @@
 					><span>V</span><span>r</span><span>e</span><span>d</span
 					><span>e</span></span
 				>
+				<p class="flipped-text isHovered">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+					consequatur omnis ducimus temporibus, commodi nemo obcaecati...
+				</p>
+				<img
+					class="background-splotch flipped"
+					src="./assets/home-bike-flipped.png"
+					alt="#"
+				/>
+				<img
+					class="background-splotch normal"
+					src="./assets/home-bike.png"
+					alt="#"
+				/>
+				<img id="home-photo" src="./assets/home-photo.png" alt="#" />
+				<img
+					id="illustration-house"
+					src="./assets/home-illustration-house.png"
+					alt="#"
+				/>
+				<img id="box-arrow" src="./assets/home-box-arrow.png" alt="#" />
+				<img id="plant" src="./assets/home-plant.png" alt="#" />
 				<p id="quote">
 					“Om mensen zelfstandig en menswaardig te laten wonen en het gevoel van
 					verbondenheid te creëeren.”<br />
@@ -84,4 +106,27 @@
 			</div>
 		</footer>
 	</body>
+	<script>
+		const splotchNormal = document.querySelector(".normal");
+		const splotchFlipped = document.querySelector(".flipped");
+		const textFlipped = document.querySelector(".flipped-text");
+
+		textFlipped.addEventListener("mouseover", () => {
+			splotchNormal.classList.add("isHovered");
+			splotchFlipped.classList.remove("isHovered");
+			textFlipped.classList.remove("isHovered");
+		});
+
+		splotchNormal.addEventListener("mouseover", () => {
+			splotchNormal.classList.add("isHovered");
+			splotchFlipped.classList.remove("isHovered");
+			textFlipped.classList.remove("isHovered");
+		});
+
+		splotchNormal.addEventListener("mouseout", () => {
+			splotchNormal.classList.remove("isHovered");
+			splotchFlipped.classList.add("isHovered");
+			textFlipped.classList.add("isHovered");
+		});
+	</script>
 </html>
