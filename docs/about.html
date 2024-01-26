@@ -16,9 +16,9 @@
 			<div id="spacer"></div>
 			<a href="./index.html">HOME</a>
 			<div class="dropdown">
-				<label for="dropdown-toggle" class="dropdown-btn current"
-					>OVER ONS</label
-				>
+				<label for="dropdown-toggle" class="dropdown-btn current">
+					OVER ONS
+				</label>
 				<input id="dropdown-toggle" type="checkbox" />
 				<img src="./assets/pointer-arrow.png" alt="#" />
 
@@ -45,6 +45,23 @@
 						willen wonen. We bieden hiervoor individuele woonbegeleiding op
 						maat.
 					</p>
+					<p class="flipped-text isHovered">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+						nostrum, tempore molestiae voluptatem modi neque dignissimos animi.
+						Sint sunt distinctio placeat reiciendis quis optio cupiditate.
+						Cumque quidem molestias maxime assumenda?
+					</p>
+					<img
+						class="background-splotch flipped"
+						src="./assets/about-us-background-flipped.png"
+						alt="#"
+					/>
+					<img
+						class="background-splotch normal"
+						src="./assets/about-us-background.png"
+						alt="#"
+					/>
+					<img id="single-line" src="./assets/line-illustration.png" alt="#" />
 				</section>
 				<section>
 					<h2>Onze visie<br />en missie</h2>
@@ -81,6 +98,17 @@
 						ook een vakantie voor de cliënten: drie dagen lang gaan enkele
 						hulpverleners met een groep van dertig personen op uitstap.
 					</p>
+					<img
+						id="house-illustration"
+						src="./assets/house-illustration.png"
+						alt=""
+					/>
+					<img
+						id="heart-illustration"
+						src="./assets/heart-illustration.png"
+						alt=""
+					/>
+					<img id="squirrels" src="./assets/squirrels.png" alt="" />
 				</section>
 			</article>
 		</main>
@@ -117,4 +145,27 @@
 			</div>
 		</footer>
 	</body>
+	<script>
+		const splotchNormal = document.querySelector(".normal");
+		const splotchFlipped = document.querySelector(".flipped");
+		const textFlipped = document.querySelector(".flipped-text");
+
+		textFlipped.addEventListener("mouseover", () => {
+			splotchNormal.classList.add("isHovered");
+			splotchFlipped.classList.remove("isHovered");
+			textFlipped.classList.remove("isHovered");
+		});
+		
+		splotchNormal.addEventListener("mouseover", () => {
+			splotchNormal.classList.add("isHovered");
+			splotchFlipped.classList.remove("isHovered");
+			textFlipped.classList.remove("isHovered");
+		});
+
+		splotchNormal.addEventListener("mouseout", () => {
+			splotchNormal.classList.remove("isHovered");
+			splotchFlipped.classList.add("isHovered");
+			textFlipped.classList.add("isHovered");
+		});
+	</script>
 </html>
