@@ -15,23 +15,41 @@
 			</a>
 			<div id="spacer"></div>
 			<a href="./index_FR.html">ACCEUIL</a>
-			<div class="dropdown">
-				<label for="dropdown-toggle" class="dropdown-btn current"
-					>A PROPOS DE NOUS</label
-				>
-				<input id="dropdown-toggle" type="checkbox" />
-				<img src="./assets/pointer-arrow.png" alt="#" />
+			
+			<div id="uppermenu" class="nav-dropdown">
+				<span class="title current">A PROPOS DE NOUS</span>
+				<img
+					id="uppermenu"
+					class="pointer"
+					src="./assets/pointer-arrow.png"
+					alt="#"
+				/>
 
-				<ul id="dropdown-content">
+				<ul id="uppermenu" class="menu-content">
 					<a href="./about_FR.html">QUI SOMME NOUS</a>
 					<a href="./historiek_FR.html">HISTORIQUE</a>
-					<a href="./archive_FR.html" class="current">ARCHIVE</a>
+
+					<div id="submenu" class="nav-dropdown">
+						<span class="current title">ARCHIVE</span>
+						<img
+							id="submenu"
+							class="pointer"
+							src="./assets/pointer-arrow.png"
+							alt="#"
+						/>
+
+						<ul id="submenu" class="menu-content">
+							<a href="./archive_FR.html">NIEUWSBRIEVEN</a>
+							<a href="./archive_FR.html">JAARVERSLAGEN</a>
+						</ul>
+					</div>
 				</ul>
 			</div>
+
 			<a href="./support_FR.html">SOUTENEZ-NOUS</a>
 			<a href="./job_offers_FR.html">POSTE VACANTS</a>
 			<a href="./contact_FR.html">CONTACT</a>
-			<a href="archive.html">
+			<a href="./archive.html">
 				<span class="current">FR</span>/<span>NL</span>
 			</a>
 		</nav>

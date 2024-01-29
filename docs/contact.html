@@ -15,21 +15,41 @@
 			</a>
 			<div id="spacer"></div>
 			<a href="./index.html">HOME</a>
-			<div class="dropdown">
-				<label for="dropdown-toggle" class="dropdown-btn">OVER ONS</label>
-				<input id="dropdown-toggle" type="checkbox" />
-				<img src="./assets/pointer-arrow.png" alt="#" />
 
-				<ul id="dropdown-content">
+			<div id="uppermenu" class="nav-dropdown">
+				<span class="title">OVER ONS</span>
+				<img
+					id="uppermenu"
+					class="pointer"
+					src="./assets/pointer-arrow.png"
+					alt="#"
+				/>
+
+				<ul id="uppermenu" class="menu-content">
 					<a href="./about.html">WIE ZIJN WIJ</a>
 					<a href="./historiek.html">HISTORIEK</a>
-					<a href="./archive.html">ARCHIEF</a>
+
+					<div id="submenu" class="nav-dropdown">
+						<span class="title">ARCHIEF</span>
+						<img
+							id="submenu"
+							class="pointer"
+							src="./assets/pointer-arrow.png"
+							alt="#"
+						/>
+
+						<ul id="submenu" class="menu-content">
+							<a href="./archive.html">NIEUWSBRIEVEN</a>
+							<a href="./archive.html">JAARVERSLAGEN</a>
+						</ul>
+					</div>
 				</ul>
 			</div>
+
 			<a href="./support.html">STEUN ONS</a>
 			<a href="./job_offers.html">VACATURE</a>
 			<a href="./contact.html" class="current">CONTACT</a>
-			<a href="contact_FR.html">
+			<a href="./contact_FR.html">
 				<span>FR</span>/<span class="current">NL</span>
 			</a>
 		</nav>
@@ -78,8 +98,12 @@
 
 		<footer>
 			<div class="sponsors">
-				<img src="./assets/logo_caritas-removebg-preview.png" alt="" />
-				<img src="./assets/logo_cocom-transformed.png" alt="" />
+				<div class="sponsor">
+					<img src="./assets/logo_caritas-removebg-preview.png" alt="" />
+				</div>
+				<div class="sponsor">
+					<img src="./assets/logo_cocom-transformed.png" alt="" />
+				</div>
 			</div>
 			<div class="emailAdres">
 				<img src="./assets/Tracé 2254.png" alt="" id="line" />
