@@ -30,8 +30,8 @@ main {
 
 .begeleidingsaanbod {
 	position: absolute;
-	top: 32%;
-	left: 28%;
+	top: 33%;
+	left: 27%;
 }
 
 .derde {
@@ -43,7 +43,7 @@ main {
 .werking {
 	position: absolute;
 	top: 22%;
-	right: 23%;
+	right: 22.7%;
 }
 
 .vierde {
@@ -54,8 +54,8 @@ main {
 
 .centrum {
 	position: absolute;
-	top: 40%;
-	right: 10%;
+	top: 38.5%;
+	right: 12%;
 }
 
 .vijfde {
@@ -78,7 +78,7 @@ main {
 
 .autonomie {
 	position: absolute;
-	top: 62%;
+	top: 60%;
 	left: 15%;
 }
 
@@ -92,4 +92,8 @@ main {
 	position: absolute;
 	top: 42%;
 	left: 15%;
+}
+
+h4 {
+	font-size: 18px;
 }

@@ -6,25 +6,25 @@
 .nieuwsbrieven {
 	display: flex;
 	justify-content: space-evenly;
-}
-
-.jaarverslagen {
 	margin-bottom: 7%;
 }
 
-.jaarverslag {
+.jaarverslag,
+.nieuwsbrief {
 	display: flex;
 	box-shadow: 4px 5px 32px -25px rgba(0, 0, 0, 0.75);
 
 	padding: 20px;
 }
 
-.jaarverslag p {
+.jaarverslag p,
+.nieuwsbrief p {
 	padding: 20px;
 	margin: 0px 0px 30px 0px;
 }
 
-.jaarverslag .btn-primary {
+.jaarverslag .btn-primary,
+.nieuwsbrief .btn-primary {
 	padding-left: 40px;
 	padding-right: 40px;
 }
@@ -33,22 +33,68 @@
 	padding-bottom: 30px;
 }
 
-.jaarverslag img {
+.jaarverslag img,
+.nieuwsbrief img {
 	object-fit: contain;
 	width: 80px;
 }
 
-.nieuwsbrief {
-	flex-direction: column;
-	display: flex;
-	align-self: center;
-}
-
-.nieuwsbrief a {
-	margin: 10px;
-	color: #584e18;
-}
-
 main {
 	margin-bottom: 5%;
+}
+
+/*TESTEN*/
+nav .dropdown2 {
+	position: relative;
+}
+
+nav .dropdown2 img {
+	transform: rotate(90deg);
+	width: 15px;
+	user-select: none;
+	right: 5px;
+	top: 10px;
+	position: absolute;
+	z-index: 1000;
+}
+
+nav .dropdown2 input:checked ~ img,
+nav .dropdown2:hover input ~ img {
+	transform: rotate(0deg);
+}
+
+nav .dropdown2 .dropdown-btn {
+	border: none;
+	cursor: pointer;
+}
+
+nav .dropdown2 ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 100%;
+	z-index: 1000;
+
+	> :nth-child(odd) {
+		background-color: #97b287;
+	}
+
+	> * {
+		padding: 10px;
+	}
+}
+
+nav .dropdown2:hover ul {
+	display: block;
+}
+
+nav .dropdown2 #dropdown-content2 {
+	background-color: #7e9570;
+}
+
+nav #dropdown-toggle2 {
+	display: none;
 }
