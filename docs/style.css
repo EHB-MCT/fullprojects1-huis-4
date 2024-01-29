@@ -159,6 +159,7 @@ nav .dropdown:hover ul {
 
 nav .dropdown #dropdown-content {
 	background-color: #97b287;
+	white-space: nowrap;
 }
 
 nav #dropdown-toggle {

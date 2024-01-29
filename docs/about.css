@@ -1,0 +1,80 @@
+main {
+	padding: 0 calc(48pt + 70px);
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	min-height: 2000px;
+}
+
+article {
+	position: relative;
+	width: 100%;
+	max-width: 1012px; /* Magic numbers are bad practice, sorry */
+
+	> :first-child {
+		top: 3%;
+	}
+
+	> :nth-child(2) {
+		left: 60%;
+		top: 25%;
+	}
+
+	> :last-child {
+		top: 15%;
+	}
+}
+
+article img {
+	position: absolute;
+	user-select: none;
+	transition: opacity 1s ease;
+
+	&.background-splotch {
+		top: 80%;
+	}
+	
+	&#single-line {
+		left: 140%;
+		top: -10%;
+		z-index: -1;
+	}
+	
+	&#house-illustration {
+		left: 120%;
+		top: 31%;
+	}
+	
+	&#heart-illustration {
+		left: 174%;
+		top: 49%;
+	}
+	
+	&#squirrels {
+		left: 99%;
+		top: 29%;
+	}
+}
+
+section {
+	position: relative;
+	width: fit-content;
+
+	p {
+		width: 353pt;
+		transition: opacity 1s ease;
+	}
+
+	p.flipped-text {
+		width: 150pt;
+		position: absolute;
+		left: 94%;
+		top: 130%;
+		z-index: 1;
+		transform: rotate(-4deg);
+	}
+}
+
+.isHovered {
+	opacity: 0;
+}

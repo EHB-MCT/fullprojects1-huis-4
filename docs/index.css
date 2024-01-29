@@ -21,17 +21,47 @@ section {
 	position: relative;
 	width: 100%;
 	max-width: 1152px; /* Magic numbers are bad practice, sorry */
-	background-image: url("./assets/home-bike.png"),
-		url("./assets/home-box-arrow.png"), url("./assets/home-photo.png"),
-		url("./assets/home-illustration-house.png"), url("./assets/home-plant.png");
-	background-repeat: no-repeat;
-	background-position-x: -30%, 77%, 72%, 85%, 82%;
-	background-position-y: 100%, 75%, -5%, 2%, 58%;
-	user-select: none;
+
+	img {
+		position: absolute;
+		user-select: none;
+		transition: opacity 1s ease;
+	
+		&.background-splotch {
+			top: 11%;
+			left: -13%;
+		}
+		
+		&#illustration-house {
+			left: 79%;
+			top: 2%;
+		}
+
+		&#home-photo {
+			left: 56%;
+			top: -3%;
+		}
+		
+		&#squirrels {
+			left: 99%;
+			top: 29%;
+		}
+
+		&#box-arrow {
+			left: 49%;
+			top: 63%;
+		}
+		
+		&#plant {
+			left: 67%;
+			top: 37%;
+		}
+	}
 }
 
 #title-part-1 {
 	position: absolute;
+	user-select: none;
 	font-family: "Avenir Next Ultralight";
 	font-size: 103.52pt;
 	top: 7%;
@@ -41,6 +71,7 @@ section {
 
 #title-part-2 {
 	position: absolute;
+	user-select: none;
 	font-family: "Avenir Next Bold";
 	font-size: 57.35pt;
 	left: 31%;
@@ -50,6 +81,7 @@ section {
 
 #title-part-3 {
 	position: absolute;
+	user-select: none;
 	font-family: "Brush Script MT";
 	font-size: 199.42pt;
 	-webkit-text-fill-color: transparent;
@@ -83,6 +115,15 @@ section {
 	}
 }
 
+p.flipped-text {
+	width: 150pt;
+	position: absolute;
+	left: 8%;
+	top: 33%;
+	z-index: 1;
+	transform: rotate(-5.5deg);
+}
+
 #home-page-btn {
 	position: absolute;
 	white-space: nowrap;
@@ -92,4 +133,8 @@ section {
 
 .btn-primary {
 	margin: 0 0 34px 50px;
+}
+
+.isHovered {
+	opacity: 0;
 }
