@@ -287,3 +287,45 @@
 	flex: 1;
 	object-fit: contain;
 }
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 768px) {
+	body {
+		width: 100%;
+	}
+
+	nav {
+		display: none;
+	}
+
+	footer {
+		display: none;
+	}
+
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.werk {
+		flex-direction: column;
+	}
+
+	.werk img {
+		display: none;
+	}
+
+	.werk p {
+		width: 100%;
+		margin-right: 0px;
+		align-self: normal;
+	}
+
+	.rechts img {
+		width: 100%;
+	}
+
+	.btn-primary {
+		margin-left: -5px;
+	}
+}
