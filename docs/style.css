@@ -238,14 +238,6 @@ footer h4 {
 }
 
 @media screen and (max-width: 768px) {
-	nav {
-		display: none;
-	}
-
-	main {
-		display: none;
-	}
-
 	.sponsors {
 		flex-direction: column;
 	}
