@@ -328,4 +328,72 @@
 	.btn-primary {
 		margin-left: -5px;
 	}
+
+	/* KOOK VRIJWILLIGER*/
+	main {
+		padding: 0 0 0 48pt;
+	}
+
+	.headerK {
+		margin-left: 0px;
+	}
+
+	.headerK h2 {
+		font-size: 22pt;
+	}
+
+	.headerK h3 {
+		font-size: 16pt;
+	}
+
+	.headerK p {
+		font-size: 10pt;
+	}
+
+	.headerK li {
+		font-size: 10pt;
+	}
+	.arrow {
+		margin-left: -50px;
+	}
+
+	.kookVrijwilliger {
+		width: 100%;
+	}
+
+	.TaakomschrijvingFlexK {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.TaakomschrijvingImageK {
+		flex: 1;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	.pan {
+		width: 250px;
+		height: auto;
+	}
+
+	.ProfielImageK {
+		display: none;
+	}
+
+	.ProfielTextK {
+		margin-left: 0px;
+		margin-bottom: 50px;
+	}
+
+	.AanbodFlexK {
+		flex-wrap: wrap;
+	}
+
+	.Sponge {
+		margin-left: -50px;
+		margin-top: 20px;
+		width: 300px;
+		height: auto;
+	}
 }
