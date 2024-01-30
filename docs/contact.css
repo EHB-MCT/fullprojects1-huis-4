@@ -1,5 +1,5 @@
 main {
-	margin-left: 7%;
+	padding-left: 7%;
 }
 
 .mail {
@@ -54,8 +54,12 @@ main {
 }
 
 @media screen and (max-width: 480px) {
+	nav {
+		display: none;
+	}
+
 	main {
-		margin-left: -38pt;
+		padding-left: 48pt;
 		position: relative;
 	}
 
