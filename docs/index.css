@@ -26,12 +26,12 @@ section {
 		position: absolute;
 		user-select: none;
 		transition: opacity 1s ease;
-	
+
 		&.background-splotch {
 			top: 11%;
 			left: -13%;
 		}
-		
+
 		&#illustration-house {
 			left: 79%;
 			top: 2%;
@@ -41,7 +41,7 @@ section {
 			left: 56%;
 			top: -3%;
 		}
-		
+
 		&#squirrels {
 			left: 99%;
 			top: 29%;
@@ -51,7 +51,7 @@ section {
 			left: 49%;
 			top: 63%;
 		}
-		
+
 		&#plant {
 			left: 67%;
 			top: 37%;

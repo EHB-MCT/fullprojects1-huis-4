@@ -236,3 +236,40 @@ footer h4 {
 .contactInfo {
 	margin-top: 3px;
 }
+
+@media screen and (max-width: 768px) {
+	nav {
+		display: none;
+	}
+
+	main {
+		display: none;
+	}
+
+	.sponsors {
+		flex-direction: column;
+	}
+
+	#line {
+		display: none;
+	}
+
+	.emailAdres {
+		flex-direction: column;
+	}
+
+	.contact,
+	.adress {
+		margin: 0px 30px 0px 30px;
+	}
+
+	.sponsors img:last-child {
+		padding-left: 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	footer {
+		flex-direction: column-reverse;
+	}
+}
