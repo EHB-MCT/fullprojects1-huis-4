@@ -433,4 +433,37 @@
 		margin-top: 0px;
 		margin-bottom: 150px;
 	}
+
+	/* ADMINISTRASTIEF MEDEWERKER*/
+	.headerA {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.TaakomschrijvingFlexA {
+		flex-wrap: wrap;
+		margin-bottom: 0px;
+	}
+
+	.ProfielFlexA {
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+	}
+
+	.ProfielTextA {
+		margin-top: 0px;
+	}
+
+	.RoseBloem {
+		width: 250px;
+		margin-top: 0px;
+	}
+
+	.AanbodFlexA {
+		flex-wrap: wrap;
+	}
+
+	.BrugMetPlakband {
+		width: 300px;
+	}
 }
