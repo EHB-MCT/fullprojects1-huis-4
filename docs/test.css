@@ -3,7 +3,7 @@ nav a.icon {
 }
 
 @media screen and (max-width: 480px) {
-	.nameLogo {
+	/* .nameLogo {
 		display: none;
 	}
 
@@ -28,7 +28,13 @@ nav a.icon {
 		display: block;
 		position: absolute;
 		right: 0;
-		top: 0;
 		color: aliceblue;
+	}
+
+	.fa.fa-bars{
+		font-size: 20pt;
+	} */
+	nav >* {
+		display: none;
 	}
 }
