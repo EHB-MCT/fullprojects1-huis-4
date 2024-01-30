@@ -291,6 +291,28 @@
 /*RESPONSIVE*/
 
 @media screen and (max-width: 768px) {
+	/*TYPO*/
+	body h2 {
+		font-size: 22pt;
+	}
+
+	body h3 {
+		font-size: 16pt;
+	}
+
+	body p {
+		font-size: 10pt;
+	}
+
+	body li {
+		font-size: 10pt;
+	}
+	.arrow {
+		margin-left: -50px;
+	}
+
+	/*FIRST PAGE*/
+
 	body {
 		width: 100%;
 	}
@@ -326,31 +348,12 @@
 	}
 
 	/* KOOK VRIJWILLIGER*/
-	main {
+	.mainK {
 		padding: 0 0 0 48pt;
 	}
 
 	.headerK {
 		margin-left: 0px;
-	}
-
-	.headerK h2 {
-		font-size: 22pt;
-	}
-
-	.headerK h3 {
-		font-size: 16pt;
-	}
-
-	.headerK p {
-		font-size: 10pt;
-	}
-
-	.headerK li {
-		font-size: 10pt;
-	}
-	.arrow {
-		margin-left: -50px;
 	}
 
 	.kookVrijwilliger {
@@ -378,7 +381,7 @@
 	}
 
 	.ProfielTextK {
-		margin-left: 0px;
+		margin-left: 25px;
 		margin-bottom: 50px;
 	}
 
@@ -391,5 +394,43 @@
 		margin-top: 20px;
 		width: 300px;
 		height: auto;
+	}
+
+	/* LOGISTIEK VRIJWILLIGER*/
+
+	.headerL {
+		margin-left: 0px;
+	}
+
+	.TaakomschrijvingFlexL {
+		margin-bottom: 10px;
+	}
+
+	.TaakomschrijvingImageL {
+		display: none;
+	}
+
+	.ProfielFlexL {
+		flex-wrap: wrap;
+	}
+
+	.ProfielTextL {
+		margin-top: 20px;
+		margin-left: 25px;
+	}
+
+	.ProfielImageL {
+		flex: 1;
+		margin-top: 0px;
+	}
+
+	.ZetelBloemEnGroen {
+		width: 300px;
+		margin-right: 0px;
+	}
+
+	.AanbodFlexL {
+		margin-top: 0px;
+		margin-bottom: 150px;
 	}
 }
