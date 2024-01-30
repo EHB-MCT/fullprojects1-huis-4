@@ -77,7 +77,7 @@ a {
 
 /* NAVIGATION */
 nav#web {
-	display: block;
+	display: flex;
 }
 
 nav#mobile {
