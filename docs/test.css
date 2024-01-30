@@ -1,0 +1,34 @@
+nav a.icon {
+	display: none;
+}
+
+@media screen and (max-width: 480px) {
+	.nameLogo {
+		display: none;
+	}
+
+	nav {
+		overflow: hidden;
+		position: relative;
+	}
+
+	nav #myLinks {
+		display: none;
+	}
+
+	nav a {
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+	}
+
+	nav a.icon {
+		padding: 20px;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		color: aliceblue;
+	}
+}

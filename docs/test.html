@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Huis van Vrede VZW</title>
+		<link rel="stylesheet" href="./test.css" />
+		<link rel="stylesheet" href="./style.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<nav>
+			<!-- Top Navigation Menu -->
+
+			<a href="./index.html" class="logo">
+				<img src="./assets/logo-cutout.png" alt="logo" />
+				<span class="nameLogo">HUIS VAN VREDE VZW</span>
+			</a>
+			<div id="spacer"></div>
+
+			<div id="myLinks">
+				<a href="./index.html">HOME</a>
+
+				<div id="uppermenu" class="nav-dropdown">
+					<span class="title">OVER ONS</span>
+					<img
+						id="uppermenu"
+						class="pointer"
+						src="./assets/pointer-arrow.png"
+						alt="#"
+					/>
+
+					<ul id="uppermenu" class="menu-content">
+						<a href="./about.html">WIE ZIJN WIJ</a>
+						<a href="./historiek.html">HISTORIEK</a>
+
+						<div id="submenu" class="nav-dropdown">
+							<span class="title">ARCHIEF</span>
+							<img
+								id="submenu"
+								class="pointer"
+								src="./assets/pointer-arrow.png"
+								alt="#"
+							/>
+
+							<ul id="submenu" class="menu-content">
+								<a href="./archive.html">NIEUWSBRIEVEN</a>
+								<a href="./archive.html">JAARVERSLAGEN</a>
+							</ul>
+						</div>
+					</ul>
+				</div>
+
+				<a href="./support.html">STEUN ONS</a>
+				<a href="./job_offers.html">VACATURE</a>
+				<a class="current" href="./contact.html">CONTACT</a>
+				<a href="./index_FR.html">
+					<span>FR</span>/<span class="current">NL</span>
+				</a>
+			</div>
+
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+
+			<script>
+				function myFunction() {
+					var x = document.getElementById("myLinks");
+					if (x.style.display === "block") {
+						x.style.display = "none";
+					} else {
+						x.style.display = "block";
+					}
+				}
+			</script>
+		</nav>
+	</body>
+</html>
