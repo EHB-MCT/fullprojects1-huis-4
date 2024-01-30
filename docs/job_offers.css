@@ -299,10 +299,6 @@
 		display: none;
 	}
 
-	footer {
-		display: none;
-	}
-
 	.wrapper {
 		flex-direction: column;
 	}
