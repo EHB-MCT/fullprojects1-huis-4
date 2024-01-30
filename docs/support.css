@@ -1,26 +1,53 @@
 main {
 	display: flex;
-	align-content: center;
 	justify-content: center;
+	width: 80%;
+	align-self: center;
 }
 
-section {
-	position: relative;
-	width: 100%;
-	max-width: 1102px; /* Magic numbers are bad practice, sorry */
-	height: fit-content;
-	background-image: url("./assets/steun-ons-achtergrond.png");
-	background-repeat: no-repeat;
-	background-position-x: 10%;
-	background-position-y: 100%;
+.wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 7%;
+}
 
-	margin-bottom: 8%;
+.wrapper img {
+	object-fit: contain;
+}
 
-	h3 {
-		margin-left: 5%;
+.wrapper p {
+	max-width: 45%;
+}
+
+@media screen and (max-width: 480px) {
+	nav {
+		display: none;
 	}
 
-	p {
-		margin-left: 55%;
+	footer {
+		display: none;
+	}
+
+	main {
+		padding: 0;
+	}
+
+	h2 {
+		display: flex;
+		justify-content: center;
+	}
+
+	.wrapper {
+		flex-direction: column-reverse;
+	}
+
+	.wrapper p {
+		max-width: 90%;
+		align-self: center;
+	}
+
+	.wrapper img {
+		max-width: 90%;
+		align-self: center;
 	}
 }
