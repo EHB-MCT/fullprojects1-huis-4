@@ -420,6 +420,50 @@
 	.BrugMetPlakband {
 		width: 300px;
 	}
+
+	/*MAATSCHAPPELIJK ASSISSTENT*/
+	.TaakomschrijvingFlex {
+		flex-wrap: wrap;
+	}
+
+	.schilderij {
+		width: 200px;
+		margin-left: 0px;
+	}
+
+	.ProfielFlex {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+
+	.ProfielText {
+		flex: 1;
+		margin-left: 0px;
+		margin-top: 50px;
+	}
+
+	.ProfielImage {
+		flex: 1;
+		width: 50%;
+		align-self: center;
+	}
+
+	.plant {
+		width: 200px;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	.AanbodFlex {
+		display: block;
+		margin-bottom: 100px;
+	}
+
+	.AanbodText {
+		flex: 1;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
 }
 
 /* Mobile S*/
