@@ -199,37 +199,6 @@ nav a#icon {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 768px) {
-	nav#web {
-		display: none;
-	}
-
-	nav#mobile {
-		display: flex;
-		position: relative;
-		z-index: 1;
-	}
-
-	nav#mobile ul {
-		position: absolute;
-		top: 100%;
-		right: 0;
-	}
-	
-	nav a#icon {
-		padding: 20px;
-		display: block;
-		position: absolute;
-		right: 0;
-		color: aliceblue;
-	}
-
-	.fa.fa-bars{
-		font-size: 20pt;
-	}
-}
-
-
 /* MAIN */
 main {
 	min-height: 60vh;
@@ -297,6 +266,37 @@ footer h4 {
 }
 
 @media screen and (max-width: 768px) {
+	/*NAV*/
+	nav#web {
+		display: none;
+	}
+
+	nav#mobile {
+		display: flex;
+		position: relative;
+		z-index: 1;
+	}
+
+	nav#mobile ul {
+		position: absolute;
+		top: 100%;
+		right: 0;
+	}
+
+	nav a#icon {
+		padding: 20px;
+		display: block;
+		position: absolute;
+		right: 0;
+		color: aliceblue;
+	}
+
+	.fa.fa-bars {
+		font-size: 20pt;
+	}
+
+	/*FOOTER*/
+
 	.sponsors {
 		flex-direction: column;
 	}

@@ -6,8 +6,14 @@
 		<title>Huis van Vrede VZW</title>
 		<link rel="stylesheet" href="./job_offers.css" />
 		<link rel="stylesheet" href="./style.css" />
+		<link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 	</head>
 	<body>
+		<div id="darken-page"></div>
 		<nav>
 			<a href="./index_FR.html" class="logo">
 				<img src="./assets/logo-cutout.png" alt="logo" />
@@ -30,7 +36,7 @@
 					<a href="./historiek_FR.html">HISTORIQUE</a>
 
 					<div id="submenu" class="nav-dropdown">
-						<span class="title">ARCHIVE</span>
+						<span class="title">PUBLICATION</span>
 						<img
 							id="submenu"
 							class="pointer"
@@ -39,8 +45,8 @@
 						/>
 
 						<ul id="submenu" class="menu-content">
-							<a href="./archive_FR.html">NIEUWSBRIEVEN</a>
-							<a href="./archive_FR.html">JAARVERSLAGEN</a>
+							<a href="./archive_FR.html">BULLETINS D'INFORMATION</a>
+							<a href="./archive_FR.html">RAPPORT ANNUEL</a>
 						</ul>
 					</div>
 				</ul>
@@ -51,6 +57,31 @@
 			<a href="./contact_FR.html">CONTACT</a>
 			<a href="./job_offers.html">
 				<span class="current">FR</span>/<span>NL</span>
+			</a>
+		</nav>
+
+		<nav id="mobile">
+			<a href="./index.html" class="logo">
+				<img src="./assets/logo-cutout.png" alt="logo" />
+			</a>
+			<div id="spacer"></div>
+
+			<ul>
+				<a href="./index.html">ACCEUIL</a>
+				<a href="./about.html">A PROPOS DE NOUS</a>
+				<a href="./historiek.html" class="current">HISTORIQUE</a>
+				<a href="./archive.html">BULLETINS D'INFORMATION</a>
+				<a href="./archive.html">RAPPORT ANNUEL</a>
+				<a href="./support.html">STEUN ONS</a>
+				<a href="./job_offers.html">POSTE VACANTS</a>
+				<a href="./contact.html">CONTACT</a>
+				<a href="./support_FR.html">
+					<span class="current">FR</span><span>/</span><span>NL</span>
+				</a>
+			</ul>
+
+			<a href="javascript:void(0);" id="icon" onclick="openNavList()">
+				<i class="fa fa-bars"></i>
 			</a>
 		</nav>
 		<main>
@@ -140,5 +171,17 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+			function openNavList() {
+				const anchorList = document.querySelector("nav#mobile ul");
+				if (anchorList.style.display === "block") {
+					anchorList.style.display = "none";
+					document.querySelector("#darken-page").style.display = "none";
+				} else {
+					anchorList.style.display = "block";
+					document.querySelector("#darken-page").style.display = "block";
+				}
+			}
+		</script>
 	</body>
 </html>
