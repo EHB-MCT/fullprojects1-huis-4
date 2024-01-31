@@ -11,102 +11,243 @@
 }
 
 main {
+	position: relative;
+	padding: 0 48pt;
+	min-height: 100vh;
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	min-height: 750px;
+
+	background-image: url(./assets/about-us-street-cutout.png);
+	background-repeat: no-repeat;
+	background-size: 145%;
+	background-position-x: -320px;
+	background-position-y: -400%;
 }
 
 section {
 	position: relative;
 	width: 100%;
 	max-width: 1152px; /* Magic numbers are bad practice, sorry */
-
-	img {
-		position: absolute;
-		user-select: none;
+	p {
 		transition: opacity 1s ease;
-
-		&.background-splotch {
-			top: 11%;
-			left: -13%;
-		}
-
-		&#illustration-house {
-			left: 79%;
-			top: 2%;
-		}
-
-		&#home-photo {
-			left: 56%;
-			top: -3%;
-		}
-
-		&#squirrels {
-			left: 99%;
-			top: 29%;
-		}
-
-		&#box-arrow {
-			left: 49%;
-			top: 63%;
-		}
-
-		&#plant {
-			left: 67%;
-			top: 37%;
-		}
 	}
 }
 
-#title-part-1 {
+section img {
 	position: absolute;
 	user-select: none;
-	font-family: "Avenir Next Ultralight";
-	font-size: 103.52pt;
-	top: 7%;
-	left: 18%;
-	color: #584e18;
-}
+	transition: opacity 1s ease;
 
-#title-part-2 {
-	position: absolute;
-	user-select: none;
-	font-family: "Avenir Next Bold";
-	font-size: 57.35pt;
-	left: 31%;
-	top: 27%;
-	color: #584e18;
-}
+	&#background-fishes {
+		left: 98%;
+		top: 41%;
+	}
 
-#title-part-3 {
-	position: absolute;
-	user-select: none;
-	font-family: "Brush Script MT";
-	font-size: 199.42pt;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 4pt #584e18;
-	left: 44%;
-	top: 28%;
+	&#background-splotch {
+		left: -25%;
+		top: 6%;
+	}
 
-	> *:nth-child(even) {
-		top: 20px;
+	&#background-fishes {
+		left: 13%;
+		top: 22%;
+	}
+	&.background-photo-frame {
 		position: relative;
-		padding: 0 5px 0 5px;
+		box-shadow: 8px 8px 10px;
 	}
 
-	> *:not(:nth-child(1)):nth-child(odd) {
-		top: -30px;
-		position: relative;
-		padding: 0 2px 0 2px;
+	&#background-bike {
+		left: 2.5%;
+		top: 2%;
+	}
+
+	&#background-interior {
+		left: 1.5%;
+		top: 1.5%;
+	}
+
+	&#background-illustration-house {
+		left: 66%;
+		top: 10%;
+	}
+
+	&#background-box-arrow {
+		left: 11%;
+		top: 35%;
+	}
+
+	&#background-plant {
+		left: 97%;
+		top: 36%;
 	}
 }
 
-#quote {
+section #title {
+	position: relative;
+	width: fit-content;
+	user-select: none;
+	color: #584e18;
+	margin-left: 4%;
+	margin-top: 63px;
+
+	#title-part-1 {
+		font-family: "Avenir Next Ultralight";
+		font-size: 103.52pt;
+		margin-left: 6%;
+		margin-top: 7%;
+	}
+	
+	#title-part-2 {
+		position: absolute;
+		top: 29%;
+		font-family: "Avenir Next Bold";
+		font-size: 57.35pt;
+		margin-left: 38%;
+	}
+	
+	#title-part-3 {
+		display: flex;
+		font-family: "Brush Script MT";
+		font-size: 199.42pt;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 4pt #584e18;
+		margin-left: 73%;
+		margin-top: -17%;
+	
+		> *:nth-child(even) {
+			top: 20px;
+			position: relative;
+			padding: 0 5px 0 5px;
+		}
+	
+		> *:not(:nth-child(1)):nth-child(odd) {
+			top: -30px;
+			position: relative;
+			padding: 0 2px 0 2px;
+		}
+	}
+}
+
+section #photo1 {
 	position: absolute;
+	left: -5%;
+	top: 15%;
+	display: flex;
+	transform: rotate(-4.73deg);
+	/* min-width: 228.703px;
+	min-height: 323.773px; */
+
+	*:not(.background-photo-frame) {
+		position: absolute;
+	}
+
+	p.flipped-text {
+		opacity: 0;
+		user-select: none;
+		width: 150pt;
+		left: 5%;
+		top: 2%;
+		z-index: 1;
+	}
+
+	.background-tape {
+		transform: scale(0.2) rotate(-20.73deg);
+		left: -129%;
+		top: -89%;
+		z-index: 1;
+	}
+
+	img#background-splotch {
+		left: -118%;
+		top: -48%;
+		transform: rotate(6deg);
+	}
+}
+
+section #photo2 {
+	position: absolute;
+	left: 78%;
+	top: 11%;
+	display: flex;
+	transform: rotate(2.73deg);
+
+	*:not(.background-photo-frame) {
+		position: absolute;
+	}
+
+	p.flipped-text {
+		opacity: 0;
+		user-select: none;
+		width: 250pt;
+		left: 8%;
+		top: 3%;
+		z-index: 1;
+	}
+
+	.background-tape {
+		transform: scale(0.2) rotate(-30deg);
+		left: -74%;
+		top: -50%;
+		z-index: 1;
+	}
+
+}
+
+section #photo1:hover {
+	.background-tape {
+		animation: animateTape1 1s;
+		animation-fill-mode: forwards;
+	}
+
+	.background-photo-frame {
+		animation: animateScale 1s;
+		animation-fill-mode: forwards;
+	}
+
+	p.flipped-text {
+		opacity: 1;
+		animation: animateScale 1s;
+		animation-fill-mode: forwards;
+	}
+
+	#background-bike {
+		opacity: 0;
+		animation: animateScale 1s;
+		animation-fill-mode: forwards;
+	}
+}
+
+section #photo2:hover {
+	.background-tape {
+		animation: animateTape2 1s;
+		animation-fill-mode: forwards;
+	}
+
+	.background-photo-frame {
+		animation: animateScale 1s;
+		animation-fill-mode: forwards;
+	}
+
+	p.flipped-text {
+		opacity: 1;
+		animation: animateScale 1s;
+		animation-fill-mode: forwards;
+	}
+
+	#background-interior {
+		opacity: 0;
+		animation: animateScale 1s;
+		animation-fill-mode: forwards;
+	}
+}
+
+section #quote {
 	width: 300pt;
-	left: 20%;
-	top: 77%;
+	margin-left: 75%;
+	margin-top: 77%;
+	margin-bottom: 50px;
 
 	span {
 		font-family: Arial;
@@ -115,28 +256,46 @@ section {
 	}
 }
 
-p.flipped-text {
-	width: 150pt;
-	position: absolute;
-	left: 8%;
-	top: 33%;
-	z-index: 1;
-	transform: rotate(-5.5deg);
-}
-
-#home-page-btn {
+section #home-page-btn {
 	position: absolute;
 	white-space: nowrap;
-	top: 81%;
-	left: 80%;
+	top: 44%;
+	left: 43%;
 }
 
 .btn-primary {
 	margin: 0 0 34px 50px;
 }
 
-.isHovered {
-	opacity: 0;
+@keyframes animateScale {
+	50% {
+		transform: scale(1.1);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes animateTape1 {
+	50% {
+		top: -95%;
+		transform: scale(0.25) rotate(-20.73deg);
+		animation-play-state: paused;
+	}
+	to {
+		transform: scale(0.2) rotate(-20.73deg);
+	}
+}
+
+@keyframes animateTape2 {
+	50% {
+		top: -55%;
+		transform: scale(0.25) rotate(-30deg);
+		animation-play-state: paused;
+	}
+	to {
+		transform: scale(0.2) rotate(-30deg);
+	}
 }
 
 @media screen and (max-width: 768px) {
