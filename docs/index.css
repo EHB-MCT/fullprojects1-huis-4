@@ -138,3 +138,118 @@ p.flipped-text {
 .isHovered {
 	opacity: 0;
 }
+
+@media screen and (max-width: 768px) {
+	#title-part-1 {
+		font-size: 70pt;
+		left: 2%;
+		top: 1%;
+	}
+
+	#title-part-2 {
+		font-size: 40pt;
+		left: 17%;
+		top: 13%;
+	}
+
+	#title-part-3 {
+		font-size: 120pt;
+		left: 44%;
+		top: 13%;
+	}
+
+	section img.background-splotch {
+		top: 15%;
+		left: -18%;
+		width: 70%;
+	}
+
+	section img#home-photo {
+		left: 60%;
+		top: 34%;
+	}
+
+	#quote {
+		width: 227pt;
+		left: 6%;
+		top: 64%;
+	}
+
+	#home-page-btn {
+		top: 100%;
+		left: 69%;
+	}
+
+	section img#box-arrow {
+		left: 9%;
+		top: 84%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#title-part-1 {
+		font-size: 51pt;
+		left: -16%;
+		top: 3%;
+	}
+
+	#title-part-2 {
+		font-size: 30pt;
+		left: 10%;
+		top: 13%;
+	}
+
+	#title-part-3 {
+		font-size: 63pt;
+		left: 49%;
+		top: 18%;
+	}
+
+	section img.background-splotch {
+		width: 100%;
+		top: 17%;
+		left: -44%;
+	}
+
+	section img#home-photo {
+		width: 50%;
+		top: 36%;
+	}
+
+	#home-page-btn {
+		left: 26%;
+		top: 89%;
+	}
+
+	section img#box-arrow {
+		left: -10%;
+		top: 78%;
+		width: 80%;
+	}
+
+	section img#illustration-house {
+		left: 10%;
+		top: 44%;
+		width: 15%;
+	}
+
+	section img#plant {
+		left: 62%;
+		top: 56%;
+		width: 61%;
+	}
+
+	#quote {
+		width: 158pt;
+		left: -13%;
+		top: 50%;
+	}
+
+	#title-part-3 > *:not(:nth-child(1)):nth-child(odd) {
+		top: -4px;
+	}
+
+	#title-part-3 > *:nth-child(even) {
+		left: -5%;
+	}
+}

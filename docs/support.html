@@ -12,9 +12,10 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
 	</head>
+
 	<body>
 		<div id="darken-page"></div>
-		<nav>
+		<nav id="web">
 			<a href="./index.html" class="logo">
 				<img src="./assets/logo-cutout.png" alt="logo" />
 				<span>HUIS VAN VREDE VZW</span>
@@ -36,7 +37,7 @@
 					<a href="./historiek.html">HISTORIEK</a>
 
 					<div id="submenu" class="nav-dropdown">
-						<span class="title">ARCHIEF</span>
+						<span class="title">PUBLICATIES</span>
 						<img
 							id="submenu"
 							class="pointer"
@@ -45,20 +46,21 @@
 						/>
 
 						<ul id="submenu" class="menu-content">
-							<a href="./archive.html">NIEUWSBRIEVEN</a>
-							<a href="./archive.html">JAARVERSLAGEN</a>
+							<a href="./publicaties.html">NIEUWSBRIEVEN</a>
+							<a href="./publicaties.html">JAARVERSLAGEN</a>
 						</ul>
 					</div>
 				</ul>
 			</div>
 
-			<a href="./support.html" class="current">STEUN ONS</a>
+			<a class="current" href="./support.html">STEUN ONS</a>
 			<a href="./job_offers.html">VACATURE</a>
 			<a href="./contact.html">CONTACT</a>
 			<a href="./support_FR.html">
-				<span>FR</span>/<span class="current">NL</span>
+				<span>FR</span><span>/</span><span class="current">NL</span>
 			</a>
 		</nav>
+
 		<nav id="mobile">
 			<a href="./index.html" class="logo">
 				<img src="./assets/logo-cutout.png" alt="logo" />
@@ -69,9 +71,9 @@
 				<a href="./index.html">HOME</a>
 				<a href="./about.html">WIE ZIJN WIJ</a>
 				<a href="./historiek.html">HISTORIEK</a>
-				<a href="./archive.html">NIEUWSBRIEVEN</a>
-				<a href="./archive.html">JAARVERSLAGEN</a>
-				<a href="./support.html" class="current">STEUN ONS</a>
+				<a href="./publicaties.html">NIEUWSBRIEVEN</a>
+				<a href="./publicaties.html">JAARVERSLAGEN</a>
+				<a class="current" href="./support.html">STEUN ONS</a>
 				<a href="./job_offers.html">VACATURE</a>
 				<a href="./contact.html">CONTACT</a>
 				<a href="./support_FR.html">
@@ -83,6 +85,7 @@
 				<i class="fa fa-bars"></i>
 			</a>
 		</nav>
+
 		<main>
 			<section>
 				<h2>Steun ons.</h2>
@@ -107,6 +110,7 @@
 				</div>
 			</section>
 		</main>
+
 		<footer>
 			<div class="sponsors">
 				<img src="./assets/logo_caritas-removebg-preview.png" alt="" />
@@ -139,6 +143,7 @@
 				</div>
 			</div>
 		</footer>
+
 		<script>
 			function openNavList() {
 				const anchorList = document.querySelector("nav#mobile ul");

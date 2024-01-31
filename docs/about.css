@@ -1,80 +1,154 @@
 main {
-	padding: 0 calc(48pt + 70px);
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	min-height: 2000px;
-}
-
-article {
 	position: relative;
-	width: 100%;
-	max-width: 1012px; /* Magic numbers are bad practice, sorry */
+	padding: 0 48pt;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
 
 	> :first-child {
-		top: 3%;
+		margin-top: 3%;
 	}
 
 	> :nth-child(2) {
-		left: 60%;
-		top: 25%;
-	}
-
-	> :last-child {
-		top: 15%;
-	}
-}
-
-article img {
-	position: absolute;
-	user-select: none;
-	transition: opacity 1s ease;
-
-	&.background-splotch {
-		top: 80%;
-	}
-	
-	&#single-line {
-		left: 140%;
-		top: -10%;
-		z-index: -1;
-	}
-	
-	&#house-illustration {
-		left: 120%;
-		top: 31%;
-	}
-	
-	&#heart-illustration {
-		left: 174%;
-		top: 49%;
-	}
-	
-	&#squirrels {
-		left: 99%;
-		top: 29%;
+		margin-left: calc(100% / 12 * 7 + 8pt);
+		margin-top: 32%;
 	}
 }
 
 section {
 	position: relative;
-	width: fit-content;
+	width: calc(100% / 12 * 5 - 8pt);
+
+	h2 {
+		white-space: nowrap;
+	}
 
 	p {
-		width: 353pt;
 		transition: opacity 1s ease;
 	}
 
 	p.flipped-text {
+		opacity: 0;
 		width: 150pt;
+		margin-top: 13%;
+		margin-left: 15%;
+		z-index: 2;
+	}
+
+	#photo {
 		position: absolute;
-		left: 94%;
-		top: 130%;
-		z-index: 1;
-		transform: rotate(-4deg);
+		left: 93%;
+		top: 128%;
+		display: flex;
+		transform: rotate(-4.73deg);
+
+		* {
+			position: absolute;
+		}
+	}
+
+	#photo:hover {
+		#background-tape {
+			animation: animateTape 1s;
+			animation-fill-mode: forwards;
+		}
+
+		#background-photo-frame {
+			animation: animateScale 1s;
+			animation-fill-mode: forwards;
+		}
+
+		p.flipped-text {
+			opacity: 1;
+			animation: animateScale 1s;
+			animation-fill-mode: forwards;
+		}
+
+		#background-carpet {
+			opacity: 0;
+			animation: animateScale 1s;
+			animation-fill-mode: forwards;
+		}
 	}
 }
 
-.isHovered {
-	opacity: 0;
+section img {
+	position: absolute;
+	user-select: none;
+	transition: opacity 1s ease;
+
+	&#background-splotch {
+		top: 116%;
+		left: 18%;
+	}
+
+	&#background-cutout {
+		left: 19%;
+		top: 120%;
+	}
+
+	&#background-bike {
+		left: 42%;
+		top: 128%;
+	}
+
+	&#background-photo-frame {
+		position: relative;
+		box-shadow: 8px 8px 10px;
+	}
+
+	&#background-tape {
+		transform: scale(0.3) rotate(4.73deg);
+		left: -58%;
+		top: -77%;
+		z-index: 1;
+	}
+
+	&#background-carpet {
+		margin-top: 9%;
+		margin-left: 2%;
+		z-index: 2;
+	}
+
+	&#single-line {
+		left: 6%;
+		top: -159%;
+		z-index: -1;
+	}
+
+	&#house-illustration {
+		left: 140%;
+		top: 35%;
+	}
+
+	&#heart-illustration {
+		left: 194%;
+		top: 54%;
+	}
+
+	&#squirrels {
+		left: 119%;
+		top: 33%;
+	}
+}
+
+@keyframes animateScale {
+	50% {
+		transform: scale(1.1);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes animateTape {
+	50% {
+		top: -83%;
+		transform: scale(0.35) rotate(4.73deg);
+		animation-play-state: paused;
+	}
+	to {
+		transform: scale(0.3) rotate(4.73deg);
+	}
 }

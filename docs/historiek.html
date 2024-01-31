@@ -6,9 +6,15 @@
 		<title>Huis van Vrede VZW</title>
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="./historiek.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 	</head>
+
 	<body>
-		<nav>
+		<div id="darken-page"></div>
+		<nav id="web">
 			<a href="./index.html" class="logo">
 				<img src="./assets/logo-cutout.png" alt="logo" />
 				<span>HUIS VAN VREDE VZW</span>
@@ -30,7 +36,7 @@
 					<a class="current" href="./historiek.html">HISTORIEK</a>
 
 					<div id="submenu" class="nav-dropdown">
-						<span class="title">ARCHIEF</span>
+						<span class="title">PUBLICATIES</span>
 						<img
 							id="submenu"
 							class="pointer"
@@ -39,8 +45,8 @@
 						/>
 
 						<ul id="submenu" class="menu-content">
-							<a href="./archive.html">NIEUWSBRIEVEN</a>
-							<a href="./archive.html">JAARVERSLAGEN</a>
+							<a href="./publicaties.html">NIEUWSBRIEVEN</a>
+							<a href="./publicaties.html">JAARVERSLAGEN</a>
 						</ul>
 					</div>
 				</ul>
@@ -50,9 +56,35 @@
 			<a href="./job_offers.html">VACATURE</a>
 			<a href="./contact.html">CONTACT</a>
 			<a href="./historiek_FR.html">
-				<span>FR</span>/<span class="current">NL</span>
+				<span>FR</span><span>/</span><span class="current">NL</span>
 			</a>
 		</nav>
+
+		<nav id="mobile">
+			<a class="logo" href="./index.html">
+				<img src="./assets/logo-cutout.png" alt="logo" />
+			</a>
+			<div id="spacer"></div>
+
+			<ul>
+				<a href="./index.html">HOME</a>
+				<a href="./about.html">WIE ZIJN WIJ</a>
+				<a class="current" href="./historiek.html">HISTORIEK</a>
+				<a href="./publicaties.html">NIEUWSBRIEVEN</a>
+				<a href="./publicaties.html">JAARVERSLAGEN</a>
+				<a href="./support.html">STEUN ONS</a>
+				<a href="./job_offers.html">VACATURE</a>
+				<a href="./contact.html">CONTACT</a>
+				<a href="./support_FR.html">
+					<span>FR</span><span>/</span><span class="current">NL</span>
+				</a>
+			</ul>
+
+			<a id="icon" href="javascript:void(0);" onclick="openNavList()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+
 		<main>
 			<h2 class="Historiek">Historiek</h2>
 			<img class="lijn" src="./assets/LijnHistoriek.png" alt="" />
@@ -154,5 +186,18 @@
 				</div>
 			</div>
 		</footer>
+		
+		<script>
+			function openNavList() {
+				const anchorList = document.querySelector("nav#mobile ul");
+				if (anchorList.style.display === "block") {
+					anchorList.style.display = "none";
+					document.querySelector("#darken-page").style.display = "none";
+				} else {
+					anchorList.style.display = "block";
+					document.querySelector("#darken-page").style.display = "block";
+				}
+			}
+		</script>
 	</body>
 </html>

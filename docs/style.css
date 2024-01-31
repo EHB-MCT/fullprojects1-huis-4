@@ -77,11 +77,13 @@ a {
 
 /* NAVIGATION */
 nav#web {
-	display: block;
+	display: flex;
+	z-index: 1000;
 }
 
 nav#mobile {
 	display: none;
+	z-index: 1000;
 }
 
 nav {
@@ -196,7 +198,37 @@ nav a#icon {
 	display: none;
 	width: 100%;
 	height: 100%;
+	z-index: 999;
 	background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+	nav#web {
+		display: none;
+	}
+
+	nav#mobile {
+		display: flex;
+		position: relative;
+	}
+
+	nav#mobile ul {
+		position: absolute;
+		top: 100%;
+		right: 0;
+	}
+
+	nav a#icon {
+		padding: 20px;
+		display: block;
+		position: absolute;
+		right: 0;
+		color: aliceblue;
+	}
+
+	.fa.fa-bars {
+		font-size: 20pt;
+	}
 }
 
 /* MAIN */
@@ -258,7 +290,6 @@ footer h4 {
 .sponsors img {
 	margin: 20px;
 	width: 250px;
-	z-index: 1000;
 }
 
 .contactInfo {
