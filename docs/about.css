@@ -1,6 +1,5 @@
 main {
 	position: relative;
-	padding: 0 48pt;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -38,7 +37,7 @@ section {
 
 	#photo {
 		position: absolute;
-		left: 93%;
+		left: 90%;
 		top: 128%;
 		display: flex;
 		transform: rotate(-4.73deg);

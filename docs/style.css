@@ -234,7 +234,7 @@ nav a#icon {
 /* MAIN */
 main {
 	min-height: 60vh;
-	padding: 0 48pt;
+	padding: 0 100pt;
 	margin: 0 0 auto 0;
 }
 
@@ -297,6 +297,11 @@ footer h4 {
 }
 
 @media screen and (max-width: 768px) {
+	/*PADDING*/
+	main {
+		padding: 0 24pt;
+	}
+
 	/*TYPO*/
 	body h2 {
 		font-size: 22pt;

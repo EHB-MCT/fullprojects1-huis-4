@@ -50,11 +50,6 @@
 
 /*Administratief medewerker*/
 
-.headerA {
-	margin-left: 150px;
-	margin-right: 150px;
-}
-
 .administratiefMedewerker {
 	text-align: center;
 }
@@ -110,11 +105,6 @@
 
 /*kookvrijwilliger*/
 
-.headerK {
-	margin-left: 200px;
-	margin-right: 100px;
-}
-
 .kookVrijwilliger {
 	text-align: center;
 	margin-right: 7%;
@@ -165,11 +155,6 @@
 }
 
 /*logistiek vrijwilliger*/
-
-.headerL {
-	margin-left: 200px;
-	margin-right: 100px;
-}
 
 .logistiekVrijwilliger {
 	text-align: center;
@@ -222,11 +207,6 @@
 }
 
 /*Maatschappelijk assistente*/
-
-.headerM {
-	margin-left: 150px;
-	margin-right: 150px;
-}
 
 .maatschappelijkAssisstent {
 	text-align: center;
@@ -337,13 +317,6 @@
 	}
 
 	/* KOOK VRIJWILLIGER*/
-	.mainK {
-		padding: 0 0 0 48pt;
-	}
-
-	.headerK {
-		margin-left: 0px;
-	}
 
 	.kookVrijwilliger {
 		width: 100%;
@@ -387,10 +360,6 @@
 
 	/* LOGISTIEK VRIJWILLIGER*/
 
-	.headerL {
-		margin-left: 0px;
-	}
-
 	.TaakomschrijvingFlexL {
 		margin-bottom: 10px;
 	}
@@ -424,10 +393,6 @@
 	}
 
 	/* ADMINISTRASTIEF MEDEWERKER*/
-	.headerA {
-		margin-left: 0px;
-		margin-right: 0px;
-	}
 
 	.TaakomschrijvingFlexA {
 		flex-wrap: wrap;
