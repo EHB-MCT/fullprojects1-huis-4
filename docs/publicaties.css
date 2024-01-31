@@ -42,3 +42,18 @@
 main {
 	margin-bottom: 5%;
 }
+
+@media screen and (max-width: 768px) {
+	.jaarverslagen,
+	.nieuwsbrieven {
+		flex-wrap: wrap;
+	}
+
+	.Kayak {
+		width: 100%;
+	}
+
+	.boeken {
+		width: 100%;
+	}
+}

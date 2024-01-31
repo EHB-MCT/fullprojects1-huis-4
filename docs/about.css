@@ -153,34 +153,76 @@ section img {
 	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 	section img {
+		&#background-splotch {
+			display: none;
+		}
+
 		&#background-bike {
-			left: 10%;
-			top: 5%;
+			left: -7%;
+			top: -5%;
 			transform: scale(0.2);
 			z-index: 4;
 		}
 
 		&#background-cutout {
-			left: -30%;
-			top: 10%;
+			left: -50%;
+			top: 0%;
+			transform: scale(0.2);
+		}
+
+		&#background-tape {
+			transform: scale(0.2) rotate(30deg);
+			left: -25%;
+			top: -65%;
+			z-index: 3;
+		}
+
+		&#squirrels {
+			display: none;
+		}
+
+		&#single-line {
+			display: none;
+		}
+
+		&#house-illustration {
 			transform: scale(0.3);
+			left: 90%;
+			top: 80%;
+		}
+
+		&#heart-illustration {
+			transform: scale(0.3);
+			left: 80%;
+			top: 0%;
 		}
 	}
 
 	section {
 		#photo {
-			left: 52%;
-			top: 8%;
-			transform: scale(0.3) rotate(4.73deg);
+			left: 25%;
+			top: 20%;
+			transform: scale(0.2) rotate(4.73deg);
 		}
 
 		width: 100%;
 	}
+
+	.VisieEnMissie {
+		position: relative;
+	}
+
+	main {
+		> :nth-child(2) {
+			margin-left: 0;
+			margin-top: 32%;
+		}
+	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width: 768px) {
 	section img {
 		&#background-splotch {
 			display: none;
