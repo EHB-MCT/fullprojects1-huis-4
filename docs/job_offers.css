@@ -291,6 +291,11 @@
 /*RESPONSIVE*/
 
 @media screen and (max-width: 768px) {
+	/*BUTTON*/
+	.btn-primary {
+		margin-left: 0px;
+	}
+
 	/*TYPO*/
 	body h2 {
 		font-size: 22pt;
