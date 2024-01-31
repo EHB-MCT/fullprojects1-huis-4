@@ -152,3 +152,11 @@ section img {
 		transform: scale(0.3) rotate(4.73deg);
 	}
 }
+
+@media screen and (max-width: 768px) {
+	section img {
+		&#background-splotch {
+			display: none;
+		}
+	}
+}
