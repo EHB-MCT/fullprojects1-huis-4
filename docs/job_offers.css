@@ -296,22 +296,6 @@
 		margin-left: 0px;
 	}
 
-	/*TYPO*/
-	body h2 {
-		font-size: 22pt;
-	}
-
-	body h3 {
-		font-size: 16pt;
-	}
-
-	body p {
-		font-size: 10pt;
-	}
-
-	body li {
-		font-size: 10pt;
-	}
 	.arrow {
 		margin-left: -50px;
 	}
@@ -480,4 +464,3 @@
 		width: 200px;
 	}
 }
-/* MAATSCHAPPELIJKE ASSISTENT*/
