@@ -472,3 +472,11 @@
 		width: 300px;
 	}
 }
+
+/* Mobile S*/
+@media screen and (max-width: 320px) {
+	/* ADMINISTRASTIEF MEDEWERKER*/
+	.BrugMetPlakband {
+		width: 200px;
+	}
+}
