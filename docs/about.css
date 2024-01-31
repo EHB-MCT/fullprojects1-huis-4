@@ -111,25 +111,26 @@ section img {
 	}
 
 	&#single-line {
-		left: -200%;
-		top: -19%;
+		left: -163%;
+		top: -41%;
 		z-index: -1;
-		transform: scaleX(-1) rotate(0deg);
+		transform: scaleX(-1) rotate(40deg);
 	}
 
 	&#house-illustration {
-		left: 140%;
-		top: 35%;
+		left: -134%;
+		top: 49%;
 	}
 
 	&#heart-illustration {
-		left: 194%;
-		top: 54%;
+		left: -81%;
+    	top: 20%;
 	}
 
 	&#squirrels {
 		left: 119%;
 		top: 33%;
+		transform: scale(2);
 	}
 }
 
