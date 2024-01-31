@@ -37,8 +37,8 @@ section {
 
 	#photo {
 		position: absolute;
-		left: 90%;
-		top: 128%;
+		left: 120%;
+		top: 70%;
 		display: flex;
 		transform: rotate(-4.73deg);
 
@@ -78,18 +78,18 @@ section img {
 	transition: opacity 1s ease;
 
 	&#background-splotch {
-		top: 116%;
-		left: 18%;
+		top: 60%;
+		left: 40%;
 	}
 
 	&#background-cutout {
-		left: 19%;
-		top: 120%;
+		left: 48%;
+		top: 60%;
 	}
 
 	&#background-bike {
-		left: 42%;
-		top: 128%;
+		left: 68%;
+		top: 60%;
 	}
 
 	&#background-photo-frame {
@@ -111,9 +111,10 @@ section img {
 	}
 
 	&#single-line {
-		left: 6%;
-		top: -159%;
+		left: -200%;
+		top: -19%;
 		z-index: -1;
+		transform: scaleX(-1) rotate(0deg);
 	}
 
 	&#house-illustration {
