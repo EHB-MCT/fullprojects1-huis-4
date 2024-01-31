@@ -27,23 +27,29 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	font-size: 14pt;
-	font-family: "Avenir Next Medium", sans-serif;
+	font-family: "Avenir Next Regular", sans-serif;
 }
 
 h1 {
 	font-size: 280pt;
-	font-family: "Kalnia";
+	font-family: "Avenir Next Medium", sans-serif;
 }
 
 h2 {
 	font-size: 40pt;
-	font-family: "Kalnia";
+	font-family: "Avenir Next Ultralight", sans-serif;
+	span {
+		font-family: "Avenir Next Medium", sans-serif;
+	}
 }
 
 h3 {
 	color: #84a86e;
 	font-size: 30pt;
-	font-family: "Kalnia";
+	font-family: "Avenir Next Regular", sans-serif;
+	span {
+		font-family: "Avenir Next Medium", sans-serif;
+	}
 }
 
 h4 {
@@ -51,7 +57,8 @@ h4 {
 	font-family: "Avenir Next Medium", sans-serif;
 }
 
-a {
+a,
+nav span {
 	font-size: 14pt;
 	font-family: "Avenir Next Medium", sans-serif;
 	text-decoration: none;
@@ -285,11 +292,29 @@ footer h4 {
 
 .sponsors {
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.bovenSponsors {
+	margin-top: 50px;
+	flex: 1;
+}
+
+.onderSponsors {
+	flex: 1;
 }
 
 .sponsors img {
-	margin: 20px;
-	width: 250px;
+	margin-bottom: 20px;
+}
+
+.caritas {
+	max-width: 120px;
+}
+
+.cocom {
+	max-width: 200px;
 }
 
 .contactInfo {
