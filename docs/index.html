@@ -88,42 +88,73 @@
 
 		<main>
 			<section>
-				<span id="title-part-1">HUIS</span>
-				<span id="title-part-2">VAN</span>
-				<span id="title-part-3"
-					><span>V</span><span>r</span><span>e</span><span>d</span
-					><span>e</span></span
-				>
-				<p class="flipped-text isHovered">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-					consequatur omnis ducimus temporibus, commodi nemo obcaecati...
-				</p>
+				<div id="title">
+					<span id="title-part-1">HUIS</span><br />
+					<span id="title-part-2">VAN</span><br />
+					<span id="title-part-3"
+						><span>V</span><span>r</span><span>e</span><span>d</span
+						><span>e</span></span
+					>
+				</div>
 				<img
-					class="background-splotch flipped"
-					src="./assets/home-bike-flipped.png"
+					id="background-splotch"
+					src="./assets/home-background-splotch.png"
 					alt="#"
 				/>
+				<img id="background-fishes" src="./assets/home-fishes.png" alt="#" />
+				<div id="photo1">
+					<img class="background-tape" src="./assets/tape.png" alt="#" />
+					<img
+						class="background-photo-frame"
+						src="./assets/photo-full-frame-medium.png"
+						alt="#"
+					/>
+					<img id="background-bike" src="./assets/home-bike.png" alt="#" />
+					<p class="flipped-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+						consequatur omnis ducimus temporibus, commodi nemo obcaecati...
+					</p>
+				</div>
+				<div id="photo2">
+					<img class="background-tape" src="./assets/tape.png" alt="#" />
+					<img
+						class="background-photo-frame"
+						src="./assets/photo-full-frame-large.png"
+						alt="#"
+					/>
+					<img
+						id="background-interior"
+						src="./assets/home-interior-photo.png"
+						alt="#"
+					/>
+					<p class="flipped-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+						consequatur omnis ducimus temporibus, commodi nemo obcaecati...
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+						consequatur omnis ducimus temporibus, commodi nemo obcaecati...
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+						consequatur omnis ducimus temporibus, commodi nemo obcaecati...
+					</p>
+				</div>
 				<img
-					class="background-splotch normal"
-					src="./assets/home-bike.png"
-					alt="#"
-				/>
-				<img id="home-photo" src="./assets/home-photo.png" alt="#" />
-				<img
-					id="illustration-house"
+					id="background-illustration-house"
 					src="./assets/home-illustration-house.png"
 					alt="#"
 				/>
-				<img id="box-arrow" src="./assets/home-box-arrow.png" alt="#" />
-				<img id="plant" src="./assets/home-plant.png" alt="#" />
+				<img
+					id="background-box-arrow"
+					src="./assets/home-box-arrow.png"
+					alt="#"
+				/>
+				<img id="background-plant" src="./assets/home-plant.png" alt="#" />
 				<p id="quote">
 					“Om mensen zelfstandig en menswaardig te laten wonen en het gevoel van
 					verbondenheid te creëeren.”<br />
 					<span>- Medewerker</span>
 				</p>
-				<a href="./support.html" id="home-page-btn" class="btn-primary"
-					>STEUN ONS</a
-				>
+				<a href="./support.html" id="home-page-btn" class="btn-primary">
+					STEUN ONS
+				</a>
 			</section>
 		</main>
 
@@ -161,28 +192,6 @@
 		</footer>
 
 		<script>
-			const splotchNormal = document.querySelector(".normal");
-			const splotchFlipped = document.querySelector(".flipped");
-			const textFlipped = document.querySelector(".flipped-text");
-
-			textFlipped.addEventListener("mouseover", () => {
-				splotchNormal.classList.add("isHovered");
-				splotchFlipped.classList.remove("isHovered");
-				textFlipped.classList.remove("isHovered");
-			});
-
-			splotchNormal.addEventListener("mouseover", () => {
-				splotchNormal.classList.add("isHovered");
-				splotchFlipped.classList.remove("isHovered");
-				textFlipped.classList.remove("isHovered");
-			});
-
-			splotchNormal.addEventListener("mouseout", () => {
-				splotchNormal.classList.remove("isHovered");
-				splotchFlipped.classList.add("isHovered");
-				textFlipped.classList.add("isHovered");
-			});
-
 			function openNavList() {
 				const anchorList = document.querySelector("nav#mobile ul");
 				if (anchorList.style.display === "block") {
