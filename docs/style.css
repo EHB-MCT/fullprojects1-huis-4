@@ -305,7 +305,6 @@ footer h4 {
 	nav#mobile {
 		display: flex;
 		position: relative;
-		z-index: 1;
 	}
 
 	nav#mobile ul {
