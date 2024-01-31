@@ -297,6 +297,23 @@ footer h4 {
 }
 
 @media screen and (max-width: 768px) {
+	/*TYPO*/
+	body h2 {
+		font-size: 22pt;
+	}
+
+	body h3 {
+		font-size: 16pt;
+	}
+
+	body p {
+		font-size: 10pt;
+	}
+
+	body li {
+		font-size: 10pt;
+	}
+
 	/*NAV*/
 	nav#web {
 		display: none;
