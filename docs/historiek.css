@@ -6,6 +6,10 @@ main {
 	width: 100%;
 }
 
+.lijn_mobile {
+	display: none;
+}
+
 .eerste {
 	position: absolute;
 	top: 13%;
@@ -93,4 +97,180 @@ main {
 
 h4 {
 	font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+	.lijn {
+		width: 122%;
+		margin-left: -20%;
+	}
+
+	.openBoek {
+		top: -1%;
+		right: 2%;
+		width: 40%;
+	}
+
+	.paard {
+		top: 46%;
+		left: 28%;
+	}
+
+	.eerste {
+		top: 10%;
+		left: 13%;
+	}
+
+	.ontstaan {
+		top: 14%;
+		left: 13%;
+	}
+
+	.tweede {
+		top: 30%;
+		left: 15%;
+	}
+
+	.begeleidingsaanbod {
+		top: 34%;
+		left: 15%;
+	}
+
+	.derde {
+		top: 30%;
+		right: 41%;
+	}
+
+	.werking {
+		top: 15%;
+	}
+
+	.vierde {
+		top: 31%;
+		right: 20%;
+	}
+
+	.centrum {
+		top: 37%;
+		right: 6%;
+	}
+
+	.vijfde {
+		top: 69%;
+		right: 52%;
+	}
+
+	.samenwerking {
+		top: 74%;
+		right: 17.5%;
+	}
+
+	.zesde {
+		top: 69%;
+		right: 83%;
+	}
+
+	.autonomie {
+		top: 55%;
+		left: 10%;
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	main {
+		width: 80%;
+	}
+
+	.lijn {
+		display: none;
+	}
+
+	.lijn_mobile {
+		display: block;
+		margin-bottom: 50%;
+	}
+
+	.openBoek {
+		top: 88%;
+		right: 50%;
+		width: 53%;
+	}
+
+	.paard {
+		top: 1%;
+		left: 64%;
+		width: 35%;
+	}
+
+	.eerste {
+		top: 6%;
+		left: 12%;
+	}
+
+	.ontstaan {
+		top: 10%;
+		left: 12%;
+	}
+
+	.tweede {
+		top: 22%;
+		left: 71%;
+	}
+
+	.begeleidingsaanbod {
+		top: 27%;
+		left: 33%;
+	}
+
+	.derde {
+		top: 36%;
+		right: 77%;
+	}
+
+	.werking {
+		top: 39%;
+		right: 30%;
+	}
+
+	.vierde {
+		top: 49%;
+		right: 6%;
+	}
+
+	.centrum {
+		width: 70%;
+		top: 55%;
+		right: -3%;
+	}
+
+	.centrum h4,
+	.centrum p {
+		margin: 0;
+	}
+
+	.centrum p {
+		font-size: 8pt;
+	}
+
+	.vijfde {
+		top: 63%;
+		right: 83%;
+	}
+
+	.samenwerking {
+		top: 66%;
+		right: 13.5%;
+	}
+
+	.zesde {
+		top: 80%;
+		right: 42%;
+	}
+
+	.autonomie {
+		top: 84%;
+		left: 42%;
+		width: 60%;
+	}
 }
