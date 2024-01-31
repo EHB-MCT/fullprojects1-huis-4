@@ -35,4 +35,7 @@
 	.AanbodFlex {
 		flex-wrap: wrap;
 	}
+	.AanbodText {
+		margin-top: 0px;
+	}
 }
