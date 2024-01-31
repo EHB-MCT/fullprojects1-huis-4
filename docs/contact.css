@@ -21,7 +21,7 @@
 }
 
 .nummer {
-	width: 600px;
+	width: 350px;
 }
 
 .adres {
@@ -43,7 +43,7 @@
 
 .GSM {
 	width: 700px;
-	margin-left: 160px;
+	margin-left: 16px;
 }
 
 @media screen and (max-width: 768px) {

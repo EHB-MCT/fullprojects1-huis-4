@@ -292,11 +292,29 @@ footer h4 {
 
 .sponsors {
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.bovenSponsors {
+	margin-top: 50px;
+	flex: 1;
+}
+
+.onderSponsors {
+	flex: 1;
 }
 
 .sponsors img {
-	margin: 20px;
-	width: 250px;
+	margin-bottom: 20px;
+}
+
+.caritas {
+	max-width: 120px;
+}
+
+.cocom {
+	max-width: 200px;
 }
 
 .contactInfo {
