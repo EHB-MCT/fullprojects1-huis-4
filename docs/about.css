@@ -153,6 +153,33 @@ section img {
 	}
 }
 
+@media screen and (max-width: 425px) {
+	section img {
+		&#background-bike {
+			left: 10%;
+			top: 5%;
+			transform: scale(0.2);
+			z-index: 4;
+		}
+
+		&#background-cutout {
+			left: -30%;
+			top: 10%;
+			transform: scale(0.3);
+		}
+	}
+
+	section {
+		#photo {
+			left: 52%;
+			top: 8%;
+			transform: scale(0.3) rotate(4.73deg);
+		}
+
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	section img {
 		&#background-splotch {
@@ -160,16 +187,16 @@ section img {
 		}
 
 		&#background-bike {
-			left: -20%;
+			left: 27%;
 			top: 30%;
-			transform: scale(0.4);
+			transform: scale(0.5);
 			z-index: 4;
 		}
 
 		&#background-cutout {
-			left: -100%;
-			top: 30%;
-			transform: scale(0.4);
+			left: 0%;
+			top: 40%;
+			transform: scale(0.5);
 		}
 
 		&#background-tape {
@@ -184,51 +211,40 @@ section img {
 		}
 
 		&#single-line {
-			transform: scale(0.4) rotate(220deg);
-			left: -390%;
-			top: -80%;
-			z-index: -1;
+			display: none;
 		}
 
 		&#house-illustration {
 			transform: scale(0.5);
-			left: 140%;
-			top: 100%;
+			left: 90%;
+			top: 80%;
 		}
 
 		&#heart-illustration {
 			transform: scale(0.5);
-			left: 194%;
+			left: 80%;
 			top: 0%;
 		}
 	}
 
 	section {
 		#photo {
-			left: 93%;
-			top: 20%;
-			transform: scale(0.5) rotate(-4.73deg);
+			left: 52%;
+			top: 40%;
+			transform: scale(0.5) rotate(4.73deg);
 		}
+
+		width: 100%;
 	}
 
 	.VisieEnMissie {
 		position: relative;
 	}
 
-	.VisieEnMissie h2 {
-		margin-left: -170%;
-	}
-
-	.VisieEnMissie p {
-		margin-left: -170%;
-	}
-
-	.Werking {
-		position: relative;
-	}
-
-	.Werking h2 {
-		padding-right: 50%;
-		margin-right: 50%;
+	main {
+		> :nth-child(2) {
+			margin-left: 0;
+			margin-top: 32%;
+		}
 	}
 }
