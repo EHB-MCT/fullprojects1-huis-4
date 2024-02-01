@@ -73,9 +73,8 @@ section img {
 	}
 
 	&#background-cutout {
-		left: 10%;
-		top: 70%;
-		transform: scale(0.5);
+		left: 48%;
+		top: 60%;
 	}
 
 	&#background-bike {
@@ -145,7 +144,6 @@ section img {
 	}
 }
 
-/* For mobile phones: */
 @media screen and (max-width: 426px) {
 	main {
 		> * {
