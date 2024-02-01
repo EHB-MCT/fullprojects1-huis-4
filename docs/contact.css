@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+main {
+	padding-bottom: 10px;
+}
+
+.mail {
+	margin-top: 90px;
+}
+
+>>>>>>> 2eb9323a400323fc59a67c9bd8dd60b348fbd459
 .M {
 	margin-bottom: 10px;
 }
@@ -40,15 +51,11 @@
 
 .GSM {
 	width: 700px;
-	margin-left: 16px;
+	object-fit: contain;
+	margin-top: -10%;
 }
 
 @media screen and (max-width: 1280px) {
-	main {
-		margin-left: 40pt;
-		width: 90%;
-	}
-
 	.GSM {
 		width: 50%;
 	}
@@ -82,7 +89,8 @@
 
 	.GSM {
 		width: 50%;
-		margin-left: 0px;
+		margin-left: 25%;
+		margin-top: -6%;
 	}
 
 	.nummer {
@@ -128,5 +136,14 @@
 
 	.map {
 		width: 75%;
+	}
+	main {
+		> * {
+			padding: 0 10pt;
+		}
+	}
+
+	.adres {
+		margin-left: 0px;
 	}
 }
