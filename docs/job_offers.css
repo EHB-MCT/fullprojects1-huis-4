@@ -23,10 +23,6 @@
 	object-fit: contain;
 }
 
-.links {
-	margin-left: 7%;
-}
-
 .rechts {
 	display: flex;
 	margin-left: 5%;
@@ -226,7 +222,7 @@
 }
 
 .schilderij {
-	width: 400px;
+	width: 350px;
 	margin-left: 250px;
 }
 
@@ -259,8 +255,8 @@
 
 .AanbodText {
 	flex: 1;
-	margin-top: -100px;
-	margin-left: 75px;
+	margin-top: -50px;
+	margin-left: 150px;
 }
 
 .Aanbodleeg {
