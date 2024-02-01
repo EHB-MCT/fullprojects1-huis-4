@@ -18,6 +18,11 @@ main {
 	max-width: 45%;
 }
 
+.vet {
+	font-weight: bold;
+	color: #84a86e;
+}
+
 @media screen and (max-width: 768px) {
 	nav {
 		display: none;
