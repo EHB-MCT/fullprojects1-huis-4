@@ -313,12 +313,16 @@ footer h4 {
 	margin-bottom: 20px;
 }
 
+.febi {
+	max-width: 120px;
+}
+
 .caritas {
 	max-width: 120px;
 }
 
 .cocom {
-	max-width: 200px;
+	max-width: 235px;
 }
 
 .contactInfo {
