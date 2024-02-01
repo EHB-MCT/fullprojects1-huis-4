@@ -18,6 +18,10 @@ main {
 	max-width: 45%;
 }
 
+.vet {
+	color: #84a86e;
+}
+
 @media screen and (max-width: 908px) {
 	.wrapper img {
 		width: 90%;
