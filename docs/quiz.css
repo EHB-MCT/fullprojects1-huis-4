@@ -14,9 +14,9 @@ legend {
 .no-highlight {
 	background-color: transparent !important;
 }
-#correctHighlight {
+.correctHighlight {
 	background-color: lightgreen;
 }
-#wrongHighlight {
+.wrongHighlight {
 	background-color: rgba(255, 0, 0, 0.6);
 }
