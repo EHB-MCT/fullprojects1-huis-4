@@ -36,3 +36,7 @@ button:hover {
 .wrongHighlight {
 	background-color: rgba(255, 0, 0, 0.6);
 }
+#quizForm {
+	margin: auto;
+	width: 20%;
+}

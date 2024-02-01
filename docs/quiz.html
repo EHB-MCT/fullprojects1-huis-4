@@ -90,7 +90,7 @@
 			</fieldset>
 
             <button type="button" onclick="nextQuestion()" id="nextQ">Next question</button>
-			<button type="button" onclick="submitQuiz()" id="submitQ">Submit answers</button>
+			<button type="button" onclick="submitQuiz()" id="submitQ">Go back</button>
 		</form>
 
 		<script>
@@ -237,6 +237,9 @@
                 var nextButton = document.getElementById('nextQ');
   nextButton.style.display = 'inline';
   submitButton.style.display = 'none';
+  /////////////////////////////
+  var targetPage = 'about.html';
+window.location.href = targetPage;
 			}
 
 			function updateQuestions() {
