@@ -416,3 +416,47 @@ footer h4 {
 		flex-direction: column-reverse;
 	}
 }
+
+fieldset {
+	padding: 20px;
+	margin: 10px 0;
+	background-color: white;
+	width: 50%;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	box-shadow: 4px 5px 32px -25px rgba(0, 0, 0, 0.75);
+}
+
+legend {
+	font-size: 30px;
+	color: #84a86e;
+	font-weight: medium;
+}
+
+button {
+	font-family: "Avenir Next";
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: white;
+	border: 4px solid #97b287;
+	padding: 15px 25px;
+}
+
+button:hover {
+	background-color: #97b287;
+}
+.no-highlight {
+	background-color: transparent !important;
+}
+.correctHighlight {
+	background-color: lightgreen;
+}
+.wrongHighlight {
+	background-color: rgba(255, 0, 0, 0.6);
+}
+#quizForm {
+	width: 20%;
+	margin: 8%;
+	padding-bottom: 26%;
+}
