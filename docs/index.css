@@ -12,264 +12,256 @@
 
 main {
 	position: relative;
-	padding: 0 48pt;
-	min-height: 100vh;
 	display: flex;
 	align-content: center;
 	justify-content: center;
-
-	background-image: url(./assets/about-us-street-cutout.png);
-	background-repeat: no-repeat;
-	background-size: 145%;
-	background-position-x: -320px;
-	background-position-y: -400%;
+	overflow: hidden;
+	min-height: 75vh;
+	margin: 0;
 }
 
 section {
 	position: relative;
 	width: 100%;
 	max-width: 1152px; /* Magic numbers are bad practice, sorry */
+	max-height: 869.6px;
 
 	p {
 		transition: opacity 1s ease;
 	}
-}
 
-section img {
-	position: absolute;
-	user-select: none;
-	transition: opacity 1s ease;
-
-	&#background-fishes {
-		left: 98%;
-		top: 41%;
-	}
-
-	&#background-splotch {
-		left: -25%;
-		top: 6%;
-	}
-
-	&#background-fishes {
-		left: 13%;
-		top: 22%;
-	}
-	&.background-photo-frame {
-		position: relative;
-		box-shadow: 8px 8px 10px;
-	}
-
-	&#background-bike {
-		left: 2.5%;
-		top: 2%;
-	}
-
-	&#background-interior {
-		left: 1.5%;
-		top: 1.5%;
-	}
-
-	&#background-illustration-house {
-		left: 66%;
-		top: 10%;
-	}
-
-	&#background-box-arrow {
-		left: 11%;
-		top: 35%;
-	}
-
-	&#background-plant {
-		left: 97%;
-		top: 36%;
-	}
-}
-
-section #title {
-	position: relative;
-	width: fit-content;
-	user-select: none;
-	color: #584e18;
-	margin-left: 4%;
-	margin-top: 63px;
-
-	#title-part-1 {
-		font-family: "Avenir Next Ultralight";
-		font-size: 103.52pt;
-		margin-left: 6%;
-		margin-top: 7%;
-	}
-	
-	#title-part-2 {
+	img {
 		position: absolute;
-		top: 29%;
-		font-family: "Avenir Next Bold";
-		font-size: 57.35pt;
-		margin-left: 38%;
-	}
-	
-	#title-part-3 {
-		display: flex;
-		font-family: "Brush Script MT";
-		font-size: 199.42pt;
-		-webkit-text-fill-color: transparent;
-		-webkit-text-stroke: 4pt #584e18;
-		margin-left: 73%;
-		margin-top: -17%;
-	
-		> *:nth-child(even) {
-			top: 20px;
-			position: relative;
-			padding: 0 5px 0 5px;
-		}
-	
-		> *:not(:nth-child(1)):nth-child(odd) {
-			top: -30px;
-			position: relative;
-			padding: 0 2px 0 2px;
-		}
-	}
-}
-
-section #photo1 {
-	position: absolute;
-	left: -5%;
-	top: 15%;
-	display: flex;
-	transform: rotate(-4.73deg);
-	/* min-width: 228.703px;
-	min-height: 323.773px; */
-
-	*:not(.background-photo-frame) {
-		position: absolute;
-	}
-
-	.background-tape {
-		transform: scale(0.2) rotate(-20.73deg);
-		left: -129%;
-		top: -89%;
-		z-index: 1;
-	}
-
-	img#background-splotch {
-		left: -118%;
-		top: -48%;
-		transform: rotate(6deg);
-	}
-}
-
-section #photo2 {
-	position: absolute;
-	left: 78%;
-	top: 11%;
-	display: flex;
-	transform: rotate(2.73deg);
-
-	*:not(.background-photo-frame) {
-		position: absolute;
-	}
-
-	.background-tape {
-		transform: scale(0.2) rotate(-30deg);
-		left: -74%;
-		top: -50%;
-		z-index: 1;
-	}
-}
-
-section #photo1:hover {
-	.background-tape {
-		animation: animateTape1 1s;
-		animation-fill-mode: forwards;
-	}
-
-	.background-photo-frame {
-		animation: animateScale 1s;
-		animation-fill-mode: forwards;
-	}
-
-	#quote-flipped-left {
-		user-select: initial;
-		opacity: 1;
-		animation: animateScale 1s;
-		animation-fill-mode: forwards;
-	}
-
-	#background-bike {
-		opacity: 0;
-		animation: animateScale 1s;
-		animation-fill-mode: forwards;
-	}
-}
-
-section #photo2:hover {
-	.background-tape {
-		animation: animateTape2 1s;
-		animation-fill-mode: forwards;
-	}
-
-	.background-photo-frame {
-		animation: animateScale 1s;
-		animation-fill-mode: forwards;
-	}
-
-	#quote-flipped-right {
-		user-select: initial;
-		opacity: 1;
-		animation: animateScale 1s;
-		animation-fill-mode: forwards;
-	}
-
-	#background-interior {
-		opacity: 0;
-		animation: animateScale 1s;
-		animation-fill-mode: forwards;
-	}
-}
-
-section .quote {
-	&#quote-flipped-left,
-	&#quote-flipped-right {
-		opacity: 0;
 		user-select: none;
-		z-index: 1;
+		transition: opacity 1s ease;
+	
+		&#background-splotch {
+			left: -13%;
+			top: 6%;
+		}
+	
+		&#background-fishes {
+			left: 29%;
+			top: 36.5%;
+		}
+		&.background-photo-frame {
+			position: relative;
+			box-shadow: 8px 8px 10px;
+		}
+	
+		&#background-bike {
+			left: 2.5%;
+			top: 2%;
+		}
+	
+		&#background-boat {
+			left: 4%;
+			top: 3%;
+		}
+
+		&#background-interior {
+			left: 2.5%;
+    		top: 1.5%;
+		}
+	
+		&#background-illustration-house {
+			left: 96%;
+			top: 6%;
+			transform: rotate(-5deg);
+		}
+	
+		&#background-box-arrow {
+			left: 62%;
+			top: 57%;
+		}
+	
+		&#background-plant {
+			left: 82%;
+			top: 38%;
+		}
 	}
 
-	&#quote-flipped-left {
-		width: 150pt;
-		left: 5%;
-		top: 2%;
+	#title {
+		position: absolute;
+		width: fit-content;
+		user-select: none;
+		color: #584e18;
+		margin-left: 25%;
+		margin-top: 90px;
+	
+		#title-part-1 {
+			font-family: "Avenir Next Ultralight";
+			font-size: 103.52pt;
+			margin-left: 6%;
+			margin-top: 7%;
+		}
+		
+		#title-part-2 {
+			position: absolute;
+			top: 60%;
+			font-family: "Avenir Next Bold";
+			font-size: 57.35pt;
+      		margin-left: 55%;
+		}
+		
+		#title-part-3 {
+			margin-left: 94%;
+			margin-top: -4%;
+		}
 	}
 
-	&#quote-flipped-right {
-		width: 225pt;
-		left: 8%;
-		top: 3%;
+	.quote {
+		&#quote-flipped-left,
+		&#quote-flipped-right {
+			opacity: 0;
+			user-select: none;
+			z-index: 1;
+		}
+	
+		&#quote-flipped-left {
+			width: 150pt;
+			left: 5%;
+			top: 2%;
+		}
+	
+		&#quote-flipped-right {
+			width: 130pt;
+			left: 8%;
+			top: 3%;
+		}
+	
+		&#quote-middle {
+			margin-left: 14%;
+			margin-top: 50%;
+		}
+	
+		span {
+			font-family: Arial;
+			font-style: normal;
+			color: #84a86e;
+		}
 	}
 
-	&#quote-bottom {
-		width: 300pt;
-		margin-left: 75%;
-		margin-top: 77%;
-		margin-bottom: 50px;
-	}
+	.background-element {
+		position: absolute;
+		width: calc(100% - 120pt);
+		height: 100%;
 
-	span {
-		font-family: Arial;
-		font-style: normal;
-		color: #84a86e;
+		#photo1 {
+			position: absolute;
+			left: 5.5%;
+			top: 19%;
+			display: flex;
+			transform: rotate(-2deg);
+			z-index: 1;
+		
+			*:not(.background-photo-frame, br, span) {
+				position: absolute;
+			}
+		
+			.background-tape {
+				transform: scale(0.2) rotate(-28deg);
+				left: -100%;
+				top: -73%;
+				z-index: 1;
+			}
+		
+			img#background-splotch {
+				left: -118%;
+				top: -48%;
+				transform: rotate(6deg);
+			}
+
+			&:hover {
+				.background-tape {
+					animation: animateTape1 1s;
+					animation-fill-mode: forwards;
+				}
+			
+				.background-photo-frame {
+					animation: animateScale 1s;
+					animation-fill-mode: forwards;
+				}
+			
+				#quote-flipped-left {
+					user-select: initial;
+					opacity: 1;
+					animation: animateScale 1s;
+					animation-fill-mode: forwards;
+				}
+			
+				#background-interior {
+					opacity: 0;
+					animation: animateScale 1s;
+					animation-fill-mode: forwards;
+				}
+			}
+		}
+
+		#photo2 {
+			position: absolute;
+			left: 77%;
+			top: 13%;
+			display: flex;
+			transform: rotate(2deg);
+			z-index: 1;
+		
+			*:not(.background-photo-frame, br, span) {
+				position: absolute;
+			}
+		
+			.background-tape {
+				transform: scale(0.2) rotate(-20deg);
+				left: -127%;
+				top: -114%;
+				z-index: 1;
+			}
+
+			&:hover {
+				.background-tape {
+					animation: animateTape2 1s;
+					animation-fill-mode: forwards;
+				}
+			
+				.background-photo-frame {
+					animation: animateScale 1s;
+					animation-fill-mode: forwards;
+				}
+			
+				#quote-flipped-right {
+					user-select: initial;
+					opacity: 1;
+					animation: animateScale 1s;
+					animation-fill-mode: forwards;
+				}
+			
+				#background-boat {
+					opacity: 0;
+					animation: animateScale 1s;
+					animation-fill-mode: forwards;
+				}
+			}
+		}
 	}
 }
 
-section #home-page-btn {
+img#street-cutout {
 	position: absolute;
-	white-space: nowrap;
-	top: 44%;
-	left: 43%;
+	left: -1%;
+	top: 69%;
+	z-index: -1;
+	transform: scale(1.35);
 }
 
 .btn-primary {
 	margin: 0 0 34px 50px;
+
+	&#home-page-btn {
+		position: absolute;
+		white-space: nowrap;
+		top: 73%;
+		left: 85%;
+	}
 }
 
 @keyframes animateScale {
@@ -283,28 +275,28 @@ section #home-page-btn {
 
 @keyframes animateTape1 {
 	50% {
-		top: -95%;
-		transform: scale(0.25) rotate(-20.73deg);
+		top: -80%;
+		transform: scale(0.25) rotate(-28deg);
 		animation-play-state: paused;
 	}
 	to {
-		transform: scale(0.2) rotate(-20.73deg);
+		transform: scale(0.2) rotate(-28deg);
 	}
 }
 
 @keyframes animateTape2 {
 	50% {
-		top: -55%;
-		transform: scale(0.25) rotate(-30deg);
+		top: -120%;
+		transform: scale(0.25) rotate(-20deg);
 		animation-play-state: paused;
 	}
 	to {
-		transform: scale(0.2) rotate(-30deg);
+		transform: scale(0.2) rotate(-20deg);
 	}
 }
 
 /* For mobile phones: */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 426px) {
 	#title-part-1 {
 		font-size: 51pt;
 		left: -16%;
@@ -372,58 +364,5 @@ section #home-page-btn {
 	}
 }
 
-/* */
-@media screen and (max-width: 768px) {
-	#title-part-1 {
-		font-size: 70pt;
-		left: 2%;
-		top: 1%;
-	}
-
-	#title-part-2 {
-		font-size: 40pt;
-		left: 17%;
-		top: 13%;
-	}
-
-	#title-part-3 {
-		font-size: 120pt;
-		left: 44%;
-		top: 13%;
-	}
-
-	section img.background-splotch {
-		top: 15%;
-		left: -18%;
-		width: 70%;
-	}
-
-	section img#home-photo {
-		left: 60%;
-		top: 34%;
-	}
-
-	#quote {
-		width: 227pt;
-		left: 6%;
-		top: 64%;
-	}
-
-	#home-page-btn {
-		top: 100%;
-		left: 69%;
-	}
-
-	section img#box-arrow {
-		left: 9%;
-		top: 84%;
-	}
-}
-
-/* For tablets: */
-@media only screen and (min-width: 768px) {
-}
-
-/* For desktop: */
-@media only screen and (min-width: 1200px) {
-}
+/* No less than 427px, no greater than 768px */
+@media (min-width: 427px) and (max-width: 768px) {}
