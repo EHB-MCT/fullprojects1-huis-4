@@ -53,9 +53,6 @@ main {
 }
 
 @media screen and (max-width: 1280px) {
-	main {
-	}
-
 	.GSM {
 		width: 50%;
 	}

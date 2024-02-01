@@ -1,11 +1,7 @@
-.titel {
-	margin-left: 10%;
-}
-
 .jaarverslagen,
 .nieuwsbrieven {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	margin-bottom: 7%;
 }
 
@@ -78,7 +74,13 @@ main {
 		width: 100%;
 	}
 
-	.btn-primary{
+	main {
+		> * {
+			padding: 0 10pt;
+		}
+	}
+
+	.btn-primary {
 		font-size: 10pt;
 	}
 }
