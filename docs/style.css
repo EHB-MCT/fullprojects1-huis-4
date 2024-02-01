@@ -241,12 +241,16 @@ nav a#icon {
 
 /* MAIN */
 main {
+	width: 100%;
 	max-width: 1280px;
 	min-height: 60vh;
-	padding: 0 100pt;
 	margin: 0 0 auto 0;
 	justify-self: center;
 	align-self: center;
+
+	>* {
+		padding: 0 60pt;
+	}
 }
 
 /*FOOTER*/
