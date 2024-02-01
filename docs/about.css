@@ -235,6 +235,12 @@ section img {
 	}
 }
 
+.quiz {
+	margin-top: 70px;
+	display: flex;
+	justify-content: center;
+}
+
 /* No less than 427px, no greater than 768px */
 @media (min-width: 427px) and (max-width: 768px) {
 	main {
