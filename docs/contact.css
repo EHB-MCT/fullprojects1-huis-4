@@ -55,6 +55,8 @@ main {
 @media screen and (max-width: 1280px) {
 	.GSM {
 		width: 50%;
+		margin-left: 25%;
+		margin-top: -6%;
 	}
 
 	.nummer {
@@ -86,7 +88,7 @@ main {
 
 	.GSM {
 		width: 50%;
-		margin-left: 25%;
+		margin-left: 15%;
 		margin-top: -6%;
 	}
 
@@ -128,7 +130,7 @@ main {
 	}
 
 	main {
-		margin-left: 20pt;
+		margin-left: 0pt;
 	}
 
 	.map {
@@ -142,5 +144,9 @@ main {
 
 	.adres {
 		margin-left: 0px;
+	}
+
+	.MapAdres {
+		padding-left: 10pt;
 	}
 }
