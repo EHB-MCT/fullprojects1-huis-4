@@ -27,7 +27,7 @@ section {
 
 	#photo {
 		position: absolute;
-		left: 120%;
+		left: 110%;
 		top: 70%;
 		display: flex;
 		transform: rotate(-4.73deg);
@@ -187,7 +187,7 @@ section img {
 		&#background-splotch {
 			transform: scale(0.25);
 			position: absolute;
-			left: -74%;
+			left: -59%;
 			top: -30%;
 		}
 
@@ -241,8 +241,20 @@ section img {
 	justify-content: center;
 }
 
+@media screen (min-width: 769px) and (max-width: 1024px) {
+	section img {
+		&#background-splotch {
+			transform: scale(0.8);
+		}
+	}
+}
+
 /* No less than 427px, no greater than 768px */
 @media (min-width: 427px) and (max-width: 768px) {
+	.emailAdres {
+		margin-left: -10%;
+	}
+
 	main {
 		> :nth-child(1) {
 			width: 60%;
@@ -294,30 +306,33 @@ section img {
 	}
 
 	section img {
+		position: absolute;
+
 		&#background-splotch {
-			transform: scale(0.45);
+			transform: scale(0.5);
 			position: absolute;
-			top: -28%;
-			left: revert-layer;
+			top: 28%;
+			width: 100%;
+			left: -4%;
 		}
 
 		&#background-bike {
-			left: 44%;
+			left: 18%;
 			top: -21%;
-			transform: scale(0.5);
+			transform: scale(0.4);
 			z-index: 4;
 		}
 
 		&#background-cutout {
-			left: 9%;
+			left: -13%;
 			top: -13%;
 			transform: scale(0.5);
 		}
 
 		&#background-tape {
-			transform: scale(0.4) rotate(30deg);
-			left: -25%;
-			top: -65%;
+			transform: scale(0.2) rotate(-30deg);
+			left: -102%;
+			top: -66%;
 			z-index: 3;
 		}
 
@@ -343,12 +358,11 @@ section img {
 			top: 97%;
 		}
 	}
-}
 
-@media screen and (max-width: 480px) {
-	main {
-		> * {
-			padding: 0 10;
+	section {
+		#photo {
+			transform: scale(0.4) rotate(10deg);
+			left: 45%;
 		}
 	}
 }
