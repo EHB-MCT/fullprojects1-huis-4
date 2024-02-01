@@ -100,6 +100,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	user-select: none;
+	white-space: nowrap;
 }
 
 nav img {
