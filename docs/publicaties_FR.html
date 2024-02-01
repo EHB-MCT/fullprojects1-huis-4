@@ -72,10 +72,10 @@
 				<a href="./index_FR.html">ACCEUIL</a>
 				<a href="./about_FR.html">A PROPOS DE NOUS</a>
 				<a href="./historiek_FR.html">HISTORIQUE</a>
-				<a class="current" href="./publicaties_FR.html#nieuwsbrieven">
+				<a id="nieuwsbrievenLink" class="current" href="./publicaties_FR.html#nieuwsbrieven">
 					BULLETINS D'INFORMATION
 				</a>
-				<a class="current" href="./publicaties_FR.html#jaarverslagen">
+				<a id="jaarverslagenLink" class="current" href="./publicaties_FR.html#jaarverslagen">
 					RAPPORT ANNUEL
 				</a>
 				<a href="./support_FR.html">SOUTENEZ-NOUS</a>
@@ -92,7 +92,7 @@
 		</nav>
 
 		<main>
-			<h3 class="titel"><span>B</span>ulletins d'information</h3>
+			<h3 id="nieuwsbrieven" class="titel"><span>B</span>ulletins d'information</h3>
 			<div class="nieuwsbrieven">
 				<div class="container_jaarverslag">
 					<div class="nieuwsbrief">
@@ -201,7 +201,7 @@
 					<img class="boeken" src="./assets/foto_nieuwsbrieven.png" alt="" />
 				</div>
 			</div>
-			<h3 class="titel"><span>R</span>apport annuel</h3>
+			<h3 id="jaarverslagen" class="titel"><span>R</span>apport annuel</h3>
 			<div class="jaarverslagen">
 				<div class="container_jaarverslag">
 					<div class="jaarverslag">
@@ -298,8 +298,8 @@
 		</footer>
 
 		<script>
+			const anchorList = document.querySelector("nav#mobile ul");
 			function openNavList() {
-				const anchorList = document.querySelector("nav#mobile ul");
 				if (anchorList.style.display === "block") {
 					anchorList.style.display = "none";
 					document.querySelector("#darken-page").style.display = "none";
@@ -308,6 +308,19 @@
 					document.querySelector("#darken-page").style.display = "block";
 				}
 			}
+
+			const nieuwsbrieven = document.querySelector("#nieuwsbrievenLink");
+			const jaarverslagen = document.querySelector("#jaarverslagenLink");
+
+			nieuwsbrieven.addEventListener("click", () => {
+				anchorList.style.display = "none";
+				document.getElementById("darken-page").style.display = "none";
+			});
+
+			jaarverslagen.addEventListener("click", () => {
+				anchorList.style.display = "none";
+				document.getElementById("darken-page").style.display = "none";
+			});
 		</script>
 	</body>
 </html>
