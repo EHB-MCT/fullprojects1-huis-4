@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>test quiz</title>
+		<link rel="stylesheet" href="./quiz.css" />
+	</head>
+	<body>
+		<form id="quizForm">
+			<fieldset id="1">
+				<legend>Welke definitie is juist?</legend>
+				<label>
+					<input type="radio" name="q1" value="a" /> a) Thuisloosheid erkent de
+					mensen die op straat wonen en dus geen dak boven hun hoofd hebben.
+				
+				<label>
+					<input type="radio" name="q1" value="b" /> b) Thuisloosheid uit zich
+					in het ontbreken van een vaste woonst, vast werk, bestaansmiddelen en
+					relationele verbanden, waardoor de thuisloze zich niet verder
+					zelfstandig kan handhaven.
+				</label>
+			</fieldset>
+			<fieldset id="2"> 
+				<legend>Hoeveel thuislozen zijn er in Vlaanderen?</legend>
+				<label>
+					<input type="radio" name="q2" value="a" /> a) Ongeveer 12 000 mensen.
+				<label>
+					<input type="radio" name="q2" value="b" /> b) Ongeveer 15 000 mensen
+					<label>
+						<input type="radio" name="q2" value="c" /> c) Ongeveer 19 000 mensen
+				</label>
+
+			</fieldset>
+			<fieldset id="3">
+				<legend>Hoeveel procent van thuislozen zijn kinderen?</legend>
+				<label>
+					<input type="radio" name="q3" value="a" /> a) 9 procent.
+				<label>
+					<input type="radio" name="q3" value="b" /> b) 16 procent.
+					<label>
+						<input type="radio" name="q3" value="c" /> c) 16 procent.
+				</label>
+			</fieldset>
+			<fieldset id="4">
+				<legend>Hoeveel vrijwilligers telt het Huis van Vrede?</legend>
+			<label>
+					<input type="radio" name="q4" value="a" /> a) 4
+			<label>
+					<input type="radio" name="q4" value="b" /> b) 11
+			<label>
+						<input type="radio" name="q4" value="c" /> c) 15
+				</label>
+			</fieldset>
+			<fieldset id="5">
+				<legend>Hoeveel thuislozen worden er nu begeleidt?</legend>
+				<label>
+					<input type="radio" name="q5" value="a" /> a) 69, waarvan 80 volwassenen en 35 kinderen.
+				<label>
+					<input type="radio" name="q5" value="b" /> b) 78, waarvan 86 volwassenen en 56 kinderen.
+				<label>
+						<input type="radio" name="q5" value="c" /> c) 86, waarvan 86 volwassenen en 42 kinderen.
+				</label>
+			</fieldset>
+			<fieldset id="6">
+				<legend>Naar waar is HVV deze zomer met 30 leden op vakantie gegaan?</legend>
+				<label>
+					<input type="radio" name="q6" value="a" /> a) Buret, vlak naast de grens van Luxemburg.
+				<label>
+					<input type="radio" name="q6" value="b" /> b) Aken, net over de grens in Duitsland.
+					<label>
+						<input type="radio" name="q6" value="c" /> c) Blankenberge, aan zee.
+				</label>
+			</fieldset>
+			<fieldset id="7">
+				<legend>Wat is een wekelijks vooruitzicht voor de leden van Huis van Vrede?</legend>
+				<label>
+					<input type="radio" name="q7" value="a" /> a) Elkaar tegenkomen in het huis.
+				<label>
+					<input type="radio" name="q7" value="b" /> b) Een gratis lunch op maandag.
+					<label>
+						<input type="radio" name="q7" value="c" /> c) Hun koffietje drinken aan de tafel.
+						<label>
+							<input type="radio" name="q7" value="d" /> d) Alle bovenstaande.
+				</label>
+			</fieldset>
+
+            <button type="button" onclick="nextQuestion()">Next question</button>
+			<button type="button" onclick="submitQuiz()">Submit answerss</button>
+		</form>
+
+		<script>
+            var nextCount = 0;
+			/////////////////////////disable all questions, only 1st is shown.//////////////////////////////////
+			var fieldset2 = document.getElementById("2");
+            fieldset2.style.display = "none";
+			var fieldset3 = document.getElementById("3");
+            fieldset3.style.display = "none";
+            var fieldset4 = document.getElementById("4");
+            fieldset4.style.display = "none";
+			var fieldset5 = document.getElementById("5");
+            fieldset5.style.display = "none";
+			var fieldset6 = document.getElementById("6");
+            fieldset6.style.display = "none";
+			var fieldset7 = document.getElementById("7");
+            fieldset7.style.display = "none";
+            ///////////////////////////////////////////////////////////////////////////////////
+			function nextQuestion() {
+			nextCount = nextCount + 1;
+            ///////////////////////////////////////////////
+			if(nextCount == 1) {
+			var fieldset2 = document.getElementById("2");
+            fieldset2.style.display = "initial";
+			////////////////////////////2
+			var fieldset1 = document.getElementById("1");
+			fieldset1.style.display = "none";
+				}
+				else if(nextCount == 2) {
+			var fieldset3 = document.getElementById("3"); ///Q3
+            fieldset3.style.display = "initial";
+			///////////////////////////////////
+			var fieldset1 = document.getElementById("1");
+			fieldset1.style.display = "none";
+			var fieldset2 = document.getElementById("2");
+			fieldset2.style.display = "none";
+				}
+				else if(nextCount == 3) {
+			var fieldset4 = document.getElementById("4");  //Q4
+            fieldset4.style.display = "initial";
+				///////////////////////////////////
+				var fieldset1 = document.getElementById("1");
+			fieldset1.style.display = "none";
+			var fieldset2 = document.getElementById("2");
+			fieldset2.style.display = "none";
+			var fieldset3 = document.getElementById("3");
+			fieldset3.style.display = "none";
+				}
+				else if(nextCount == 4) {
+			var fieldset5 = document.getElementById("5");  //Q5
+            fieldset5.style.display = "initial";
+				///////////////////////////////////
+				var fieldset1 = document.getElementById("1");
+			fieldset1.style.display = "none";
+			var fieldset2 = document.getElementById("2");
+			fieldset2.style.display = "none";
+			var fieldset3 = document.getElementById("3");
+			fieldset3.style.display = "none";
+			var fieldset4 = document.getElementById("4");
+			fieldset4.style.display = "none";
+				}
+				else if(nextCount == 5) {
+			var fieldset6 = document.getElementById("6");  //Q6
+            fieldset6.style.display = "initial";
+				///////////////////////////////////
+				var fieldset1 = document.getElementById("1");
+			fieldset1.style.display = "none";
+			var fieldset2 = document.getElementById("2");
+			fieldset2.style.display = "none";
+			var fieldset3 = document.getElementById("3");
+			fieldset3.style.display = "none";
+			var fieldset4 = document.getElementById("4");
+			fieldset4.style.display = "none";
+			var fieldset5 = document.getElementById("5");
+			fieldset5.style.display = "none";
+				}
+				else if(nextCount == 6) {
+			var fieldset7 = document.getElementById("7");  //Q7
+            fieldset7.style.display = "initial";
+				///////////////////////////////////
+				var fieldset1 = document.getElementById("1");
+			fieldset1.style.display = "none";
+			var fieldset2 = document.getElementById("2");
+			fieldset2.style.display = "none";
+			var fieldset3 = document.getElementById("3");
+			fieldset3.style.display = "none";
+			var fieldset4 = document.getElementById("4");
+			fieldset4.style.display = "none";
+			var fieldset5 = document.getElementById("5");
+			fieldset5.style.display = "none";
+			var fieldset6 = document.getElementById("6");
+			fieldset6.style.display = "none";
+				}
+
+				////////////////////////////////
+				else if(nextCount >= 7) {
+					nextCount = 6; //end
+				}
+			console.log(nextCount);
+			}
+			function submitQuiz() {
+				updateQuestions();
+				nextCount = 0; //reset back to 1st question
+				var correctAnswers = ["b", "c", "c", "b", "b", "a", "d"]; // Define the correct answers
+				var userAnswers = [];
+
+				// Get user-selected answers
+				for (var i = 1; i <= 7; i++) {
+					var selectedOption = document.querySelector(
+						'input[name="q' + i + '"]:checked'
+					);
+					if (selectedOption) {
+						userAnswers.push(selectedOption.value);
+					} else {
+						userAnswers.push(null); // Mark unanswered questions
+					}
+				}
+
+				// Check answers and provide feedback
+				var score = 0;
+				var feedback = "Resultaten:\n";
+				for (var i = 0; i < correctAnswers.length; i++) {
+					feedback += "Vraag " + (i + 1) + ": ";
+					if (userAnswers[i] === correctAnswers[i]) {
+						feedback += "Correct\n";
+						score++;
+					} else {
+						feedback += "Incorrect\n";
+					}
+				}
+
+				feedback +=
+					"\nAantal vragen juist: " + score + " van de " + correctAnswers.length;
+
+				console.log(feedback);
+			}
+
+			function updateQuestions() {
+			var fieldset1 = document.getElementById("1");
+			fieldset1.style.display = "initial";
+			var fieldset2 = document.getElementById("2");
+			fieldset2.style.display = "none";
+			var fieldset3 = document.getElementById("3");
+			fieldset3.style.display = "none";
+			var fieldset4 = document.getElementById("4");
+			fieldset4.style.display = "none";
+			var fieldset5 = document.getElementById("5");
+			fieldset5.style.display = "none";
+			var fieldset6 = document.getElementById("6");
+			fieldset6.style.display = "none";
+			var fieldset7 = document.getElementById("7");
+			fieldset7.style.display = "none";
+			}
+		</script>
+	</body>
+</html>
