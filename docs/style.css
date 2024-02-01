@@ -333,6 +333,10 @@ footer h4 {
 	margin-top: 3px;
 }
 
+.tracé {
+	width: 2px;
+}
+
 @media screen and (max-width: 768px) {
 	/*PADDING*/
 	main {
