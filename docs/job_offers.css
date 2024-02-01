@@ -222,7 +222,7 @@
 }
 
 .schilderij {
-	width: 400px;
+	width: 350px;
 	margin-left: 250px;
 }
 
@@ -255,8 +255,8 @@
 
 .AanbodText {
 	flex: 1;
-	margin-top: -100px;
-	margin-left: 75px;
+	margin-top: -50px;
+	margin-left: 150px;
 }
 
 .Aanbodleeg {
