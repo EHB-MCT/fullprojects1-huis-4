@@ -23,10 +23,6 @@
 	object-fit: contain;
 }
 
-.links {
-	margin-left: 7%;
-}
-
 .rechts {
 	display: flex;
 	margin-left: 5%;
@@ -34,7 +30,7 @@
 
 .rechts img {
 	margin-top: -20%;
-	width: 700px;
+	width: 120%;
 	align-self: flex-start;
 }
 
@@ -226,7 +222,7 @@
 }
 
 .schilderij {
-	width: 400px;
+	width: 350px;
 	margin-left: 250px;
 }
 
@@ -259,8 +255,8 @@
 
 .AanbodText {
 	flex: 1;
-	margin-top: -100px;
-	margin-left: 75px;
+	margin-top: -50px;
+	margin-left: 150px;
 }
 
 .Aanbodleeg {
@@ -269,6 +265,27 @@
 }
 
 /*RESPONSIVE*/
+
+@media only screen and (max-width: 1280px) {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.text {
+		margin-top: 5%;
+		margin-bottom: 0%;
+	}
+
+	main {
+		padding: 0;
+	}
+
+	.rechts img {
+		margin-top: -7%;
+		width: 100%;
+		margin-left: 14%;
+	}
+}
 
 @media screen and (max-width: 768px) {
 	/*BUTTON*/

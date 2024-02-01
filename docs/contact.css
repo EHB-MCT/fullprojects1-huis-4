@@ -1,3 +1,7 @@
+main {
+	padding-bottom: 10px;
+}
+
 .mail {
 	margin-top: 90px;
 }
@@ -12,7 +16,8 @@
 
 .MapAdres {
 	display: flex;
-	width: 100%;
+	padding: 0;
+	padding-left: 60pt;
 }
 
 .map {
@@ -21,7 +26,7 @@
 }
 
 .nummer {
-	width: 350px;
+	width: 100%;
 }
 
 .adres {
@@ -43,7 +48,21 @@
 
 .GSM {
 	width: 700px;
-	margin-left: 16px;
+	object-fit: contain;
+	margin-top: -10%;
+}
+
+@media screen and (max-width: 1280px) {
+	main {
+	}
+
+	.GSM {
+		width: 50%;
+	}
+
+	.nummer {
+		width: 75%;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -53,6 +72,7 @@
 
 	main {
 		position: relative;
+		padding: 0pt;
 	}
 
 	.mail {
@@ -69,7 +89,8 @@
 
 	.GSM {
 		width: 50%;
-		margin-left: 0px;
+		margin-left: 25%;
+		margin-top: -6%;
 	}
 
 	.nummer {
@@ -94,5 +115,35 @@
 		order: 3;
 		max-width: 250px;
 		max-height: 250px;
+		padding-right: 25px;
+	}
+
+	footer {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	body {
+		width: 100%;
+	}
+
+	main {
+		margin-left: 20pt;
+	}
+
+	.map {
+		width: 75%;
+	}
+	main {
+		> * {
+			padding: 0 10pt;
+		}
+	}
+
+	.adres {
+		margin-left: 0px;
 	}
 }
