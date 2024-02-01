@@ -44,7 +44,8 @@
 
 .GSM {
 	width: 700px;
-	margin-left: 16px;
+	object-fit: contain;
+	margin-top: -10%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -86,7 +87,8 @@
 
 	.GSM {
 		width: 50%;
-		margin-left: 0px;
+		margin-left: 25%;
+		margin-top: -6%;
 	}
 
 	.nummer {
@@ -132,5 +134,14 @@
 
 	.map {
 		width: 75%;
+	}
+	main {
+		> * {
+			padding: 0 10pt;
+		}
+	}
+
+	.adres {
+		margin-left: 0px;
 	}
 }
