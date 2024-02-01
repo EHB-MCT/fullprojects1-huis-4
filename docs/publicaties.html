@@ -71,10 +71,10 @@
 				<a href="./index.html">HOME</a>
 				<a href="./about.html">WIE ZIJN WIJ</a>
 				<a href="./historiek.html">HISTORIEK</a>
-				<a class="current" href="./publicaties.html#nieuwsbrieven">
+				<a id="nieuwsbrievenLink" class="current" href="./publicaties.html#nieuwsbrieven">
 					NIEUWSBRIEVEN
 				</a>
-				<a class="current" href="./publicaties.html#jaarverslagen">
+				<a id="jaarverslagenLink" class="current" href="./publicaties.html#jaarverslagen">
 					JAARVERSLAGEN
 				</a>
 				<a href="./support.html">STEUN ONS</a>
@@ -297,8 +297,8 @@
 		</footer>
 
 		<script>
+			const anchorList = document.querySelector("nav#mobile ul");
 			function openNavList() {
-				const anchorList = document.querySelector("nav#mobile ul");
 				if (anchorList.style.display === "block") {
 					anchorList.style.display = "none";
 					document.querySelector("#darken-page").style.display = "none";
@@ -307,6 +307,19 @@
 					document.querySelector("#darken-page").style.display = "block";
 				}
 			}
+
+			const nieuwsbrieven = document.querySelector("#nieuwsbrievenLink");
+			const jaarverslagen = document.querySelector("#jaarverslagenLink");
+
+			nieuwsbrieven.addEventListener("click", () => {
+				anchorList.style.display = "none";
+				document.getElementById("darken-page").style.display = "none";
+			});
+
+			jaarverslagen.addEventListener("click", () => {
+				anchorList.style.display = "none";
+				document.getElementById("darken-page").style.display = "none";
+			});
 		</script>
 	</body>
 </html>
