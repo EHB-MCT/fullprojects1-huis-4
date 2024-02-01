@@ -11,3 +11,12 @@ legend {
 	color: #84a86e;
 	font-weight: bold;
 }
+.no-highlight {
+	background-color: transparent !important;
+}
+#correctHighlight {
+	background-color: lightgreen;
+}
+#wrongHighlight {
+	background-color: rgba(255, 0, 0, 0.6);
+}
