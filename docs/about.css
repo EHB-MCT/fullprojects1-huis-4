@@ -115,7 +115,7 @@ section img {
 
 	&#heart-illustration {
 		left: -21%;
-    	top: 40%;
+		top: 40%;
 	}
 
 	&#squirrels {
@@ -148,12 +148,12 @@ section img {
 /* For mobile phones: */
 @media screen and (max-width: 426px) {
 	main {
-		>* {
+		> * {
 			margin: 0;
 			padding: 0 10pt;
 		}
 	}
-	
+
 	section {
 		width: calc(100% - 20pt);
 		margin: 0;
@@ -161,23 +161,23 @@ section img {
 		#photo {
 			left: 25%;
 			top: 20%;
-			transform: scale(0.2) rotate(4.73deg);
+			transform: scale(0.3) rotate(4.73deg);
 		}
 
 		#photo:hover {
 			#background-tape {
 				animation: none;
 			}
-	
+
 			#background-photo-frame {
 				animation: none;
 			}
-	
+
 			p.flipped-text {
 				opacity: 0;
 				animation: none;
 			}
-	
+
 			#background-carpet {
 				opacity: 1;
 				animation: none;
@@ -187,24 +187,27 @@ section img {
 
 	section img {
 		&#background-splotch {
-			display: none;
+			transform: scale(0.25);
+			position: absolute;
+			left: -74%;
+			top: -30%;
 		}
 
 		&#background-bike {
 			left: -7%;
 			top: -5%;
-			transform: scale(0.2);
+			transform: scale(0.3);
 			z-index: 4;
 		}
 
 		&#background-cutout {
 			left: -50%;
 			top: 0%;
-			transform: scale(0.2);
+			transform: scale(0.3);
 		}
 
 		&#background-tape {
-			transform: scale(0.2) rotate(30deg);
+			transform: scale(0.3) rotate(30deg);
 			left: -25%;
 			top: -65%;
 			z-index: 3;
@@ -251,34 +254,34 @@ section img {
 			width: 70%;
 		}
 
-		>* {
-			padding: 0 10pt;
+		> * {
+			padding: 0 40pt;
 		}
 	}
 
 	section {
 		width: calc(100% - 20pt);
-		
+
 		#photo {
-			left: 81%;
-			top: -46%;
-			transform: scale(0.5) rotate(-4.73deg);
+			left: 84%;
+			top: 28%;
+			transform: scale(0.55) rotate(11.27deg);
 		}
 
 		#photo:hover {
 			#background-tape {
 				animation: none;
 			}
-	
+
 			#background-photo-frame {
 				animation: none;
 			}
-	
+
 			p.flipped-text {
 				opacity: 0;
 				animation: none;
 			}
-	
+
 			#background-carpet {
 				opacity: 1;
 				animation: none;
@@ -288,7 +291,10 @@ section img {
 
 	section img {
 		&#background-splotch {
-			display: none;
+			transform: scale(0.45);
+			position: absolute;
+			top: -28%;
+			left: revert-layer;
 		}
 
 		&#background-bike {
@@ -331,6 +337,14 @@ section img {
 			transform: scale(0.5);
 			left: 63%;
 			top: 97%;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	main {
+		> * {
+			padding: 0 10;
 		}
 	}
 }

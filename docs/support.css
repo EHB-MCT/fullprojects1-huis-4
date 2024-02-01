@@ -34,12 +34,14 @@ main {
 	}
 
 	main {
-		padding: 0;
+		> * {
+			padding: 0 10pt;
+		}
 	}
 
 	h2 {
 		display: flex;
-		justify-content: center;
+		margin-left: 5%;
 	}
 
 	.wrapper {

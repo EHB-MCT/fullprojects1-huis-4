@@ -2,6 +2,16 @@ main {
 	position: relative;
 }
 
+main {
+	> * {
+		padding: 0pt;
+	}
+}
+
+main h2 {
+	margin-left: 60pt;
+}
+
 .lijn {
 	width: 100%;
 }
@@ -12,74 +22,74 @@ main {
 
 .eerste {
 	position: absolute;
-	top: 13%;
-	left: 28%;
+	top: 10%;
+	left: 12%;
 }
 
 .ontstaan {
 	position: absolute;
-	top: 18%;
-	left: 28%;
+	top: 15%;
+	left: 12%;
 }
 
 .tweede {
 	position: absolute;
 	top: 31%;
-	left: 30%;
+	left: 16%;
 }
 
 .begeleidingsaanbod {
 	position: absolute;
 	top: 36%;
-	left: 30%;
+	left: 16%;
 }
 
 .derde {
 	position: absolute;
-	top: 32%;
-	right: 34%;
+	top: 40%;
+	right: 48%;
 }
 
 .werking {
 	position: absolute;
-	top: 20%;
-	right: 18%;
+	top: 27%;
+	right: 27%;
 }
 
 .vierde {
 	position: absolute;
 	top: 36%;
-	right: 28%;
+	right: 22%;
 }
 
 .centrum {
 	position: absolute;
 	top: 42%;
-	right: 15%;
+	right: 3%;
 }
 
 .vijfde {
 	position: absolute;
-	top: 65%;
-	right: 40%;
+	top: 63%;
+	right: 31%;
 }
 
 .samenwerking {
 	position: absolute;
-	top: 70%;
-	right: 21.5%;
+	top: 68%;
+	right: 6.5%;
 }
 
 .zesde {
 	position: absolute;
-	top: 70%;
-	right: 73%;
+	top: 78%;
+	right: 91%;
 }
 
 .autonomie {
 	position: absolute;
-	top: 62%;
-	left: 20%;
+	top: 69%;
+	left: 2%;
 }
 
 .openBoek {
@@ -91,18 +101,77 @@ main {
 .paard {
 	position: absolute;
 	top: 45%;
-	left: 15%;
-	width: 25%;
+	left: 0%;
+	width: 50%;
 }
 
 h4 {
 	font-size: 18px;
 }
 
+@media screen and (max-width: 1280px) {
+	/*TYPO*/
+	body p {
+		font-size: 10pt;
+	}
+
+	body h2 {
+		font-size: 22pt;
+	}
+
+	body h3 {
+		font-size: 16pt;
+	}
+
+	body h4 {
+		font-size: 10pt;
+	}
+
+	/*POSITION*/
+	.ontstaan {
+		top: 13%;
+		left: 12%;
+	}
+
+	.begeleidingsaanbod {
+		top: 34%;
+		left: 16%;
+	}
+
+	.werking {
+		top: 28%;
+		right: 32.5%;
+	}
+
+	.vierde {
+		top: 30%;
+		right: 17%;
+	}
+
+	.centrum {
+		top: 35%;
+		right: 3%;
+	}
+
+	.vijfde {
+		top: 63%;
+		right: 31%;
+	}
+
+	.samenwerking {
+		top: 66%;
+		right: 13.5%;
+	}
+
+	.autonomie {
+		top: 69%;
+		left: 4.5%;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.lijn {
-		width: 122%;
-		margin-left: -20%;
+		width: 100%;
 	}
 
 	.openBoek {
@@ -112,68 +181,59 @@ h4 {
 	}
 
 	.paard {
-		top: 46%;
-		left: 28%;
+		top: 45%;
+		left: -4%;
 	}
 
-	.eerste {
-		top: 10%;
-		left: 13%;
-	}
-
+	/*POSITION*/
 	.ontstaan {
-		top: 14%;
-		left: 13%;
-	}
-
-	.tweede {
-		top: 30%;
-		left: 15%;
+		top: 13%;
+		left: 12%;
 	}
 
 	.begeleidingsaanbod {
 		top: 34%;
-		left: 15%;
+		left: 16%;
 	}
 
 	.derde {
-		top: 30%;
-		right: 41%;
+		top: 34%;
+		right: 51.5%;
 	}
 
 	.werking {
-		top: 15%;
+		top: 23%;
+		right: 28.7%;
 	}
 
 	.vierde {
-		top: 31%;
-		right: 20%;
+		top: 34%;
+		right: 24%;
 	}
 
 	.centrum {
-		top: 37%;
-		right: 6%;
+		top: 38%;
+		right: 3%;
 	}
 
 	.vijfde {
-		top: 69%;
-		right: 52%;
-	}
-
-	.samenwerking {
-		top: 74%;
-		right: 17.5%;
+		top: 63%;
+		right: 38%;
 	}
 
 	.zesde {
-		top: 69%;
-		right: 83%;
+		top: 80.5%;
+		left: 04.5%;
+	}
+
+	.samenwerking {
+		top: 66%;
+		right: 11.5%;
 	}
 
 	.autonomie {
-		top: 55%;
-		left: 10%;
-		width: 33%;
+		top: 84%;
+		left: 4.5%;
 	}
 }
 
@@ -205,7 +265,7 @@ h4 {
 
 	.eerste {
 		top: 6%;
-		left: 12%;
+		left: 11.5%;
 	}
 
 	.ontstaan {
@@ -215,33 +275,33 @@ h4 {
 
 	.tweede {
 		top: 22%;
-		left: 71%;
+		left: 34%;
 	}
 
 	.begeleidingsaanbod {
-		top: 27%;
-		left: 33%;
+		top: 25%;
+		left: 34%;
 	}
 
 	.derde {
-		top: 36%;
+		top: 34%;
 		right: 77%;
 	}
 
 	.werking {
-		top: 39%;
-		right: 30%;
+		top: 37%;
+		right: 26%;
 	}
 
 	.vierde {
-		top: 49%;
-		right: 6%;
+		top: 48%;
+		right: 51%;
 	}
 
 	.centrum {
 		width: 70%;
-		top: 55%;
-		right: -3%;
+		top: 52%;
+		right: -4%;
 	}
 
 	.centrum h4,
@@ -254,13 +314,79 @@ h4 {
 	}
 
 	.vijfde {
-		top: 63%;
-		right: 83%;
+		top: 58%;
+		right: 76%;
 	}
 
 	.samenwerking {
-		top: 66%;
+		top: 61%;
 		right: 13.5%;
+	}
+
+	.zesde {
+		top: 75%;
+		right: 42%;
+	}
+
+	.autonomie {
+		top: 78%;
+		left: 4%;
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.lijn_mobile {
+		object-fit: fill;
+		height: 1200px;
+		width: 280px;
+	}
+
+	.paard {
+		left: 74%;
+	}
+
+	.openBoek {
+		left: 50%;
+	}
+
+	.eerste {
+		top: 6%;
+		left: 11.5%;
+	}
+
+	.ontstaan {
+		top: 10%;
+		left: 12%;
+	}
+
+	.tweede {
+		top: 23%;
+	}
+
+	.derde {
+		top: 35%;
+	}
+
+	.werking {
+		top: 38%;
+	}
+
+	.vierde {
+		top: 52%;
+	}
+
+	.centrum {
+		top: 55.5%;
+		right: 0%;
+	}
+
+	.vijfde {
+		top: 62%;
+	}
+
+	.samenwerking {
+		top: 65%;
 	}
 
 	.zesde {
@@ -269,8 +395,8 @@ h4 {
 	}
 
 	.autonomie {
-		top: 84%;
-		left: 42%;
+		top: 82%;
+		left: 1%;
 		width: 60%;
 	}
 }

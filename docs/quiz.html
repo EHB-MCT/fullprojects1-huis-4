@@ -4,84 +4,88 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>test quiz</title>
-		<link rel="stylesheet" href="./quiz.css" />
+		<link 
+			rel="stylesheet" href="./quiz.css" 
+			rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 	</head>
 	<body>
 		<form id="quizForm">
 			<fieldset id="1">
 				<legend>Welke definitie is juist?</legend>
 				<label>
-					<input type="radio" name="q1" value="a" /> a) Thuisloosheid erkent de
-					mensen die op straat wonen en dus geen dak boven hun hoofd hebben.
+					<input type="radio" name="q1" value="a" id="radioButton"/><mark id="wrongHighlight"> a) Thuisloosheid erkent de
+					mensen die op straat wonen en dus geen dak boven hun hoofd hebben.</mark><br>
 				
 				<label>
-					<input type="radio" name="q1" value="b" /> b) Thuisloosheid uit zich
+					<input type="radio" name="q1" value="b" id="radioButton"/><mark class="correctHighlight"> b) Thuisloosheid uit zich
 					in het ontbreken van een vaste woonst, vast werk, bestaansmiddelen en
 					relationele verbanden, waardoor de thuisloze zich niet verder
-					zelfstandig kan handhaven.
+					zelfstandig kan handhaven.</mark>
 				</label>
 			</fieldset>
 			<fieldset id="2"> 
 				<legend>Hoeveel thuislozen zijn er in Vlaanderen?</legend>
 				<label>
-					<input type="radio" name="q2" value="a" /> a) Ongeveer 12 000 mensen.
+					<input type="radio" name="q2" value="a" id="radioButton"/><mark class="wrongHighlight"> a) Ongeveer 12 000 mensen.</mark>
 				<label>
-					<input type="radio" name="q2" value="b" /> b) Ongeveer 15 000 mensen
+					<input type="radio" name="q2" value="b" id="radioButton"/><mark class="wrongHighlight"> b) Ongeveer 15 000 mensen.</mark>
 					<label>
-						<input type="radio" name="q2" value="c" /> c) Ongeveer 19 000 mensen
+						<input type="radio" name="q2" value="c" id="radioButton"/><mark class="correctHighlight"> c) Ongeveer 19 000 mensen.</mark>
 				</label>
 
 			</fieldset>
 			<fieldset id="3">
 				<legend>Hoeveel procent van thuislozen zijn kinderen?</legend>
 				<label>
-					<input type="radio" name="q3" value="a" /> a) 9 procent.
+					<input type="radio" name="q3" value="a" id="radioButton"/><mark class="wrongHighlight"> a) 9 procent.</mark>
 				<label>
-					<input type="radio" name="q3" value="b" /> b) 16 procent.
+					<input type="radio" name="q3" value="b" id="radioButton"/><mark class="wrongHighlight"> b) 16 procent.</mark>
 					<label>
-						<input type="radio" name="q3" value="c" /> c) 16 procent.
+						<input type="radio" name="q3" value="c" id="radioButton"/><mark class="correctHighlight"> c) 16 procent.</mark>
 				</label>
 			</fieldset>
 			<fieldset id="4">
 				<legend>Hoeveel vrijwilligers telt het Huis van Vrede?</legend>
 			<label>
-					<input type="radio" name="q4" value="a" /> a) 4
+					<input type="radio" name="q4" value="a" id="radioButton"/><mark class="wrongHighlight"> a) 4</mark>
 			<label>
-					<input type="radio" name="q4" value="b" /> b) 11
+					<input type="radio" name="q4" value="b" id="radioButton"/><mark class="correctHighlight"> b) 11</mark>
 			<label>
-						<input type="radio" name="q4" value="c" /> c) 15
+						<input type="radio" name="q4" value="c" id="radioButton"/><mark class="wrongHighlight"> c) 15</mark>
 				</label>
 			</fieldset>
 			<fieldset id="5">
 				<legend>Hoeveel thuislozen worden er nu begeleidt?</legend>
 				<label>
-					<input type="radio" name="q5" value="a" /> a) 69, waarvan 80 volwassenen en 35 kinderen.
+					<input type="radio" name="q5" value="a" id="radioButton"/><mark class="wrongHighlight"> a) 69, waarvan 80 volwassenen en 35 kinderen.</mark>
 				<label>
-					<input type="radio" name="q5" value="b" /> b) 78, waarvan 86 volwassenen en 56 kinderen.
+					<input type="radio" name="q5" value="b" id="radioButton"/><mark class="correctHighlight"> b) 78, waarvan 86 volwassenen en 56 kinderen.</mark>
 				<label>
-						<input type="radio" name="q5" value="c" /> c) 86, waarvan 86 volwassenen en 42 kinderen.
+						<input type="radio" name="q5" value="c" id="radioButton"/><mark class="wrongHighlight"> c) 86, waarvan 86 volwassenen en 42 kinderen.</mark>
 				</label>
 			</fieldset>
 			<fieldset id="6">
 				<legend>Naar waar is HVV deze zomer met 30 leden op vakantie gegaan?</legend>
 				<label>
-					<input type="radio" name="q6" value="a" /> a) Buret, vlak naast de grens van Luxemburg.
+					<input type="radio" name="q6" value="a" id="radioButton"/><mark class="correctHighlight"> a) Buret, vlak naast de grens van Luxemburg.</mark>
 				<label>
-					<input type="radio" name="q6" value="b" /> b) Aken, net over de grens in Duitsland.
+					<input type="radio" name="q6" value="b" id="radioButton"/><mark class="wrongHighlight"> b) Aken, net over de grens in Duitsland.</mark>
 					<label>
-						<input type="radio" name="q6" value="c" /> c) Blankenberge, aan zee.
+						<input type="radio" name="q6" value="c" id="radioButton"/><mark class="wrongHighlight"> c) Blankenberge, aan zee.</mark>
 				</label>
 			</fieldset>
 			<fieldset id="7">
 				<legend>Wat is een wekelijks vooruitzicht voor de leden van Huis van Vrede?</legend>
 				<label>
-					<input type="radio" name="q7" value="a" /> a) Elkaar tegenkomen in het huis.
+					<input type="radio" name="q7" value="a" id="radioButton"/><mark class="wrongHighlight"> a) Elkaar tegenkomen in het huis.
+                        </mark>
 				<label>
-					<input type="radio" name="q7" value="b" /> b) Een gratis lunch op maandag.
+					<input type="radio" name="q7" value="b" id="radioButton"/><mark class="wrongHighlight"> b) Een gratis lunch op maandag.</mark>
 					<label>
-						<input type="radio" name="q7" value="c" /> c) Hun koffietje drinken aan de tafel.
+						<input type="radio" name="q7" value="c" id="radioButton"/><mark class="wrongHighlight"> c) Hun koffietje drinken aan de tafel.</mark>
 						<label>
-							<input type="radio" name="q7" value="d" /> d) Alle bovenstaande.
+							<input type="radio" name="q7" value="d" id="radioButton"/><mark class="correctHighlight"> d) Alle bovenstaande.</mark>
 				</label>
 			</fieldset>
 
@@ -90,6 +94,9 @@
 		</form>
 
 		<script>
+            ///////////////////hide submit
+            var submitButton = document.getElementById('submitQ');
+  submitButton.style.display = 'none';
             var nextCount = 0;
 			/////////////////////////disable all questions, only 1st is shown.//////////////////////////////////
 			var fieldset2 = document.getElementById("2");
@@ -106,6 +113,7 @@
             fieldset7.style.display = "none";
             ///////////////////////////////////////////////////////////////////////////////////
 			function nextQuestion() {
+                removeMark();
 			nextCount = nextCount + 1;
             ///////////////////////////////////////////////
 			if(nextCount == 1) {
@@ -179,6 +187,10 @@
 			fieldset5.style.display = "none";
 			var fieldset6 = document.getElementById("6");
 			fieldset6.style.display = "none";
+            /////////////////////
+            var nextButton = document.getElementById('nextQ');
+  nextButton.style.display = 'none';
+  submitButton.style.display = 'inline';
 				}
 
 				////////////////////////////////
@@ -190,8 +202,8 @@
 			function submitQuiz() {
 				updateQuestions();
 				nextCount = 0; //reset back to 1st question
+                var userAnswers = [];
 				var correctAnswers = ["b", "c", "c", "b", "b", "a", "d"]; // Define the correct answers
-				var userAnswers = [];
 
 				// Get user-selected answers
 				for (var i = 1; i <= 7; i++) {
@@ -222,6 +234,9 @@
 					"\nAantal vragen juist: " + score + " van de " + correctAnswers.length;
 
 				console.log(feedback);
+                var nextButton = document.getElementById('nextQ');
+  nextButton.style.display = 'inline';
+  submitButton.style.display = 'none';
 			}
 
 			function updateQuestions() {
@@ -240,6 +255,29 @@
 			var fieldset7 = document.getElementById("7");
 			fieldset7.style.display = "none";
 			}
+            //////////////////////////////initialize (hide) highlights//////////////
+            removeMark();
+         /////////////////////////////////////////////////////////////////////////////////////////////////////////////event listen
+            document.addEventListener('change', function() {
+            addMark(); //function to do upon button change -> change highlight state to on
+             });
+            //toggleMark();
+            function removeMark() {
+  // For elements with class "wrongHighlight" or "correctHighlight"
+  var highlightElements = document.querySelectorAll(".wrongHighlight, .correctHighlight");
+
+  for (var i = 0; i < highlightElements.length; i++) {
+    highlightElements[i].classList.add("no-highlight");
+  }
+}
+function addMark() {
+  // For elements with class "wrongHighlight" or "correctHighlight"
+  var highlightElements = document.querySelectorAll(".wrongHighlight, .correctHighlight");
+
+  for (var i = 0; i < highlightElements.length; i++) {
+    highlightElements[i].classList.remove("no-highlight");
+  }
+}
 		</script>
 	</body>
 </html>
