@@ -26,41 +26,41 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	margin: 0;
-	font-size: 14pt;
-	font-family: "Avenir Next Regular", sans-serif;
+	font-size: 16pt;
+	font-family: "Avenir Next Regular";
 }
 
 h1 {
 	font-size: 280pt;
-	font-family: "Avenir Next Medium", sans-serif;
+	font-family: "Avenir Next Medium";
 }
 
 h2 {
 	font-size: 40pt;
-	font-family: "Avenir Next Ultralight", sans-serif;
+	font-family: "Avenir Next Ultralight";
 	span {
-		font-family: "Avenir Next Medium", sans-serif;
+		font-family: "Avenir Next Medium";
 	}
 }
 
 h3 {
 	color: #84a86e;
 	font-size: 30pt;
-	font-family: "Avenir Next Regular", sans-serif;
+	font-family: "Avenir Next Regular";
 	span {
-		font-family: "Avenir Next Medium", sans-serif;
+		font-family: "Avenir Next Medium";
 	}
 }
 
 h4 {
 	font-size: 18pt;
-	font-family: "Avenir Next Medium", sans-serif;
+	font-family: "Avenir Next Medium";
 }
 
 a,
 nav span {
-	font-size: 14pt;
-	font-family: "Avenir Next Medium", sans-serif;
+	font-size: 16pt;
+	font-family: "Avenir Next Medium";
 	text-decoration: none;
 	color: black;
 }
@@ -68,7 +68,7 @@ nav span {
 /* BUTTONS */
 .btn-primary {
 	margin-left: 50px;
-	font-family: "Avenir Next Bold", sans-serif;
+	font-family: "Avenir Next Bold";
 	color: black;
 	text-decoration: none;
 	font-weight: bold;
@@ -210,7 +210,7 @@ nav a#icon {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1125px) {
 	nav#web {
 		display: none;
 	}
@@ -241,9 +241,12 @@ nav a#icon {
 
 /* MAIN */
 main {
+	max-width: 1280px;
 	min-height: 60vh;
 	padding: 0 100pt;
 	margin: 0 0 auto 0;
+	justify-self: center;
+	align-self: center;
 }
 
 /*FOOTER*/
@@ -259,7 +262,7 @@ footer h4 {
 
 .emailAdres {
 	display: flex;
-	font-family: "Avenir Next", sans-serif;
+	font-family: "Avenir Next Regular";
 	font-size: 18px;
 }
 
