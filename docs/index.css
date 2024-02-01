@@ -143,15 +143,6 @@ section #photo1 {
 		position: absolute;
 	}
 
-	p.flipped-text {
-		opacity: 0;
-		user-select: none;
-		width: 150pt;
-		left: 5%;
-		top: 2%;
-		z-index: 1;
-	}
-
 	.background-tape {
 		transform: scale(0.2) rotate(-20.73deg);
 		left: -129%;
@@ -177,15 +168,6 @@ section #photo2 {
 		position: absolute;
 	}
 
-	p.flipped-text {
-		opacity: 0;
-		user-select: none;
-		width: 250pt;
-		left: 8%;
-		top: 3%;
-		z-index: 1;
-	}
-
 	.background-tape {
 		transform: scale(0.2) rotate(-30deg);
 		left: -74%;
@@ -206,7 +188,8 @@ section #photo1:hover {
 		animation-fill-mode: forwards;
 	}
 
-	p.flipped-text {
+	#quote-flipped-left {
+		user-select: initial;
 		opacity: 1;
 		animation: animateScale 1s;
 		animation-fill-mode: forwards;
@@ -230,7 +213,8 @@ section #photo2:hover {
 		animation-fill-mode: forwards;
 	}
 
-	p.flipped-text {
+	#quote-flipped-right {
+		user-select: initial;
 		opacity: 1;
 		animation: animateScale 1s;
 		animation-fill-mode: forwards;
@@ -243,16 +227,37 @@ section #photo2:hover {
 	}
 }
 
-section #quote {
-	width: 300pt;
-	margin-left: 75%;
-	margin-top: 77%;
-	margin-bottom: 50px;
+section .quote {
+	&#quote-flipped-left,
+	&#quote-flipped-right {
+		opacity: 0;
+		user-select: none;
+		z-index: 1;
+	}
 
-	span {
-		font-family: Arial;
-		font-style: normal;
-		color: #84a86e;
+	&#quote-flipped-left {
+		width: 150pt;
+		left: 5%;
+		top: 2%;
+	}
+
+	&#quote-flipped-right {
+		width: 225pt;
+		left: 8%;
+		top: 3%;
+	}
+
+	&#quote-bottom {
+		width: 300pt;
+		margin-left: 75%;
+		margin-top: 77%;
+		margin-bottom: 50px;
+	
+		span {
+			font-family: Arial;
+			font-style: normal;
+			color: #84a86e;
+		}
 	}
 }
 
