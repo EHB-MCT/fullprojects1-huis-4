@@ -5,16 +5,89 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>test quiz</title>
 		<link 
+			rel="stylesheet" href="./style.css"
 			rel="stylesheet" href="./quiz.css" 
 			rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
 	</head>
 	<body>
-		<form id="quizForm">
+		<nav id="web">
+			<a href="./index.html" class="logo">
+				<img src="./assets/logo-cutout.png" alt="logo" />
+				<span>HUIS VAN VREDE VZW</span>
+			</a>
+			<div id="spacer"></div>
+			<a class="current" href="./index.html">HOME</a>
+
+			<div id="uppermenu" class="nav-dropdown">
+				<span class="title">OVER ONS</span>
+				<img
+					id="uppermenu"
+					class="pointer"
+					src="./assets/pointer-arrow.png"
+					alt="#"
+				/>
+
+				<ul id="uppermenu" class="menu-content">
+					<a href="./about.html">WIE ZIJN WIJ</a>
+					<a href="./historiek.html">HISTORIEK</a>
+
+					<div id="submenu" class="nav-dropdown">
+						<span class="title">PUBLICATIES</span>
+						<img
+							id="submenu"
+							class="pointer"
+							src="./assets/pointer-arrow.png"
+							alt="#"
+						/>
+
+						<ul id="submenu" class="menu-content">
+							<a href="./publicaties.html#nieuwsbrieven">NIEUWSBRIEVEN</a>
+							<a href="./publicaties.html#jaarverslagen">JAARVERSLAGEN</a>
+						</ul>
+					</div>
+				</ul>
+			</div>
+
+			<a href="./support.html">STEUN ONS</a>
+			<a href="./job_offers.html">VACATURE</a>
+			<a href="./contact.html">CONTACT</a>
+			<a href="./index_FR.html">
+				<span>FR</span><span>/</span><span class="current">NL</span>
+			</a>
+		</nav>
+
+		<nav id="mobile">
+			<a class="logo" href="./index.html">
+				<img src="./assets/logo-cutout.png" alt="logo" />
+			</a>
+			<div id="spacer"></div>
+
+			<ul>
+				<a class="current" href="./index.html">HOME</a>
+				<a href="./about.html">WIE ZIJN WIJ</a>
+				<a href="./historiek.html">HISTORIEK</a>
+				<a href="./publicaties.html#nieuwsbrieven">NIEUWSBRIEVEN</a>
+				<a href="./publicaties.html#jaarverslagen">JAARVERSLAGEN</a>
+				<a href="./support.html">STEUN ONS</a>
+				<a href="./job_offers.html">VACATURE</a>
+				<a href="./contact.html">CONTACT</a>
+				<a href="./index_FR.html">
+					<span>FR</span><span>/</span><span class="current">NL</span>
+				</a>
+			</ul>
+
+			<a id="icon" href="javascript:void(0);" onclick="openNavList()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+
+	<main>
+		<form id="quizForm" style="margin-top: 10%;">
 			<fieldset id="1">
 				<legend>Welke definitie is juist?</legend>
 				<label>
-					<input type="radio" name="q1" value="a" id="radioButton"/><mark class="wrongHighlight"> a) Thuisloosheid erkent de
+					<input type="radio" name="q1" value="a" id="radioButton"/><mark class="wrongHighlight">  a) Thuisloosheid erkent de
 					mensen die op straat wonen en dus geen dak boven hun hoofd hebben.</mark><br>
 				
 				<label>
@@ -92,11 +165,53 @@
             <button type="button" onclick="nextQuestion()" id="nextQ">Next question</button>
 			<button type="button" onclick="submitQuiz()" id="submitQ">Go back</button>
 		</form>
+	</main>
+
+		<footer>
+			<div class="sponsors">
+				<div class="bovenSponsors">
+					<img class="actiris" src="./assets/logo_actiris.png" alt="" />
+					<img class="B" src="./assets/logo_B.png" alt="" />
+					<img class="febi" src="./assets/logo_febi (2).png" alt="" />
+				</div>
+
+				<div class="onderSponsors">
+					<img class="caritas" src="./assets/logo_caritas.png" alt="" />
+					<img class="cocom" src="./assets/logo_cocom.png" alt="" />
+				</div>
+			</div>
+			<div class="emailAdres">
+				<img class="tracé" src="./assets/Tracé 2254.png" alt="" id="line" />
+				<div class="contact">
+					<h4>Contactgegevens</h4>
+					<div class="contactInfo">
+						<div class="email">
+							<img src="./assets/Icon material-email.png" alt="" />
+							<p>puerto@huisvanvrede.be</p>
+						</div>
+
+						<div class="phone">
+							<img src="./assets/Icon awesome-phone-alt.png" alt="" />
+							<p>02 455 17 95</p>
+						</div>
+					</div>
+				</div>
+				<img class="tracé" src="./assets/Tracé 2254.png" alt="" id="line" />
+				<div class="adress">
+					<h4>Adres</h4>
+					<p>
+						Huis van Vrede vzw <br />
+						Varkensmarkt 23 <br />
+						1000 Brussel
+					</p>
+				</div>
+			</div>
+		</footer>
 
 		<script>
             ///////////////////hide submit
             var submitButton = document.getElementById('submitQ');
-  submitButton.style.display = 'none';
+ 			submitButton.style.display = 'none';
             var nextCount = 0;
 			/////////////////////////disable all questions, only 1st is shown.//////////////////////////////////
 			var fieldset2 = document.getElementById("2");

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>test quiz</title>
+		<link
+			rel="stylesheet"
+			href="./style.css"
+			rel="stylesheet"
+			href="./quiz.css"
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<nav id="web">
+			<a href="./index_FR.html" class="logo">
+				<img src="./assets/logo-cutout.png" alt="logo" />
+				<span>MAISON DE LA PAIX ASBL</span>
+			</a>
+			<div id="spacer"></div>
+			<a href="./index_FR.html">ACCEUIL</a>
+
+			<div id="uppermenu" class="nav-dropdown">
+				<span class="title current">A PROPOS DE NOUS</span>
+				<img
+					id="uppermenu"
+					class="pointer"
+					src="./assets/pointer-arrow.png"
+					alt="#"
+				/>
+
+				<ul id="uppermenu" class="menu-content">
+					<a class="current" href="./about_FR.html">QUI SOMME NOUS</a>
+					<a href="./historiek_FR.html">HISTORIQUE</a>
+
+					<div id="submenu" class="nav-dropdown">
+						<span class="title">PUBLICATION</span>
+						<img
+							id="submenu"
+							class="pointer"
+							src="./assets/pointer-arrow.png"
+							alt="#"
+						/>
+
+						<ul id="submenu" class="menu-content">
+							<a href="./publicaties_FR.html#nieuwsbrieven">
+								BULLETINS D'INFORMATION
+							</a>
+							<a href="./publicaties_FR.html#jaarverslagen">RAPPORT ANNUEL</a>
+						</ul>
+					</div>
+				</ul>
+			</div>
+
+			<a href="./support_FR.html">SOUTENEZ-NOUS</a>
+			<a href="./job_offers_FR.html">POSTE VACANTS</a>
+			<a href="./contact_FR.html">CONTACT</a>
+			<a href="./about.html">
+				<span class="current">FR</span><span>/</span><span>NL</span>
+			</a>
+		</nav>
+
+		<nav id="mobile">
+			<a href="./index.html" class="logo">
+				<img src="./assets/logo-cutout.png" alt="logo" />
+			</a>
+			<div id="spacer"></div>
+
+			<ul>
+				<a href="./index_FR.html">ACCEUIL</a>
+				<a href="./about_FR.html" class="current">A PROPOS DE NOUS</a>
+				<a href="./historiek_FR.html">HISTORIQUE</a>
+				<a href="./publicaties_FR.html#nieuwsbrieven">
+					BULLETINS D'INFORMATION
+				</a>
+				<a href="./publicaties_FR.html#jaarverslagen">RAPPORT ANNUEL</a>
+				<a href="./support_FR.html">SOUTENEZ-NOUS</a>
+				<a href="./job_offers_FR.html">POSTE VACANTS</a>
+				<a href="./contact_FR.html">CONTACT</a>
+				<a href="./about.html">
+					<span class="current">FR</span><span>/</span><span>NL</span>
+				</a>
+			</ul>
+
+			<a href="javascript:void(0);" id="icon" onclick="openNavList()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+
+		<main>
+			<form id="quizForm" style="margin-top: 10%">
+				<fieldset id="1">
+					<legend>Quelle définition est correcte ?</legend>
+					<label>
+						<input type="radio" name="q1" value="a" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							a) L'itinérance reconnaît les personnes vivant dans la rue et
+							n'ayant donc pas de toit au-dessus de leur tête.</mark
+						><br />
+					</label>
+					<label>
+						<input type="radio" name="q1" value="b" id="radioButton" /><mark
+							class="correctHighlight"
+						>
+							b) L'itinérance se manifeste par l'absence d'une résidence fixe,
+							d'un emploi stable, de moyens de subsistance et de liens
+							relationnels, ce qui empêche la personne sans abri de se maintenir
+							de manière indépendante.</mark
+						>
+					</label>
+				</fieldset>
+				<fieldset id="2">
+					<legend>Combien de personnes sans-abri y a-t-il en Flandre ?</legend>
+					<label>
+						<input type="radio" name="q2" value="a" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							a) Environ 12 000 personnes.</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q2" value="b" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							b) Environ 15 000 personnes.</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q2" value="c" id="radioButton" /><mark
+							class="correctHighlight"
+						>
+							c) Environ 19 000 personnes.</mark
+						>
+					</label>
+				</fieldset>
+				<fieldset id="3">
+					<legend>
+						Combien de pourcentage de sans-abri sont des enfants ?
+					</legend>
+					<label>
+						<input type="radio" name="q3" value="a" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							a) 9 pour cent.</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q3" value="b" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							b) 16 pour cent.</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q3" value="c" id="radioButton" /><mark
+							class="correctHighlight"
+						>
+							c) 16 pour cent.</mark
+						>
+					</label>
+				</fieldset>
+				<fieldset id="4">
+					<legend>Combien de bénévoles compte la Maison de la Paix ?</legend>
+					<label>
+						<input type="radio" name="q4" value="a" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							a) 4</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q4" value="b" id="radioButton" /><mark
+							class="correctHighlight"
+						>
+							b) 11</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q4" value="c" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							c) 15</mark
+						>
+					</label>
+				</fieldset>
+				<fieldset id="5">
+					<legend>Combien de sans-abri sont actuellement accompagnés ?</legend>
+					<label>
+						<input type="radio" name="q5" value="a" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							a) 69, dont 80 adultes et 35 enfants.</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q5" value="b" id="radioButton" /><mark
+							class="correctHighlight"
+						>
+							b) 78, dont 86 adultes et 56 enfants.</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q5" value="c" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							c) 86, dont 86 adultes et 42 enfants.</mark
+						>
+					</label>
+				</fieldset>
+				<fieldset id="6">
+					<legend>
+						Où la HVV est-elle partie en vacances cet été avec 30 membres ?
+					</legend>
+					<label>
+						<input type="radio" name="q6" value="a" id="radioButton" /><mark
+							class="correctHighlight"
+						>
+							a) Buret, juste à côté de la frontière du Luxembourg.</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q6" value="b" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							b) Aix-la-Chapelle, juste de l'autre côté de la frontière en
+							Allemagne.</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q6" value="c" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							c) Blankenberge, au bord de la mer.</mark
+						>
+					</label>
+				</fieldset>
+				<fieldset id="7">
+					<legend>
+						Quelle est une perspective hebdomadaire pour les membres de la
+						Maison de la Paix ?
+					</legend>
+					<label>
+						<input type="radio" name="q7" value="a" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							a) Se croiser dans la maison.</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q7" value="b" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							b) Un déjeuner gratuit le lundi.</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q7" value="c" id="radioButton" /><mark
+							class="wrongHighlight"
+						>
+							c) Prendre leur café à la table.</mark
+						>
+					</label>
+					<label>
+						<input type="radio" name="q7" value="d" id="radioButton" /><mark
+							class="correctHighlight"
+						>
+							d) Toutes les réponses ci-dessus.</mark
+						>
+					</label>
+				</fieldset>
+
+				<button type="button" onclick="nextQuestion()" id="nextQ">
+					Question suivante
+				</button>
+				<button type="button" onclick="submitQuiz()" id="submitQ">
+					Revenir en arrière
+				</button>
+			</form>
+		</main>
+
+		<footer>
+			<div class="sponsors">
+				<div class="bovenSponsors">
+					<img class="actiris" src="./assets/logo_actiris.png" alt="" />
+					<img class="B" src="./assets/logo_B.png" alt="" />
+					<img class="febi" src="./assets/logo_febi (2).png" alt="" />
+				</div>
+
+				<div class="onderSponsors">
+					<img class="caritas" src="./assets/logo_caritas.png" alt="" />
+					<img class="cocom" src="./assets/logo_cocom.png" alt="" />
+				</div>
+			</div>
+			<div class="emailAdres">
+				<img class="tracé" src="./assets/Tracé 2254.png" alt="" id="line" />
+				<div class="contact">
+					<h4>Contact</h4>
+					<div class="contactInfo">
+						<class class="email">
+							<img src="./assets/Icon material-email.png" alt="" />
+							<p>puerto@huisvanvrede.be</p>
+						</class>
+
+						<class class="phone">
+							<img src="./assets/Icon awesome-phone-alt.png" alt="" />
+							<p>02 455 17 95</p>
+						</class>
+					</div>
+				</div>
+				<img class="tracé" src="./assets/Tracé 2254.png" alt="" id="line" />
+				<div class="adress">
+					<h4>Adresse</h4>
+					<p>
+						Maison de la paix asbl <br />
+						Marché du cochon 23 <br />
+						1000 Bruxelles
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			///////////////////hide submit
+			var submitButton = document.getElementById("submitQ");
+			submitButton.style.display = "none";
+			var nextCount = 0;
+			/////////////////////////disable all questions, only 1st is shown.//////////////////////////////////
+			var fieldset2 = document.getElementById("2");
+			fieldset2.style.display = "none";
+			var fieldset3 = document.getElementById("3");
+			fieldset3.style.display = "none";
+			var fieldset4 = document.getElementById("4");
+			fieldset4.style.display = "none";
+			var fieldset5 = document.getElementById("5");
+			fieldset5.style.display = "none";
+			var fieldset6 = document.getElementById("6");
+			fieldset6.style.display = "none";
+			var fieldset7 = document.getElementById("7");
+			fieldset7.style.display = "none";
+			///////////////////////////////////////////////////////////////////////////////////
+			function nextQuestion() {
+				removeMark();
+				nextCount = nextCount + 1;
+				///////////////////////////////////////////////
+				if (nextCount == 1) {
+					var fieldset2 = document.getElementById("2");
+					fieldset2.style.display = "initial";
+					////////////////////////////2
+					var fieldset1 = document.getElementById("1");
+					fieldset1.style.display = "none";
+				} else if (nextCount == 2) {
+					var fieldset3 = document.getElementById("3"); ///Q3
+					fieldset3.style.display = "initial";
+					///////////////////////////////////
+					var fieldset1 = document.getElementById("1");
+					fieldset1.style.display = "none";
+					var fieldset2 = document.getElementById("2");
+					fieldset2.style.display = "none";
+				} else if (nextCount == 3) {
+					var fieldset4 = document.getElementById("4"); //Q4
+					fieldset4.style.display = "initial";
+					///////////////////////////////////
+					var fieldset1 = document.getElementById("1");
+					fieldset1.style.display = "none";
+					var fieldset2 = document.getElementById("2");
+					fieldset2.style.display = "none";
+					var fieldset3 = document.getElementById("3");
+					fieldset3.style.display = "none";
+				} else if (nextCount == 4) {
+					var fieldset5 = document.getElementById("5"); //Q5
+					fieldset5.style.display = "initial";
+					///////////////////////////////////
+					var fieldset1 = document.getElementById("1");
+					fieldset1.style.display = "none";
+					var fieldset2 = document.getElementById("2");
+					fieldset2.style.display = "none";
+					var fieldset3 = document.getElementById("3");
+					fieldset3.style.display = "none";
+					var fieldset4 = document.getElementById("4");
+					fieldset4.style.display = "none";
+				} else if (nextCount == 5) {
+					var fieldset6 = document.getElementById("6"); //Q6
+					fieldset6.style.display = "initial";
+					///////////////////////////////////
+					var fieldset1 = document.getElementById("1");
+					fieldset1.style.display = "none";
+					var fieldset2 = document.getElementById("2");
+					fieldset2.style.display = "none";
+					var fieldset3 = document.getElementById("3");
+					fieldset3.style.display = "none";
+					var fieldset4 = document.getElementById("4");
+					fieldset4.style.display = "none";
+					var fieldset5 = document.getElementById("5");
+					fieldset5.style.display = "none";
+				} else if (nextCount == 6) {
+					var fieldset7 = document.getElementById("7"); //Q7
+					fieldset7.style.display = "initial";
+					///////////////////////////////////
+					var fieldset1 = document.getElementById("1");
+					fieldset1.style.display = "none";
+					var fieldset2 = document.getElementById("2");
+					fieldset2.style.display = "none";
+					var fieldset3 = document.getElementById("3");
+					fieldset3.style.display = "none";
+					var fieldset4 = document.getElementById("4");
+					fieldset4.style.display = "none";
+					var fieldset5 = document.getElementById("5");
+					fieldset5.style.display = "none";
+					var fieldset6 = document.getElementById("6");
+					fieldset6.style.display = "none";
+					/////////////////////
+					var nextButton = document.getElementById("nextQ");
+					nextButton.style.display = "none";
+					submitButton.style.display = "inline";
+				}
+
+				////////////////////////////////
+				else if (nextCount >= 7) {
+					nextCount = 6; //end
+				}
+				console.log(nextCount);
+			}
+			function submitQuiz() {
+				updateQuestions();
+				nextCount = 0; //reset back to 1st question
+				var userAnswers = [];
+				var correctAnswers = ["b", "c", "c", "b", "b", "a", "d"]; // Define the correct answers
+
+				// Get user-selected answers
+				for (var i = 1; i <= 7; i++) {
+					var selectedOption = document.querySelector(
+						'input[name="q' + i + '"]:checked'
+					);
+					if (selectedOption) {
+						userAnswers.push(selectedOption.value);
+					} else {
+						userAnswers.push(null); // Mark unanswered questions
+					}
+				}
+
+				// Check answers and provide feedback
+				var score = 0;
+				var feedback = "Resultaten:\n";
+				for (var i = 0; i < correctAnswers.length; i++) {
+					feedback += "Vraag " + (i + 1) + ": ";
+					if (userAnswers[i] === correctAnswers[i]) {
+						feedback += "Correct\n";
+						score++;
+					} else {
+						feedback += "Incorrect\n";
+					}
+				}
+
+				feedback +=
+					"\nAantal vragen juist: " +
+					score +
+					" van de " +
+					correctAnswers.length;
+
+				console.log(feedback);
+				var nextButton = document.getElementById("nextQ");
+				nextButton.style.display = "inline";
+				submitButton.style.display = "none";
+				/////////////////////////////
+				var targetPage = "about.html";
+				window.location.href = targetPage;
+			}
+
+			function updateQuestions() {
+				var fieldset1 = document.getElementById("1");
+				fieldset1.style.display = "initial";
+				var fieldset2 = document.getElementById("2");
+				fieldset2.style.display = "none";
+				var fieldset3 = document.getElementById("3");
+				fieldset3.style.display = "none";
+				var fieldset4 = document.getElementById("4");
+				fieldset4.style.display = "none";
+				var fieldset5 = document.getElementById("5");
+				fieldset5.style.display = "none";
+				var fieldset6 = document.getElementById("6");
+				fieldset6.style.display = "none";
+				var fieldset7 = document.getElementById("7");
+				fieldset7.style.display = "none";
+			}
+			//////////////////////////////initialize (hide) highlights//////////////
+			removeMark();
+			/////////////////////////////////////////////////////////////////////////////////////////////////////////////event listen
+			document.addEventListener("change", function () {
+				addMark(); //function to do upon button change -> change highlight state to on
+			});
+			//toggleMark();
+			function removeMark() {
+				// For elements with class "wrongHighlight" or "correctHighlight"
+				var highlightElements = document.querySelectorAll(
+					".wrongHighlight, .correctHighlight"
+				);
+
+				for (var i = 0; i < highlightElements.length; i++) {
+					highlightElements[i].classList.add("no-highlight");
+				}
+			}
+			function addMark() {
+				// For elements with class "wrongHighlight" or "correctHighlight"
+				var highlightElements = document.querySelectorAll(
+					".wrongHighlight, .correctHighlight"
+				);
+
+				for (var i = 0; i < highlightElements.length; i++) {
+					highlightElements[i].classList.remove("no-highlight");
+				}
+			}
+		</script>
+	</body>
+</html>
