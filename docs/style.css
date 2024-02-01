@@ -237,16 +237,27 @@ nav a#icon {
 	.fa.fa-bars {
 		font-size: 20pt;
 	}
+
+	/*FOOTER*/
+
+	.sponsors {
+		margin-left: 20px;
+	}
 }
 
 /* MAIN */
 main {
+	width: 100%;
 	max-width: 1280px;
 	min-height: 60vh;
-	padding: 0 100pt;
+	padding-bottom: 100px;
 	margin: 0 0 auto 0;
 	justify-self: center;
 	align-self: center;
+
+	> * {
+		padding: 0 60pt;
+	}
 }
 
 /*FOOTER*/
@@ -329,12 +340,11 @@ footer h4 {
 	margin-top: 3px;
 }
 
-@media screen and (max-width: 768px) {
-	/*PADDING*/
-	main {
-		padding: 0 24pt;
-	}
+.tracé {
+	width: 2px;
+}
 
+@media screen and (max-width: 768px) {
 	/*TYPO*/
 	body h2 {
 		font-size: 22pt;
@@ -384,6 +394,7 @@ footer h4 {
 
 	.sponsors {
 		flex-direction: column;
+		margin-left: 50px;
 	}
 
 	#line {
@@ -397,10 +408,6 @@ footer h4 {
 	.contact,
 	.adress {
 		margin: 0px 30px 0px 30px;
-	}
-
-	.sponsors img:last-child {
-		padding-left: 20px;
 	}
 }
 

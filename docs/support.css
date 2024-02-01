@@ -19,8 +19,13 @@ main {
 }
 
 .vet {
-	font-weight: bold;
 	color: #84a86e;
+}
+
+@media screen and (max-width: 908px) {
+	.wrapper img {
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 768px) {
